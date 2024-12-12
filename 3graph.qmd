@@ -45,30 +45,36 @@ Ogive, also known as the cumulative frequency curve, is a graphical representati
 ## Types of ogives
 
 There are two main types of cumulative frequency curves:\
-1. **Less than ogive**: This is constructed using the upper limits of the classes and their corresponding cumulative frequencies.\
-2. **Greater than ogive**: This uses the lower limits of the classes and their corresponding cumulative frequencies.
+1. **Less than ogive**\
+2. **Greater than ogive**
 
 [**Less than ogive**]{.underline}
 
-The less than ogive, also known as the **less than type cumulative frequency curve**, is created by plotting the cumulative frequencies against the upper class boundaries. For example, consider the plant height data for 50 plants. By using the upper class limits and their cumulative frequencies, we can construct a smooth curve that provides insights into the data distribution. See @tbl-ullcf, which is constructed from @tbl-plantheight. The less than ogive, shown in @fig-lessogive, is drawn using @tbl-ullcf.
+The less than ogive, also known as the **less than type cumulative frequency curve**, is created by plotting the less than cumulative frequencies against the upper class boundaries. For example, consider the plant height data for 50 plants. By using the upper class limits and their cumulative frequencies, we can construct a smooth curve that provides insights into the data distribution. See @tbl-ullcf, which is constructed from @tbl-plantheight. The less than ogive, shown in @fig-lessogive, is drawn using @tbl-ullcf.
 
 | Upper limit | 140 | 150 | 160 | 170 | 180 | 190 |
 |:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
 |     LCF     |  3  |  9  | 26  | 39  | 47  | 50  |
 
-: Upper limit and LCF of plant heights {#tbl-ullcf}
+: Upper limit and LCF of plant heights {#tbl-ullcf}   
+
+Note: LCF denotes less than cumulative frequency  
+
 
 ![Less than Ogive](images/lesser_ogive.png){#fig-lessogive fig-align="center" width="50%" style="text-align:center;"}
 
 [**Greater than ogive**]{.underline}
 
-The **Greater than ogive**, also known as the **greater than type cumulative frequency curve**, is constructed by plotting the cumulative frequencies against the lower class boundaries. In this case, instead of using the upper limits like in the "Less than ogive", we use the lower class limits and their corresponding cumulative frequencies. This curve helps visualize the cumulative frequency distribution from the highest class down to the lowest, providing insights into the number of observations greater than a specific value. See @tbl-llgcf constructed from @tbl-plantheight. The greater than ogive, shown in @fig-greaterogive, is drawn using @tbl-llgcf.
+The **greater than ogive**, also known as the **greater than type cumulative frequency curve**, is constructed by plotting the greater than cumulative frequencies against the lower class boundaries. In this case, instead of using the upper limits like in the "Less than ogive", we use the lower class limits and their corresponding cumulative frequencies. This curve helps visualize the cumulative frequency distribution from the highest class down to the lowest, providing insights into the number of observations greater than a specific value. See @tbl-llgcf constructed from @tbl-plantheight. The greater than ogive, shown in @fig-greaterogive, is drawn using @tbl-llgcf.
 
 | Lower Limit | 130 | 140 | 150 | 160 | 170 | 180 |
 |:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
 |     GCF     | 50  | 47  | 41  | 24  | 11  |  3  |
 
-: Lower limit and GCF of plant heights {#tbl-llgcf}
+: Lower limit and GCF of plant heights {#tbl-llgcf}  
+
+Note: GCF denotes greater than cumulative frequency  
+
 
 ![Greater Than Ogive](images/greater_ogive.png){#fig-greaterogive fig-align="center" width="50%" style="text-align:center;"}
 
@@ -137,14 +143,14 @@ In a component bar chart, the bar for each category is subdivided into component
 
 The component bar chart shows the changes of each component over the years as well as the comparison of the total sales between different years.
 
-**Grouped bar chart** @fig-cbsales can also be represented using a grouped bar chart shown in @fig-groupedbar. For a grouped bar chart, the components are grouped together and drawn side by side.
+**Grouped bar chart** @fig-cbsales can also be represented using a grouped bar chart shown in @fig-groupedbar. For a grouped bar chart, each category within a group is represented by a bar with a distinct shade or color, allowing for clear comparisons both within and across groups.
 
 ![Grouped bar chart](images/grouped_bar.png){#fig-groupedbar fig-align="center" width="50%" style="text-align:center;"}
 
 ## Histogram versus Bar chart
 
 | Items | HISTOGRAM | BAR CHART |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Meaning | Histogram refers to a graphical representation, that displays data by way of bars to show the frequency of numerical data. | Bar graph is a pictorial representation of data that uses bars to compare different categories of data. |
 | Indicates | Distribution of non-discrete variables | Comparison of discrete variables |
 | Presents | Quantitative data | Categorical data |
