@@ -242,7 +242,7 @@ For example, if you have annual interest rates for 10 years and want to find a s
 
 By understanding the relationship between the data and the type of average, you can choose the most meaningful measure for your analysis.
 
-## Positional Averages
+## Positional Averages {#sec-positional_avg}
 
 Positional averages are measures derived directly from the values in a dataset. These averages are based on the position of the values within the series and are used to represent the overall dataset or highlight specific positional characteristics.
 

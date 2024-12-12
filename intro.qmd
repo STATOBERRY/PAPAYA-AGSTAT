@@ -251,7 +251,7 @@ we obtain the frequency distribution given below:
 Above table gives the frequency of each group or class; it is therefore called a grouped frequency table or a grouped frequency distribution. Using this grouped frequency distribution, it is easier to obtain information about the data than using the raw data. For instance, it can be seen that 14 of the 20 paddy varieties have plant height between 110 cm and 139 cm (both inclusive). This information cannot easily be obtained from the raw data.\
 It should be noted that, even though above table is concise, some information is lost. For example, the grouped frequency distribution does not give us the exact plant height of the paddy varieties. Thus the individual plant height of the paddy varieties are lost in our effort to obtain an overall picture.
 
-### Terms used
+### Terminologies
 
 **Class limits**\
 The intervals into which the observations are put are called [class intervals]{.underline}. The end points of the class intervals are called [class limits]{.underline}. For example, the class interval 100 -- 109, has lower class limit 100 and upper class limit 109.

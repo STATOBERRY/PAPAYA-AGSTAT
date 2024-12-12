@@ -56,10 +56,9 @@ The less than ogive, also known as the **less than type cumulative frequency cur
 |:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
 |     LCF     |  3  |  9  | 26  | 39  | 47  | 50  |
 
-: Upper limit and LCF of plant heights {#tbl-ullcf}   
+: Upper limit and LCF of plant heights {#tbl-ullcf}
 
-Note: LCF denotes less than cumulative frequency  
-
+Note: LCF denotes less than cumulative frequency
 
 ![Less than Ogive](images/lesser_ogive.png){#fig-lessogive fig-align="center" width="50%" style="text-align:center;"}
 
@@ -71,10 +70,9 @@ The **greater than ogive**, also known as the **greater than type cumulative fre
 |:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
 |     GCF     | 50  | 47  | 41  | 24  | 11  |  3  |
 
-: Lower limit and GCF of plant heights {#tbl-llgcf}  
+: Lower limit and GCF of plant heights {#tbl-llgcf}
 
-Note: GCF denotes greater than cumulative frequency  
-
+Note: GCF denotes greater than cumulative frequency
 
 ![Greater Than Ogive](images/greater_ogive.png){#fig-greaterogive fig-align="center" width="50%" style="text-align:center;"}
 
@@ -149,15 +147,17 @@ The component bar chart shows the changes of each component over the years as we
 
 ## Histogram versus Bar chart
 
-| Items | HISTOGRAM | BAR CHART |
-|------------------------|------------------------|------------------------|
-| Meaning | Histogram refers to a graphical representation, that displays data by way of bars to show the frequency of numerical data. | Bar graph is a pictorial representation of data that uses bars to compare different categories of data. |
-| Indicates | Distribution of non-discrete variables | Comparison of discrete variables |
-| Presents | Quantitative data | Categorical data |
-| Spaces | Bars touch each other, hence there are no spaces between bars | Bars do not touch each other, hence there are spaces between bars. |
-| Elements | Elements are grouped together, so that they are considered as ranges. | Elements are taken as individual entities. |
-| Can bars be reordered? | No | Yes |
-| Width of bars | Need not to be same | Same |
+@tbl-histovsbar highlights the key differences between histograms and bar charts, two commonly used graphical tools in data visualization. While both employ bars to represent data, they serve distinct purposes and are applied to different types of data. Understanding these differences ensures the correct choice of graph for effectively presenting and interpreting data.
+
+| **Feature** | **Histogram** | **Bar Chart** |
+|-------------------------|------------------------------|------------------|
+| **Meaning** | A graphical representation using bars to display the frequency of numerical data. | A pictorial representation using bars to compare different categories of data. |
+| **Purpose** | Depicts the distribution of continuous (non-discrete) data. | Compares discrete (categorical) data. |
+| **Type of Data** | Quantitative data. | Categorical data. |
+| **Bar Spacing** | Bars are adjacent with no gaps. | Bars are separated by spaces. |
+| **Grouping of Elements** | Data is grouped into ranges or intervals (bins). | Data is represented as individual categories. |
+| **Bar Order** | Bars cannot be reordered. | Bars can be reordered. |
+| **Bar Width** | Bar widths may vary. | Bar widths are uniform. |
 
 : Comparison between histogram and barchart {#tbl-histovsbar}
 
@@ -187,6 +187,18 @@ A pie chart is a circular graph divided into sectors, each sector representing a
 : Hypothetical data on the production of different commodities {#tbl-wheatprod}
 
 ![Piechart](images/piechart.png){#fig-piechart fig-align="center" width="50%" style="text-align:center;"}
+
+## Boxplot
+
+A boxplot, also known as a **box-and-whisker plot**, visually represents the five-number summary of a dataset: the minimum value, first quartile, median, third quartile, and maximum value. These key statistics provide insights into the dataset's central tendency, spread, and potential outliers. Quartiles and the median, explained in detail in @sec-positional_avg, are critical components of this summary.
+
+In a boxplot, a rectangular box spans from the first quartile (Q1) to the third quartile (Q3), with a vertical line inside the box indicating the median. Whiskers extend from each end of the box to the dataset's minimum and maximum values, providing a clear picture of the range and variability.
+
+@fig-boxplot below shows the parts of a box plot
+
+![Anatomy of box plot](images/boxplot.png){#fig-boxplot fig-align="center" width="50%" style="text-align:center;"}
+
+In a boxplot, the minimum value is defined as $Q_{1}- 1.5\times IQR$, and the maximum value is $Q_{3}+ 1.5\times IQR$, where $Q_{1}$ and $Q_{3}$ represent the first and third quartiles, and IQR stands for the interquartile range. Any data points falling below the minimum or above the maximum are considered outliers.
 
 ## Advanced visualization
 
