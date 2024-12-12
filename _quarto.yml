@@ -30,14 +30,14 @@ book:
     image-alt: "Textbook of Agricultural Statistics"
   chapters:
    - index.qmd
-   # - preface.qmd
-   # - intro.qmd
-   # - agstatindia.qmd
-   # - 3graph.qmd
-   # - central1.qmd
-   # - central2.qmd
-   # - appendix1.qmd
-   # - references.qmd
+   - preface.qmd
+   - intro.qmd
+   - agstatindia.qmd
+   - 3graph.qmd
+   - central1.qmd
+   - central2.qmd
+   - appendix1.qmd
+   - references.qmd
   twitter-card: 
     image: images/papayalogo.png
     image-alt: "Textbook of Agricultural Statistics"
