@@ -4,7 +4,9 @@ In the previous chapter, you explored how data can be summarized using tables an
 
 One key aspect of data analysis is identifying a single value that represents the overall dataset. This is where **measures of central tendency** come into play. These are summary statistics that capture the center or typical value of a dataset, providing a concise numerical summary.
 
-There are five commonly used averages: **mean**, **median**, and **mode**, collectively referred to as **simple averages**, and **geometric mean** and **harmonic mean**, known as **special averages**. These measures provide insights into the central value of the data, making them fundamental tools for understanding and interpreting data distributions. We will discuss these measures in two sections, here we will discuss on simple averages.
+There are five commonly used averages: **mean**, **median**, and **mode**, collectively referred to as **simple averages**, and **geometric mean** and **harmonic mean**, known as **special averages**. In addition to these, there are **positional averages**, such as **quartiles**, **deciles**, and **percentiles**, which are determined based on the position of values within an ordered dataset. These measures provide insights into the central value and distribution of the data, making them fundamental tools for understanding and interpreting data patterns.
+
+In this section, we will focus on **simple averages**, with a detailed discussion on positional averages and special averages following later.
 
 ![Measures of central tendency](images/Measures%20of%20Central%20Tendency.png){style="text-align:center;" fig-alt="Measures of central tendency" fig-align="center" width="60%"}
 
@@ -50,20 +52,21 @@ $$\overline{x} = \frac{x_{1}f_{1} + x_{2}f_{2\ \ } + \ldots + x_{n}f_{n}}{f_{1} 
 
 $$= \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}}$$
 
-**Example 4.2** Table below shows the plant height of 50 plants. Find the mean plant height.
+**Example 4.2** @tbl-plantheight below shows the plant height of 50 plants. Find the mean plant height.
 
 | Plant height(cm) | 159 | 160 | 161 | 162 | 163 |
 |------------------|----:|----:|----:|----:|----:|
 | Frequency        |   3 |   9 |  23 |  11 |   4 |
 
-: Plant height of 50 plants.
+: Plant height of 50 plants {#tbl-plantheight} 
+
 
 **Solution 4.2**
 
 The calculation can be arranged as shown
 
 | Plant height(*x*) | Frequency(*f*) | *fx* |
-|:--:|:--:|:--:|
+|:----------------------:|:----------------------:|:----------------------:|
 | 159 | 3 | 477 |
 | 160 | 9 | 1440 |
 | 161 | 23 | 3703 |
@@ -81,12 +84,12 @@ $$\overline{x} = A + \frac{\sum_{i = 1}^{n}{f_{i}d_{i}}}{\sum_{i = 1}^{n}f_{i}}$
 
 Where $A$ is the assumed mean, which can be any value in *x*. $d_{i} = x_{i} - A$, $f_{i}$ is the frequency of $x_{i}$
 
-Consider the Example 4.2
+Consider the @tbl-plantheight
 
 let $A$ = 161; it can be any number in *x*
 
 | Plant height(*x*) | Frequency(*f*) | $$\mathbf{d}_{\mathbf{i}}\mathbf{=}\mathbf{x}_{\mathbf{i}}\mathbf{-}\mathbf{161}$$ | $\mathbf{f}_{\mathbf{i}}\mathbf{d}_{\mathbf{i}}$ |
-|:--:|:--:|:--:|:--:|
+|:----------------:|:----------------:|:----------------:|:----------------:|
 | 159 | 3 | -2 | -6 |
 | 160 | 9 | -1 | -9 |
 | 161 | 23 | 0 | 0 |
@@ -108,7 +111,7 @@ $$\overline{x} = \frac{\sum_{i = 1}^{k}{f_{i}x_{i}}}{n}$$
 
 Where $x_{i}$ = the mid-point of *i*^th^ class (*i*^th^ class mark); $f_{i}$= the frequency of *i*^th^ class; $n$ = the sum of the frequencies or total frequencies in a sample. Note that *i* =1,2..., *k*, *i*.*e*. there are *k* classes.
 
-**Example 4.3** Shows the distribution of the marks scored by 60 students in a Maths examination. Find the mean mark.
+**Example 4.3** @tbl-math shows the distribution of the marks scored by 60 students in a Maths examination. Find the mean mark.
 
 | Mark (%)           | 60-65 | 65-70 | 70-75 | 75-80 | 80-85 |
 |:-------------------|:------|:------|:------|:------|:------|
@@ -121,7 +124,7 @@ Where $x_{i}$ = the mid-point of *i*^th^ class (*i*^th^ class mark); $f_{i}$= th
 The solution can be arranged as shown
 
 | Marks | Class mark($\mathbf{x}_{\mathbf{i}}$) | Frequency($\mathbf{f}_{\mathbf{i}}$) | $$\mathbf{f}_{\mathbf{i}}\mathbf{x}_{\mathbf{i}}$$ |
-|:--:|:--:|:--:|:--:|
+|:----------------:|:----------------:|:----------------:|:----------------:|
 | 60-65 | 62.5 | 2 | 125 |
 | 65-70 | 67.5 | 15 | 1012.5 |
 | 70-75 | 72.5 | 25 | 1812.5 |
@@ -148,7 +151,7 @@ Consider the Example 4.3, see @tbl-math
 $A$=72.5, class mark with highest frequency; $C$ =5
 
 | Marks | Class mark($\mathbf{x}_{\mathbf{i}}$) | Frequency($\mathbf{f}_{\mathbf{i}}$) | $$\mathbf{u}_{\mathbf{i}}\mathbf{=}\frac{\mathbf{x}_{\mathbf{i}}\mathbf{- 72.5}}{\mathbf{5}}$$ | $$\mathbf{f}_{\mathbf{i}}\mathbf{u}_{\mathbf{i}}$$ |
-|:--:|:--:|:--:|:--:|:--:|
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | 60-65 | 62.5 | 2 | -2 | -4 |
 | 65-70 | 67.5 | 15 | -1 | -15 |
 | 70-75 | 72.5 | 25 | 0 | 0 |
@@ -234,13 +237,13 @@ The median is the middle number is an ordered set of data. In a frequency table,
 
 When the number of observations (n) is odd, then the median is the value at the $\left( \frac{n + 1}{2} \right)^{\text{th}}$ positional value. For that we use less than cumulative frequency.
 
-**Example 4.5**: The following is a frequency table of the score obtained in a mathematics quiz. Find the median score.
+**Example 4.5**: The @tbl-score shows the frequency of the score obtained in a mathematics quiz. Find the median score.
 
 | **Score**     | 0   | 1   | 2   | 3   | 4   |
 |:--------------|:----|:----|:----|:----|:----|
 | **Frequency** | 3   | 4   | 7   | 6   | 3   |
 
-: Score obtained in a mathematics quiz. {#tbl-score}
+: Score obtained in a mathematics quiz {#tbl-score}
 
 **Solution 4.5:**
 
@@ -257,7 +260,7 @@ The 12^th^ position is after the 7^th^ position but before the 14^th^ positio
 
 When the number of observations is even, then the median is the average of ${\left( \frac{n}{2} \right)^{th}\text{and}\left( \frac{n}{2} + 1 \right)}^{\text{th}}$ position values.
 
-**Example 4.6**: The table is a frequency table of the marks obtained in a competition. Find the median score.
+**Example 4.6**: The @tbl-median is a frequency table of the marks obtained in a competition. Find the median score.
 
 | **Mark**      | 0   | 1   | 2   | 3   | 4   |
 |:--------------|:----|:----|:----|:----|:----|
@@ -294,7 +297,7 @@ The median of a grouped frequency distribution can be estimated from a cumulativ
 
 ![median from a cumulative frequency curve](images/mediancf.png){fig-align="left" width="50%"}
 
-**Example 4.7** Table below gives the distribution of the heights of 60 students in a Senior High school. Find the median height of the students
+**Example 4.7** @tbl-medianheight below gives the distribution of the heights of 60 students in a Senior High school. Find the median height of the students
 
 | Height(cm)         | 145-150 | 150-155 | 155-160 | 160-165 | 165-170 | 170-175 |
 |:-------------------|:--------|:--------|:--------|:--------|:--------|:--------|
@@ -363,7 +366,7 @@ $c)$ The mode does not exist when every observation has the same frequency. For 
 It can be seen that the mode of a distribution may not exist, and even if it exists, it may not be unique. Distributions with a single mode are referred to as *unimodal*. Distributions with two modes are referred to as *bimodal*. Distributions may have several modes, in which case they are referred to as *multimodal*.
 :::
 
-**Example 4.9** 20 patients selected at random had their blood groups determined. The results are given in the table below
+**Example 4.9** 20 patients selected at random had their blood groups determined. The results are given in the @tbl-letters  
 
 | Blood group     | A   | AB  | B   | O   |
 |:----------------|:----|:----|:----|:----|
@@ -381,7 +384,7 @@ Locate the highest frequency the class corresponding to that frequency is called
 
 Where $L$ = lower limit of the modal class; $f_{m}$ = the frequency of modal class; $f_{p}$= the frequency of the class preceding the modal class; $f_{s}$= the frequency of the class succeeding the modal class and $C$ = class interval
 
-**Example 4.10** For the frequency distribution of weights of sorghum ear-heads given in table below. Calculate the mode.
+**Example 4.10** For the frequency distribution of weights of sorghum ear-heads given in @tbl-earhead below. Calculate the mode.
 
 | Weights of ear heads (g) | No of ear heads (*f*) |
 |:------------------------:|:---------------------:|
