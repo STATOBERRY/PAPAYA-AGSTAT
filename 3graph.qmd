@@ -123,38 +123,35 @@ In a simple bar chart, the height (or length) of each bar is equal to the value 
 | Ernakulam |           1100            |
 |  Wayanad  |           1400            |
 
-: hypothetical data on coconut production {#tbl-coconutprod}  
-
+: hypothetical data on coconut production {#tbl-coconutprod}
 
 **Component bar chart**
 
-In a component bar chart, the bar for each category is subdivided into component parts; hence its name. Component bar charts are therefore used to show the division of items into components. This is illustrated in the following example.  
+In a component bar chart, the bar for each category is subdivided into component parts; hence its name. Component bar charts are therefore used to show the division of items into components. This is illustrated in the following example.
 
-@fig-cbsales shows the distribution of sales of agricultural produce from a Farm in 1995, 1996 and 1997 and its corresponding component barchart in @fig-cbar.  
+@fig-cbsales shows the distribution of sales of agricultural produce from a farm in 1995, 1996 and 1997 and its corresponding component barchart in @fig-cbar.
 
-The component bar chart shows the changes of each component over the years as well as the comparison of the total sales between different years.  
+The component bar chart shows the changes of each component over the years as well as the comparison of the total sales between different years.
 
+**Grouped bar chart**\
+@fig-cbsales can also be represented using a grouped bar chart shown in @fig-groupedbar. For a grouped bar chart, each category within a group is represented by a bar with a distinct shade or color, allowing for clear comparisons of both within and across groups.
 
-**Grouped bar chart**  
-@fig-cbsales can also be represented using a grouped bar chart shown in @fig-groupedbar. For a grouped bar chart, each category within a group is represented by a bar with a distinct shade or color, allowing for clear comparisons both within and across groups.  
-
-::: {layout-nrow="2"}  
-![Barchart](images/barchart.png){#fig-barchart1 fig-align="center" style="text-align:center;"}  
+::: {layout-nrow="2"}
+![Barchart](images/barchart.png){#fig-barchart1 fig-align="center" style="text-align:center;"}
 
 ![Sales data of agricultural produce](images/compdata.png){#fig-cbsales style="text-align:center;"}
 
-![Component Barchart](images/component_bar.png){#fig-cbar style="text-align:center;"}  
+![Component Barchart](images/component_bar.png){#fig-cbar style="text-align:center;"}
 
-![Grouped bar chart](images/grouped_bar.png){#fig-groupedbar style="text-align:center;"}  
-
-:::  
+![Grouped bar chart](images/grouped_bar.png){#fig-groupedbar style="text-align:center;"}
+:::
 
 ## Histogram versus Bar chart
 
 @tbl-histovsbar highlights the key differences between histograms and bar charts, two commonly used graphical tools in data visualization. While both employ bars to represent data, they serve distinct purposes and are applied to different types of data. Understanding these differences ensures the correct choice of graph for effectively presenting and interpreting data.
 
 | **Feature** | **Histogram** | **Bar Chart** |
-|-------------------------|-----------------------------|------------------|
+|-------------------------|-----------------------------|-------------------|
 | **Meaning** | A graphical representation using bars to display the frequency of numerical data. | A pictorial representation using bars to compare different categories of data. |
 | **Purpose** | Depicts the distribution of continuous (non-discrete) data. | Compares discrete (categorical) data. |
 | **Type of Data** | Quantitative data. | Categorical data. |
@@ -236,7 +233,15 @@ It is important to be aware of the wide variety of visualization tools available
 ![Density Plot](images/graphs/densityplot.png){#fig-density width="200px" height="200px"}
 
 ![Stream Graph](images/graphs/streamgraph.png){#fig-stream width="200px" height="200px"}
-:::
+:::  
+
+::: {.callout-caution title="Timeless Insights"}
+Historical facts here
+:::   
+
+::: {.callout-note title="Summary" icon=false}
+Summary here
+:::  
 
 ::: {.callout-tip title="Quotes to Inspire"}
 **"Statistics is the grammer of science"**\

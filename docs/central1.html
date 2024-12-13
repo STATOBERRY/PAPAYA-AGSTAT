@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b41886b866eb54f17009da6c00af6bd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ed3264ca69fda7dec8d1e4b54715bc75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -290,7 +290,7 @@ window.Quarto = {
 <h2 data-number="4.1" class="anchored" data-anchor-id="arithmetic-mean"><span class="header-section-number">4.1</span> Arithmetic Mean</h2>
 <p>This is what people usually intend when they say “average”. Arithmetic mean or simply the mean of a variable is defined as the sum of the observations divided by the number of observations. Mean of set of numbers <span class="math inline">\(x_{1\ },x_{2},\ldots,x_{n}\)</span> is denoted as <span class="math inline">\(\overline{x}\)</span>. It is given by the formula</p>
 <p><span class="math display">\[\overline{x} = \frac{x_{1} + x_{2} + \ldots + x_{n}}{n}\]</span></p>
-<p><span class="math display">\[= \frac{1}{n}\sum_{i = 1}^{n}x_{i}\]</span></p>
+<p><span id="eq-mean"><span class="math display">\[= \frac{1}{n}\sum_{i = 1}^{n}x_{i} \tag{4.1}\]</span></span></p>
 <p><strong>Example 4.1</strong> Find the mean of the numbers 2, 4, 7, 8, 11, 12</p>
 <p><span class="math display">\[\overline{x} = \frac{2 + 4 + 7 + 8 + 11 + 12}{6} = \frac{44}{6} = 7.33\]</span></p>
 <section id="mean-of-ungrouped-frequency-distribution" class="level3" data-number="4.1.1">
@@ -298,10 +298,15 @@ window.Quarto = {
 <p><u><strong>Direct method</strong></u></p>
 <p>If the numbers <span class="math inline">\(x_{1\ },x_{2},\ldots,x_{n}\)</span> occur with frequencies <span class="math inline">\(f_{1\ },f_{2},\ldots,f_{n}\)</span> respectively then</p>
 <p><span class="math display">\[\overline{x} = \frac{x_{1}f_{1} + x_{2}f_{2\ \ } + \ldots + x_{n}f_{n}}{f_{1} + f_{2} + \ldots f_{n}}\]</span></p>
-<p><span class="math display">\[= \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}}\]</span></p>
-<p><strong>Example 4.2</strong> Table below shows the plant height of 50 plants. Find the mean plant height.</p>
+<p><span id="eq-meanungrouped"><span class="math display">\[= \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}} \tag{4.2}\]</span></span></p>
+<p><strong>Example 4.2</strong> <a href="#tbl-plantheight" class="quarto-xref">Table&nbsp;<span>4.1</span></a> below shows the plant height of 50 plants. Find the mean plant height.</p>
+<div id="tbl-plantheight" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-plantheight-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.1: Plant height of 50 plants
+</figcaption>
+<div aria-describedby="tbl-plantheight-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<caption>Plant height of 50 plants.</caption>
 <thead>
 <tr class="header">
 <th>Plant height(cm)</th>
@@ -323,6 +328,9 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <p><strong>Solution 4.2</strong></p>
 <p>The calculation can be arranged as shown</p>
 <table class="caption-top table">
@@ -374,9 +382,9 @@ window.Quarto = {
 <p><span class="math inline">\(\overline{x} = \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}} = \frac{8054}{50}\)</span>= 161.08 cm</p>
 <p><u><strong>Assumed mean method (Indirect method)</strong></u></p>
 <p>The amount of computation involved above can be reduced by using the following formula:</p>
-<p><span class="math display">\[\overline{x} = A + \frac{\sum_{i = 1}^{n}{f_{i}d_{i}}}{\sum_{i = 1}^{n}f_{i}}\]</span></p>
+<p><span id="eq-assumedmean"><span class="math display">\[\overline{x} = A + \frac{\sum_{i = 1}^{n}{f_{i}d_{i}}}{\sum_{i = 1}^{n}f_{i}} \tag{4.3}\]</span></span></p>
 <p>Where <span class="math inline">\(A\)</span> is the assumed mean, which can be any value in <em>x</em>. <span class="math inline">\(d_{i} = x_{i} - A\)</span>, <span class="math inline">\(f_{i}\)</span> is the frequency of <span class="math inline">\(x_{i}\)</span></p>
-<p>Consider the Example 4.2</p>
+<p>Consider the <a href="#tbl-plantheight" class="quarto-xref">Table&nbsp;<span>4.1</span></a></p>
 <p>let <span class="math inline">\(A\)</span> = 161; it can be any number in <em>x</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -432,20 +440,20 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p><span class="math inline">\(\overline{x} = 161 + \frac{4}{50}\)</span> = 161.08 cm</p>
+<p>using <a href="#eq-assumedmean" class="quarto-xref">Equation&nbsp;<span>4.3</span></a>, <span class="math inline">\(\overline{x} = 161 + \frac{4}{50}\)</span> = 161.08 cm</p>
 <p>The mean plant height is 161.08 cm</p>
 </section>
 <section id="mean-of-grouped-frequency-distribution" class="level3" data-number="4.1.2">
 <h3 data-number="4.1.2" class="anchored" data-anchor-id="mean-of-grouped-frequency-distribution"><span class="header-section-number">4.1.2</span> Mean of grouped frequency distribution</h3>
 <p><u><strong>Direct method</strong></u></p>
 <p>The mean for grouped data is obtained from the following formula:</p>
-<p><span class="math display">\[\overline{x} = \frac{\sum_{i = 1}^{k}{f_{i}x_{i}}}{n}\]</span></p>
+<p><span id="eq-meangpdirect"><span class="math display">\[\overline{x} = \frac{\sum_{i = 1}^{k}{f_{i}x_{i}}}{n} \tag{4.4}\]</span></span></p>
 <p>Where <span class="math inline">\(x_{i}\)</span> = the mid-point of <em>i</em><sup>th</sup> class (<em>i</em><sup>th</sup> class mark); <span class="math inline">\(f_{i}\)</span>= the frequency of <em>i</em><sup>th</sup> class; <span class="math inline">\(n\)</span> = the sum of the frequencies or total frequencies in a sample. Note that <em>i</em> =1,2…, <em>k</em>, <em>i</em>.<em>e</em>. there are <em>k</em> classes.</p>
-<p><strong>Example 4.3</strong> Shows the distribution of the marks scored by 60 students in a Maths examination. Find the mean mark.</p>
+<p><strong>Example 4.3</strong> <a href="#tbl-math" class="quarto-xref">Table&nbsp;<span>4.2</span></a> shows the distribution of the marks scored by 60 students in a Maths examination. Find the mean mark.</p>
 <div id="tbl-math" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-math-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.1: Distribution of the marks scored by 60 students
+Table&nbsp;4.2: Distribution of the marks scored by 60 students
 </figcaption>
 <div aria-describedby="tbl-math-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -533,10 +541,10 @@ Table&nbsp;4.1: Distribution of the marks scored by 60 students
 <p>The mean mark is 72.75%</p>
 <p><u><strong>Coding Method or Indirect method</strong></u></p>
 <p>If all the class intervals of a grouped frequency distribution have equal size <span class="math inline">\(C\)</span> (class width); then the following formula can be used instead of direct method above. This formula makes calculations easier.</p>
-<p><span class="math display">\[\overline{x} = A + C\frac{\sum_{i = 1}^{n}{f_{i}u_{i}}}{\sum_{i = 1}^{n}f_{i}}\]</span></p>
+<p><span id="eq-meancoding"><span class="math display">\[\overline{x} = A + C\frac{\sum_{i = 1}^{n}{f_{i}u_{i}}}{\sum_{i = 1}^{n}f_{i}} \tag{4.5}\]</span></span></p>
 <p>Where <span class="math inline">\(A\)</span> is the class mark with the highest frequency, <span class="math inline">\(u_{i} = \frac{x_{i} - A}{C}\)</span>, <span class="math inline">\(f_{i}\)</span> is the frequency of <span class="math inline">\(x_{i}\)</span>, <em>C</em> is the class width.</p>
 <p>This is called the “coding” method for computing the mean. It is a very short method and should always be used for finding the mean of a grouped frequency distribution with equal class widths.</p>
-<p>Consider the Example 4.3, see <a href="#tbl-math" class="quarto-xref">Table&nbsp;<span>4.1</span></a></p>
+<p>Consider the <a href="#tbl-math" class="quarto-xref">Table&nbsp;<span>4.2</span></a> of the Example 4.3.</p>
 <p><span class="math inline">\(A\)</span>=72.5, class mark with highest frequency; <span class="math inline">\(C\)</span> =5</p>
 <table class="caption-top table">
 <colgroup>
@@ -600,7 +608,7 @@ Table&nbsp;4.1: Distribution of the marks scored by 60 students
 </tr>
 </tbody>
 </table>
-<p><span class="math inline">\(\overline{x} = 72.5 + 5 \times \left( \frac{3}{60} \right)\)</span>= 72.75</p>
+<p>using <a href="#eq-meancoding" class="quarto-xref">Equation&nbsp;<span>4.5</span></a>, <span class="math inline">\(\overline{x} = 72.5 + 5 \times \left( \frac{3}{60} \right)\)</span>= 72.75</p>
 <p>The mean mark is 72.75%</p>
 <p><strong>Merits and demerits of Arithmetic mean</strong></p>
 <p><u><strong>Merits</strong></u></p>
@@ -626,7 +634,7 @@ Table&nbsp;4.1: Distribution of the marks scored by 60 students
 </section>
 <section id="the-median" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="the-median"><span class="header-section-number">4.2</span> The Median</h2>
-<p><strong>The median</strong> of a set of data is defined as the middle value when the data is arranged in order of magnitude. If there are no ties, half of the observations will be smaller than the median, and half of the observations will be larger than the median. The median can be the middle most item that divides the group into two equal parts, one part comprising all values greater, and the other, all values less than that item. It is a positional measure.</p>
+<p>The <strong>median</strong> is the middle value in a set of data when the values are arranged in order from smallest to largest. If there is an <strong>odd</strong> number of values, the median is the one in the middle, with half of the values smaller and half larger. If there is an <strong>even</strong> number of values, the median is the average of the two middle values. The median is a <strong>positional measure</strong>, which means it depends on the order of the data, not the actual values. It helps to find the central point of the data, especially when there are extreme values or outliers that could affect the average.</p>
 </section>
 <section id="median-of-ungrouped-or-raw-data" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="median-of-ungrouped-or-raw-data"><span class="header-section-number">4.3</span> Median of ungrouped or raw data</h2>
@@ -671,12 +679,12 @@ Note
 <h2 data-number="4.4" class="anchored" data-anchor-id="median-of-ungrouped-frequency-distribution"><span class="header-section-number">4.4</span> Median of ungrouped frequency distribution</h2>
 <p>The median is the middle number is an ordered set of data. In a frequency table, the observations are already arranged in an ascending order. We can obtain the median by looking for the value in the middle position.</p>
 <p><u><strong>Odd number of observations</strong></u></p>
-<p>When the number of observations (n) is odd, then the median is the value at the&nbsp;<span class="math inline">\(\left( \frac{n + 1}{2} \right)^{\text{th}}\)</span> positional value. For that we use less than cumulative frequency.</p>
-<p><strong>Example 4.5</strong>: The following is a frequency table of the score obtained in a mathematics quiz. Find the median score.</p>
+<p>When the number of observations (<em>n</em>) is odd, then the median is the value at the&nbsp;<span class="math inline">\(\left( \frac{n + 1}{2} \right)^{\text{th}}\)</span> positional value. For that we use less than cumulative frequency.</p>
+<p><strong>Example 4.5</strong>: The <a href="#tbl-score" class="quarto-xref">Table&nbsp;<span>4.3</span></a> shows the frequency of the score obtained in a mathematics quiz. Find the median score.</p>
 <div id="tbl-score" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.2: Score obtained in a mathematics quiz.
+Table&nbsp;4.3: Score obtained in a mathematics quiz
 </figcaption>
 <div aria-describedby="tbl-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -705,7 +713,7 @@ Table&nbsp;4.2: Score obtained in a mathematics quiz.
 </figure>
 </div>
 <p><strong>Solution 4.5:</strong></p>
-<p>Total frequency = 3 + 4 + 7 + 6 + 3 = 23 (odd number). Since the number of scores is odd, the median is at <span class="math inline">\(\left( \frac{23 + 1}{2} \right)^{\text{th}} =\)</span> 12<sup>th</sup> position. To find out the 12<sup>th</sup> position, we use less than cumulative frequencies as shown:</p>
+<p>Total frequency = 3 + 4 + 7 + 6 + 3 = 23 (odd number). Since the number of scores is odd, the median is at <span class="math inline">\(\left( \frac{23 + 1}{2} \right)^{\text{th}} =\)</span> 12<sup>th</sup> position.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -736,14 +744,15 @@ Table&nbsp;4.2: Score obtained in a mathematics quiz.
 </tr>
 </tbody>
 </table>
-<p>The 12<sup>th</sup>&nbsp;position is after the 7<sup>th</sup>&nbsp;position but before the 14<sup>th</sup>&nbsp;position. So, the median is 2.</p>
+<p>To find out the 12<sup>th</sup> position, we use less than cumulative frequencies above which helps us track how many values are less than or equal to each score. In the table, the less than cumulative frequency for the score 0 is 3 (meaning the first 3 values are 0), for the score 1 is 7 (meaning the first 7 values are 0 and 1), and for the score 2 is 14 (meaning the first 14 values are 0, 1, and 2). If we list the data in order, it would look like this: 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2. (no need to list, this is just for reader’s understanding, less than cumulative frequency is enough).</p>
+<p>Now, we need to find where the 12<sup>th</sup> value falls. The 12th value is between the 7th and 14th values, so based on less than cumulative frequency it is clear that 12<sup>th</sup> value is 2. So the median is 2.</p>
 <p><u><strong>Even number of observations</strong></u></p>
 <p>When the number of observations is even, then the median is the average of <span class="math inline">\({\left( \frac{n}{2} \right)^{th}\text{and}\left( \frac{n}{2} + 1 \right)}^{\text{th}}\)</span> position values.</p>
-<p><strong>Example 4.6</strong>: The table is a frequency table of the marks obtained in a competition. Find the median score.</p>
+<p><strong>Example 4.6</strong>: The <a href="#tbl-median" class="quarto-xref">Table&nbsp;<span>4.4</span></a> is a frequency table of the marks obtained in a competition. Find the median score.</p>
 <div id="tbl-median" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-median-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.3: Distribution of marks obtained in a competition.
+Table&nbsp;4.4: Distribution of marks obtained in a competition.
 </figcaption>
 <div aria-describedby="tbl-median-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -810,7 +819,7 @@ Table&nbsp;4.3: Distribution of marks obtained in a competition.
 <p>The exact value of the median of a grouped data cannot be obtained because the actual values of a grouped data are not known. For a grouped frequency distribution, the median is in the class interval which contains the <span class="math inline">\(\left( \frac{N}{2} \right)^{\text{th}}\)</span>ordered observation, where <span class="math inline">\(N\)</span> is the total number of observations. This class interval is called the <strong>median class</strong>. The median of a grouped frequency distribution can be estimated by either of the following two methods:</p>
 <p><u><strong>Linear interpolation method</strong></u></p>
 <p>The median of a grouped frequency distribution can be estimated by linear interpolation. We assume that the observations are evenly spread through the median class. The median can then be computed by using the following formula:</p>
-<p><span class="math display">\[Median = L + \left( \frac{\frac{1}{2}N - F}{f_{m}} \right)C\]</span></p>
+<p><span id="eq-medlinear"><span class="math display">\[Median = L + \left( \frac{\frac{1}{2}N - F}{f_{m}} \right)C \tag{4.6}\]</span></span></p>
 <p>where <span class="math inline">\(N\)</span> = total number of observations, <span class="math inline">\(L\)</span> = lower limit of the median class, <span class="math inline">\(F\)</span> = sum of all frequencies below <em>L</em>(cumulative frequency), <span class="math inline">\(f_{m}\)</span> = frequency of the median class, <span class="math inline">\(C\)</span> = class width of the median class.</p>
 <p><u><strong>Estimation from cumulative frequency curve</strong></u></p>
 <p>The median of a grouped frequency distribution can be estimated from a cumulative frequency curve. A horizontal line is drawn from the point <span class="math inline">\(\frac{\text{N}}{2}\)</span> on the vertical axis to meet the cumulative frequency curve. From the point of intersection, a vertical line is dropped to the horizontal axis. The value on the horizontal axis is equal to the median.</p>
@@ -820,11 +829,11 @@ Table&nbsp;4.3: Distribution of marks obtained in a competition.
 <figcaption>median from a cumulative frequency curve</figcaption>
 </figure>
 </div>
-<p><strong>Example 4.7</strong> Table below gives the distribution of the heights of 60 students in a Senior High school. Find the median height of the students</p>
+<p><strong>Example 4.7</strong> <a href="#tbl-medianheight" class="quarto-xref">Table&nbsp;<span>4.5</span></a> below gives the distribution of the heights of 60 students in a senior high school. Find the median height of the students</p>
 <div id="tbl-medianheight" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-medianheight-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.4: Distribution of heights of 60 students
+Table&nbsp;4.5: Distribution of heights of 60 students
 </figcaption>
 <div aria-describedby="tbl-medianheight-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -865,13 +874,13 @@ Table&nbsp;4.4: Distribution of heights of 60 students
 </div>
 <p><strong>Solution 4.7</strong></p>
 <p><strong>(i) Linear interpolation method</strong></p>
-<p><span class="math inline">\(N\)</span> = 60</p>
+<p><span class="math inline">\(N\)</span> = 60 (Sum of frequencies)</p>
 <p>Median class= class interval which contains the <span class="math inline">\(\left( \frac{N}{2} \right)^{\text{th}}\)</span>ordered observation; here <span class="math inline">\(\left( \frac{60}{2} \right)^{\text{th}} =\)</span> 30<sup>th</sup> observation. Before the class 160-165 there are 3+9+16=28 observations so 30<sup>th</sup> observation will be in the class 160-165, therefore it is the median class.</p>
 <p><span class="math inline">\(L\)</span> = lower limit of the median class =160</p>
 <p><span class="math inline">\(F\)</span> = sum of all frequencies below 160(cumulative frequency) = 16+9+3= 28</p>
 <p><span class="math inline">\(f_{m}\)</span> = frequency of the median class=18</p>
 <p><span class="math inline">\(C\)</span> = class width of the median class=5</p>
-<p><span class="math inline">\(median = 160 + \left( \frac{\frac{1}{2}60 - 28}{18} \right)5\)</span> = 160.56</p>
+<p>using <a href="#eq-medlinear" class="quarto-xref">Equation&nbsp;<span>4.6</span></a>, <span class="math inline">\(median = 160 + \left( \frac{\frac{1}{2}60 - 28}{18} \right)5\)</span> = 160.56</p>
 <p><strong>(ii) From a cumulative frequency curve</strong></p>
 <p><img src="images/cf.png" class="img-fluid quarto-figure quarto-figure-left" style="width:50.0%" alt="Median from a cumulative frequency curve Example 4.7"><br>
 <strong>Merits and Demerits of Median</strong></p>
@@ -891,7 +900,7 @@ Table&nbsp;4.4: Distribution of heights of 60 students
 </section>
 <section id="the-mode" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="the-mode"><span class="header-section-number">4.6</span> The mode</h2>
-<p>The mode of a set of data is the value which occurs with the greatest frequency. The mode is therefore the most common value. The mode is an important measure in case of qualitative data. The mode can be used to describe both quantitative and qualitative data.</p>
+<p>The mode of a set of data is the value which occurs with the greatest frequency. The mode is therefore the most frequently occuring value in a dataset. The mode is an important measure in case of qualitative data. The mode can be used to describe both quantitative and qualitative data.</p>
 <section id="mode-of-ungrouped-or-raw-data" class="level3" data-number="4.6.1">
 <h3 data-number="4.6.1" class="anchored" data-anchor-id="mode-of-ungrouped-or-raw-data"><span class="header-section-number">4.6.1</span> Mode of ungrouped or raw data</h3>
 <p>For ungrouped data or a series of individual observations, mode is often found by mere inspection.</p>
@@ -912,11 +921,11 @@ Note
 <p>It can be seen that the mode of a distribution may not exist, and even if it exists, it may not be unique. Distributions with a single mode are referred to as <em>unimodal</em>. Distributions with two modes are referred to as <em>bimodal</em>. Distributions may have several modes, in which case they are referred to as <em>multimodal</em>.</p>
 </div>
 </div>
-<p><strong>Example 4.9</strong> 20 patients selected at random had their blood groups determined. The results are given in the table below</p>
+<p><strong>Example 4.9</strong> 20 patients selected at random had their blood groups determined. The results are given in the <a href="#tbl-letters" class="quarto-xref">Table&nbsp;<span>4.6</span></a></p>
 <div id="tbl-letters" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-letters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.5: Blood group of 20 patients
+Table&nbsp;4.6: Blood group of 20 patients
 </figcaption>
 <div aria-describedby="tbl-letters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -947,12 +956,18 @@ Table&nbsp;4.5: Blood group of 20 patients
 </section>
 <section id="mode-of-grouped-data" class="level2" data-number="4.7">
 <h2 data-number="4.7" class="anchored" data-anchor-id="mode-of-grouped-data"><span class="header-section-number">4.7</span> Mode of grouped data</h2>
-<p><span class="math display">\[mode = L + \left( \frac{f_{m}-f_{p}}{2f_{m}-f_{p} - f_{s}} \right)C\]</span></p>
+<p>Mode of a grouped frequency distribution can be found out using the formula below.</p>
+<p><span id="eq-mode"><span class="math display">\[mode = L + \left( \frac{f_{m}-f_{p}}{2f_{m}-f_{p} - f_{s}} \right)C \tag{4.7}\]</span></span></p>
 <p>Locate the highest frequency the class corresponding to that frequency is called the <strong>modal class</strong>.</p>
 <p>Where <span class="math inline">\(L\)</span> = lower limit of the modal class; <span class="math inline">\(f_{m}\)</span> = the frequency of modal class; <span class="math inline">\(f_{p}\)</span>= the frequency of the class preceding the modal class; <span class="math inline">\(f_{s}\)</span>= the frequency of the class succeeding the modal class and <span class="math inline">\(C\)</span> = class interval</p>
-<p><strong>Example 4.10</strong> For the frequency distribution of weights of sorghum ear-heads given in table below. Calculate the mode.</p>
+<p><strong>Example 4.10</strong> For the frequency distribution of weights of sorghum ear-heads given in <a href="#tbl-earhead" class="quarto-xref">Table&nbsp;<span>4.7</span></a> below. Calculate the mode.</p>
+<div id="tbl-earhead" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-earhead-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.7: frequency distribution of weights of sorghum ear heads
+</figcaption>
+<div aria-describedby="tbl-earhead-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<caption>frequency distribution of weights of sorghum ear heads</caption>
 <thead>
 <tr class="header">
 <th style="text-align: center;">Weights of ear heads (g)</th>
@@ -982,7 +997,11 @@ Table&nbsp;4.5: Blood group of 20 patients
 </tr>
 </tbody>
 </table>
-<p>Modal class is <strong>100-120</strong></p>
+</div>
+</figure>
+</div>
+<p>Modal class is <strong>100-120</strong>, since it is the class with highest frequency.</p>
+<p>Using <a href="#eq-mode" class="quarto-xref">Equation&nbsp;<span>4.7</span></a> mode is calculated as below.</p>
 <p><span class="math inline">\(mode = 100 + \left( \frac{45-35}{90-38-35} \right)20 =\)</span> 111.76</p>
 <p><u><strong>Mode using Histogram</strong></u></p>
 <p>Consider the figure below. The modal class is the class interval which corresponds to rectangle <span class="math inline">\(\text{ABCD}\)</span>. An estimate of the mode of the distribution is the abscissa of the point of intersection of the line segments <span class="math inline">\(\overline{\text{AE}}\)</span> and <span class="math inline">\(\overline{\text{BF}}\)</span> in the figure.</p>
@@ -1002,9 +1021,24 @@ Table&nbsp;4.5: Blood group of 20 patients
 <li><p>The mode of a set of data may not exist.</p></li>
 <li><p>It is not based upon all the observation.</p></li>
 </ol>
-<p>&nbsp;<br>
-&nbsp;<br>
-&nbsp;</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Timeless Insights">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Timeless Insights
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Ancient wall measuring with the mode!</strong></p>
+<p>Back in the 5th century BCE, the Athenians used a clever “statistical hack” to plan their siege of Platea. Soldiers counted bricks in an unplastered section of the wall multiple times, and the most frequent count (what we now call the mode) was taken as the best estimate. They then multiplied this by the height of a brick to calculate the wall’s height and build ladders tall enough to scale it. Problem-solving with statistics!</p>
+<p><strong>Asrtonomy and the mean</strong></p>
+<p>Although the Greeks knew the concept of the arithmetic mean, it wasn’t generalized for multiple values until the 16th century. Simon Stevin’s invention of the decimal system in 1585 made it much easier to calculate. Astronomer Tycho Brahe was one of the first to use the mean, reducing errors in his estimates of celestial body locations.</p>
+<p><strong>Navigation and the median</strong></p>
+<p>The concept of the median first appeared in 1599 in Edward Wright’s book on navigation, <em>Certaine errors in navigation</em>. Wright used it to determine the most likely value in a series of compass readings. Later, in 1669, Christiaan Huygens noticed the difference between the mean and the median while working with Graunt’s tables. It’s amazing how these early navigators and mathematicians paved the way for the stats we use today.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Quotes to Inspire">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

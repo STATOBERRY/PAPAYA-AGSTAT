@@ -86,5 +86,60 @@ a {
 
 .sidebar-logo{
   max-width: 100% !important;
+}  
+
+/* Professional Style for the Historical Facts Section */
+.historical-facts {
+  border-left: 5px solid #572A4F; /* Distinctive left border for emphasis */
+  background-color: #F9F9F9; /* Subtle off-white for readability */
+  padding: 20px; /* Comfortable padding for content */
+  margin: 25px 0; /* Adequate spacing around the box */
+  border-radius: 10px; /* Smooth, modern corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: "Merriweather", Georgia, serif; /* Professional serif font */
+  font-size: 0.8rem; /* Clear and readable text size */
+  color: #333333; /* Neutral, professional text color */
+  line-height: 1.6; /* Optimal line spacing for readability */
 }
+
+/* Title Styling for Historical Facts */
+.historical-facts h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25rem; /* Slightly larger for emphasis */
+  color: #572A4F; /* Consistent with border color */
+  text-transform: uppercase; /* Distinctive styling */
+  font-weight: bold; /* Highlight the title */
+  letter-spacing: 0.05em; /* Subtle letter spacing for elegance */
+  border-bottom: 2px solid #DDD; /* Divider line for separation */
+  padding-bottom: 5px; /* Space below the title */
+}  
+
+/* Professional Style for the Chapter Summary Block */
+.chapter-summary {
+  border-left: 5px solid #2A6F97; /* Distinctive left border */
+  background-color: #F0F8FF; /* Light blue for subtle emphasis */
+  padding: 20px; /* Comfortable padding for content */
+  margin: 25px 0; /* Adequate spacing around the box */
+  border-radius: 10px; /* Smooth, modern corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: "Merriweather", Georgia, serif; /* Professional serif font */
+  font-size: 0.8rem; /* Clear and readable text size */
+  color: #333333; /* Neutral, professional text color */
+  line-height: 1.6; /* Optimal line spacing for readability */
+}
+
+/* Title Styling for Chapter Summary */
+.chapter-summary h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25rem; /* Slightly larger for emphasis */
+  color: #2A6F97; /* Consistent with border color */
+  text-transform: uppercase; /* Distinctive styling */
+  font-weight: bold; /* Highlight the title */
+  letter-spacing: 0.05em; /* Subtle letter spacing for elegance */
+  border-bottom: 2px solid #DDD; /* Divider line for separation */
+  padding-bottom: 5px; /* Space below the title */
+}
+
 
