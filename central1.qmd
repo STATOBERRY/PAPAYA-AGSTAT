@@ -50,7 +50,7 @@ If the numbers $x_{1\ },x_{2},\ldots,x_{n}$ occur with frequencies $f_{1\ },f_{2
 
 $$\overline{x} = \frac{x_{1}f_{1} + x_{2}f_{2\ \ } + \ldots + x_{n}f_{n}}{f_{1} + f_{2} + \ldots f_{n}}$$
 
-$$= \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}}$$ {#eq-meanungrouped}  
+$$= \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}}$$ {#eq-meanungrouped}
 
 **Example 4.2** @tbl-plantheight below shows the plant height of 50 plants. Find the mean plant height.
 
@@ -73,6 +73,8 @@ The calculation can be arranged as shown
 | 163 | 4 | 652 |
 |  | $\sum_{i = 1}^{n}f_{i}$= 50 | $\sum_{i = 1}^{n}{f_{i}x_{i}}$= 8054 |
 
+: Solution using direct method {#tbl-pltheightsolutn}
+
 $\overline{x} = \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}} = \frac{8054}{50}$= 161.08 cm
 
 [**Assumed mean method (Indirect method)**]{.underline}
@@ -94,7 +96,9 @@ let $A$ = 161; it can be any number in *x*
 | 161 | 23 | 0 | 0 |
 | 162 | 11 | 1 | 11 |
 | 163 | 4 | 2 | 8 |
-|  | $\sum_{i = 1}^{n}f_{i}= 50$ |  | $\sum_{i = 1}^{n}{f_{i}d_{i}}$= 4 |  
+|  | $\sum_{i = 1}^{n}f_{i}= 50$ |  | $\sum_{i = 1}^{n}{f_{i}d_{i}}$= 4 |
+
+: Solution using assumed mean method {#tbl-pltheightassumed}
 
 using @eq-assumedmean, $\overline{x} = 161 + \frac{4}{50}$ = 161.08 cm
 
@@ -131,6 +135,8 @@ The solution can be arranged as shown
 | 80-85 | 82.5 | 4 | 330 |
 |  |  | $\sum_{i = 1}^{n}f_{i}$= 60 | $\sum_{i = 1}^{n}{f_{i}x_{i}}$= 4365 |
 
+: Mean of grouped frequency table using direct method {#tbl-pltheightsolutn}
+
 $\overline{x} = \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}} = \frac{4365}{60}$= 72.75
 
 The mean mark is 72.75%
@@ -145,7 +151,7 @@ Where $A$ is the class mark with the highest frequency, $u_{i} = \frac{x_{i} - A
 
 This is called the "coding" method for computing the mean. It is a very short method and should always be used for finding the mean of a grouped frequency distribution with equal class widths.
 
-Consider the @tbl-math of the Example 4.3.  
+Consider the @tbl-math of the Example 4.3.
 
 $A$=72.5, class mark with highest frequency; $C$ =5
 
@@ -157,6 +163,8 @@ $A$=72.5, class mark with highest frequency; $C$ =5
 | 75-80 | 77.5 | 14 | 1 | 14 |
 | 80-85 | 82.5 | 4 | 2 | 8 |
 |  |  | $\sum_{i = 1}^{k}f_{i}$= 60 |  | $\sum_{i = 1}^{k}{f_{i}u_{i}}$=3 |
+
+: Solution using coding method {#tbl-pltheightcoding}
 
 using @eq-meancoding, $\overline{x} = 72.5 + 5 \times \left( \frac{3}{60} \right)$= 72.75
 
@@ -196,7 +204,7 @@ The mean mark is 72.75%
 
 ## The Median
 
-The **median** is the middle value in a set of data when the values are arranged in order from smallest to largest. If there is an **odd** number of values, the median is the one in the middle, with half of the values smaller and half larger. If there is an **even** number of values, the median is the average of the two middle values. The median is a **positional measure**, which means it depends on the order of the data, not the actual values. It helps to find the central point of the data, especially when there are extreme values or outliers that could affect the average.  
+The **median** is the middle value in a set of data when the values are arranged in order from smallest to largest. If there is an **odd** number of values, the median is the one in the middle, with half of the values smaller and half larger. If there is an **even** number of values, the median is the average of the two middle values. The median is a **positional measure**, which means it depends on the order of the data, not the actual values. It helps to find the central point of the data, especially when there are extreme values or outliers that could affect the average.
 
 ## Median of ungrouped or raw data
 
@@ -246,14 +254,16 @@ When the number of observations (*n*) is odd, then the median is the value at th
 
 **Solution 4.5:**
 
-Total frequency = 3 + 4 + 7 + 6 + 3 = 23 (odd number). Since the number of scores is odd, the median is at $\left( \frac{23 + 1}{2} \right)^{\text{th}} =$ 12^th^ position. 
+Total frequency = 3 + 4 + 7 + 6 + 3 = 23 (odd number). Since the number of scores is odd, the median is at $\left( \frac{23 + 1}{2} \right)^{\text{th}} =$ 12^th^ position.
 
 | **Score**                          | 0   | 1   | **2**  | 3   | 4   |
 |:-----------------------------------|:----|:----|:-------|:----|:----|
 | **Frequency**                      | 3   | 4   | **7**  | 6   | 3   |
 | **less than cumulative frequency** | 3   | 7   | **14** | 20  | 23  |
 
-To find out the 12^th^ position, we use less than cumulative frequencies above which helps us track how many values are less than or equal to each score. In the table, the less than cumulative frequency for the score 0 is 3 (meaning the first 3 values are 0), for the score 1 is 7 (meaning the first 7 values are 0 and 1), and for the score 2 is 14 (meaning the first 14 values are 0, 1, and 2). If we list the data in order, it would look like this: 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2. (no need to list, this is just for reader's understanding, less than cumulative frequency is enough).  
+: Less than cumulative frequency of the scores in mathematics quiz {#tbl-mediansolution}
+
+To find out the 12^th^ position, we use less than cumulative frequencies in @tbl-mediansolution which helps us track how many values are less than or equal to each score. In the table, the less than cumulative frequency for the score 0 is 3 (meaning the first 3 values are 0), for the score 1 is 7 (meaning the first 7 values are 0 and 1), and for the score 2 is 14 (meaning the first 14 values are 0, 1, and 2). If we list the data in order, it would look like this: 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2. (no need to list, this is just for reader's understanding, less than cumulative frequency is enough).
 
 Now, we need to find where the 12^th^ value falls. The 12th value is between the 7th and 14th values, so based on less than cumulative frequency it is clear that 12^th^ value is 2. So the median is 2.
 
@@ -277,6 +287,8 @@ Total frequency = 11 + 9 + 5 + 10 + 15 = 50 (even number). Since the number of s
 |:-----------------------------------|:----|:----|:----|:----|:----|
 | **Frequency**                      | 11  | 9   | 5   | 10  | 15  |
 | **less than cumulative frequency** | 11  | 20  | 25  | 35  | 50  |
+
+: Less than cumulative frequency of marks obtained. {#tbl-medianeven}
 
 The mark at the 25^th^ position is 2 and the mark at the 26^th^ position is 3. The median is the average of the scores at 25^th^ and 26^th^ positions = $\frac{2 + 3}{2} = 2.5$
 
@@ -310,7 +322,7 @@ The median of a grouped frequency distribution can be estimated from a cumulativ
 
 **(i) Linear interpolation method**
 
-$N$ = 60 (Sum of frequencies)  
+$N$ = 60 (Sum of frequencies)
 
 Median class= class interval which contains the $\left( \frac{N}{2} \right)^{\text{th}}$ordered observation; here $\left( \frac{60}{2} \right)^{\text{th}} =$ 30^th^ observation. Before the class 160-165 there are 3+9+16=28 observations so 30^th^ observation will be in the class 160-165, therefore it is the median class.
 
@@ -320,7 +332,7 @@ $F$ = sum of all frequencies below 160(cumulative frequency) = 16+9+3= 28
 
 $f_{m}$ = frequency of the median class=18
 
-$C$ = class width of the median class=5  
+$C$ = class width of the median class=5
 
 using @eq-medlinear, $median = 160 + \left( \frac{\frac{1}{2}60 - 28}{18} \right)5$ = 160.56
 
@@ -377,10 +389,11 @@ It can be seen that the mode of a distribution may not exist, and even if it exi
 
 The blood group with the highest frequency is O. The mode of the data is therefore blood group O. We can say that most of the patients selected have blood group O. Notice that the mean and the median cannot be applied to the data. This is because the variable "blood group" cannot take numerical values. However, it can be seen that the mode can be used to describe both quantitative and qualitative data.
 
-## Mode of grouped data  
-Mode of a grouped frequency distribution can be found out using the formula below.  
+## Mode of grouped data
 
-$$mode = L + \left( \frac{f_{m}-f_{p}}{2f_{m}-f_{p} - f_{s}} \right)C$$ {#eq-mode}  
+Mode of a grouped frequency distribution can be found out using the formula below.
+
+$$mode = L + \left( \frac{f_{m}-f_{p}}{2f_{m}-f_{p} - f_{s}} \right)C$$ {#eq-mode}
 
 Locate the highest frequency the class corresponding to that frequency is called the **modal class**.
 
@@ -394,14 +407,13 @@ Where $L$ = lower limit of the modal class; $f_{m}$ = the frequency of modal cla
 |          80-100          |          38           |
 |         100-120          |          45           |
 |         120-140          |          35           |
-|         140-160          |          20           |  
+|         140-160          |          20           |
 
-: frequency distribution of weights of sorghum ear heads {#tbl-earhead}  
+: frequency distribution of weights of sorghum ear heads {#tbl-earhead}
 
+Modal class is **100-120**, since it is the class with highest frequency.
 
-Modal class is **100-120**, since it is the class with highest frequency.  
-
-Using @eq-mode mode is calculated as below.  
+Using @eq-mode mode is calculated as below.
 
 $mode = 100 + \left( \frac{45-35}{90-38-35} \right)20 =$ 111.76
 
@@ -430,23 +442,21 @@ Consider the figure below. The modal class is the class interval which correspon
 
 2.  The mode of a set of data may not exist.
 
-3.  It is not based upon all the observation.  
+3.  It is not based upon all the observation.
 
-::: {.callout-caution title="Timeless Insights"}
-**Ancient wall measuring with the mode!**  
+::: {.callout-caution title="Historical Insights"}
+**Ancient wall measuring with the mode!**
 
-Back in the 5th century BCE, the Athenians used a clever "statistical hack" to plan their siege of Platea. Soldiers counted bricks in an unplastered section of the wall multiple times, and the most frequent count (what we now call the mode) was taken as the best estimate. They then multiplied this by the height of a brick to calculate the wall’s height and build ladders tall enough to scale it. Problem-solving with statistics!  
+Back in the 5th century BCE, the Athenians used a clever "statistical hack" to plan their siege of Platea. Soldiers counted bricks in an unplastered section of the wall multiple times, and the most frequent count (what we now call the mode) was taken as the best estimate. They then multiplied this by the height of a brick to calculate the wall’s height and build ladders tall enough to scale it. Problem-solving with statistics!
 
-**Asrtonomy and the mean**  
+**Asrtonomy and the mean**
 
 Although the Greeks knew the concept of the arithmetic mean, it wasn’t generalized for multiple values until the 16th century. Simon Stevin’s invention of the decimal system in 1585 made it much easier to calculate. Astronomer Tycho Brahe was one of the first to use the mean, reducing errors in his estimates of celestial body locations.
 
-**Navigation and the median**  
+**Navigation and the median**
 
-The concept of the median first appeared in 1599 in Edward Wright’s book on navigation, *Certaine errors in navigation*. Wright used it to determine the most likely value in a series of compass readings. Later, in 1669, Christiaan Huygens noticed the difference between the mean and the median while working with Graunt's tables. It’s amazing how these early navigators and mathematicians paved the way for the stats we use today.  
-
-:::   
-
+The concept of the median first appeared in 1599 in Edward Wright’s book on navigation, *Certaine errors in navigation*. Wright used it to determine the most likely value in a series of compass readings. Later, in 1669, Christiaan Huygens noticed the difference between the mean and the median while working with Graunt's tables. It’s amazing how these early navigators and mathematicians paved the way for the stats we use today.
+:::
 
 ::: {.callout-tip title="Quotes to Inspire"}
 **"If the statistics are boring, you've got the wrong numbers":- Edward R. Tufte**

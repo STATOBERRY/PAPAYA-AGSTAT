@@ -26,7 +26,7 @@ The system for collecting area statistics across States and Union Territories (U
 
 Crop yields are estimated through **Crop Cutting Experiments (CCE)**, which are conducted extensively across the country. The General Crop Estimation Survey (GCES) covers 65 crops, including 51 food crops and 14 non-food crops. Approximately 9 lakh CCEs are carried out annually in India to estimate the yield of key crops such as rice, maize, bajra, groundnut, and sugarcane. These experiments are conducted systematically to ensure accurate and reliable yield data for principal crops.
 
-![Sampling Design under General Crop Estimation Survey](images/sampling.png){fig-height="4" fig-alt="Sampling Design under General Crop Estimation Survey" fig-align="center" width="590"style="text-align:center;"}
+![Sampling Design under General Crop Estimation Survey](images/sampling.png){fig-height="4" fig-alt="Sampling Design under General Crop Estimation Survey" fig-align="center" width="590" style="text-align:center;"}
 
 Final estimates of crop production are calculated using area figures obtained through complete enumeration and yield rates derived from crop-cutting experiments. These estimates become available only after the harvest. However, to support timely decision-making, the Government requires advance production estimates.
 
