@@ -43,7 +43,7 @@ book:
     image-alt: "Textbook of Agricultural Statistics"
     card-style: summary_large_image
   sidebar:
-    logo: images/papayalogo.png
+    logo: images/sidebarcover.png
   page-footer:
     border: true
     left: |
@@ -64,10 +64,15 @@ format:
     monofont: Fira Code
     highlight-style: arrow
     monobackgroundcolor: "#F7F7F7"
-    theme: 
-      - theme.css
-      - theme.scss
-      - lumen
+    theme:
+      light:
+        - theme.css
+        - theme.scss
+        - lumen
+      dark: 
+        - darktheme.css
+        - darktheme.scss
+        - slate
   pdf:
     documentclass: scrreprt
     latex-engine: xelatex
