@@ -237,11 +237,7 @@ It is important to be aware of the wide variety of visualization tools available
 
 ::: {.callout-caution title="Timeless Insights"}
 Historical facts here
-:::
-
-::: {.callout-note title="Summary" icon="false"}
-Summary here
-:::
+:::  
 
 ::: {.callout-tip title="Quotes to Inspire"}
 **"Statistics is the grammer of science"**\

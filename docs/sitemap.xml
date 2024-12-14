@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cleaning-data-r.ala.org.au/agstatindia.html</loc>
-    <lastmod>2024-12-13T13:46:06.940Z</lastmod>
+    <loc>https://cleaning-data-r.ala.org.au/index.html</loc>
+    <lastmod>2024-12-13T02:16:34.536Z</lastmod>
   </url>
   <url>
     <loc>https://cleaning-data-r.ala.org.au/preface.html</loc>
@@ -13,16 +13,20 @@
     <lastmod>2024-12-13T02:16:34.536Z</lastmod>
   </url>
   <url>
+    <loc>https://cleaning-data-r.ala.org.au/agstatindia.html</loc>
+    <lastmod>2024-12-13T13:46:06.940Z</lastmod>
+  </url>
+  <url>
     <loc>https://cleaning-data-r.ala.org.au/3graph.html</loc>
-    <lastmod>2024-12-14T07:43:10.192Z</lastmod>
+    <lastmod>2024-12-14T11:03:24.941Z</lastmod>
   </url>
   <url>
     <loc>https://cleaning-data-r.ala.org.au/central1.html</loc>
-    <lastmod>2024-12-14T07:55:48.045Z</lastmod>
+    <lastmod>2024-12-14T11:03:26.885Z</lastmod>
   </url>
   <url>
     <loc>https://cleaning-data-r.ala.org.au/central2.html</loc>
-    <lastmod>2024-12-14T07:55:46.199Z</lastmod>
+    <lastmod>2024-12-14T11:02:23.654Z</lastmod>
   </url>
   <url>
     <loc>https://cleaning-data-r.ala.org.au/appendix1.html</loc>
@@ -31,9 +35,5 @@
   <url>
     <loc>https://cleaning-data-r.ala.org.au/references.html</loc>
     <lastmod>2024-12-13T02:16:34.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cleaning-data-r.ala.org.au/index.html</loc>
-    <lastmod>2024-12-13T02:16:34.536Z</lastmod>
   </url>
 </urlset>

@@ -54,8 +54,9 @@ $$= \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}}$$ {#eq-meanungrou
 
 **Example 4.2** @tbl-plantheight below shows the plant height of 50 plants. Find the mean plant height.
 
-| Plant height(cm) | 159 | 160 | 161 | 162 | 163 |
+|                  |     |     |     |     |     |
 |------------------|----:|----:|----:|----:|----:|
+| Plant height(cm) | 159 | 160 | 161 | 162 | 163 |
 | Frequency        |   3 |   9 |  23 |  11 |   4 |
 
 : Plant height of 50 plants {#tbl-plantheight}
@@ -65,7 +66,7 @@ $$= \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}}$$ {#eq-meanungrou
 The calculation can be arranged as shown
 
 | Plant height(*x*) | Frequency(*f*) | *fx* |
-|:----------------------:|:----------------------:|:----------------------:|
+|:--:|:--:|:--:|
 | 159 | 3 | 477 |
 | 160 | 9 | 1440 |
 | 161 | 23 | 3703 |
@@ -90,7 +91,7 @@ Consider the @tbl-plantheight
 let $A$ = 161; it can be any number in *x*
 
 | Plant height(*x*) | Frequency(*f*) | $$\mathbf{d}_{\mathbf{i}}\mathbf{=}\mathbf{x}_{\mathbf{i}}\mathbf{-}\mathbf{161}$$ | $\mathbf{f}_{\mathbf{i}}\mathbf{d}_{\mathbf{i}}$ |
-|:----------------:|:----------------:|:----------------:|:----------------:|
+|:--:|:--:|:--:|:--:|
 | 159 | 3 | -2 | -6 |
 | 160 | 9 | -1 | -9 |
 | 161 | 23 | 0 | 0 |
@@ -116,8 +117,9 @@ Where $x_{i}$ = the mid-point of *i*^th^ class (*i*^th^ class mark); $f_{i}$= th
 
 **Example 4.3** @tbl-math shows the distribution of the marks scored by 60 students in a Maths examination. Find the mean mark.
 
-| Mark (%)           | 60-65 | 65-70 | 70-75 | 75-80 | 80-85 |
+|                    |       |       |       |       |       |
 |:-------------------|:------|:------|:------|:------|:------|
+| Mark (%)           | 60-65 | 65-70 | 70-75 | 75-80 | 80-85 |
 | Number of students | 2     | 15    | 25    | 14    | 4     |
 
 : Distribution of the marks scored by 60 students {#tbl-math}
@@ -127,7 +129,7 @@ Where $x_{i}$ = the mid-point of *i*^th^ class (*i*^th^ class mark); $f_{i}$= th
 The solution can be arranged as shown
 
 | Marks | Class mark($\mathbf{x}_{\mathbf{i}}$) | Frequency($\mathbf{f}_{\mathbf{i}}$) | $$\mathbf{f}_{\mathbf{i}}\mathbf{x}_{\mathbf{i}}$$ |
-|:----------------:|:----------------:|:----------------:|:----------------:|
+|:--:|:--:|:--:|:--:|
 | 60-65 | 62.5 | 2 | 125 |
 | 65-70 | 67.5 | 15 | 1012.5 |
 | 70-75 | 72.5 | 25 | 1812.5 |
@@ -156,7 +158,7 @@ Consider the @tbl-math of the Example 4.3.
 $A$=72.5, class mark with highest frequency; $C$ =5
 
 | Marks | Class mark($\mathbf{x}_{\mathbf{i}}$) | Frequency($\mathbf{f}_{\mathbf{i}}$) | $$\mathbf{u}_{\mathbf{i}}\mathbf{=}\frac{\mathbf{x}_{\mathbf{i}}\mathbf{- 72.5}}{\mathbf{5}}$$ | $$\mathbf{f}_{\mathbf{i}}\mathbf{u}_{\mathbf{i}}$$ |
-|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|:--:|:--:|:--:|:--:|:--:|
 | 60-65 | 62.5 | 2 | -2 | -4 |
 | 65-70 | 67.5 | 15 | -1 | -15 |
 | 70-75 | 72.5 | 25 | 0 | 0 |
@@ -246,8 +248,9 @@ When the number of observations (*n*) is odd, then the median is the value at th
 
 **Example 4.5**: The @tbl-score shows the frequency of the score obtained in a mathematics quiz. Find the median score.
 
-| **Score**     | 0   | 1   | 2   | 3   | 4   |
+|               |     |     |     |     |     |
 |:--------------|:----|:----|:----|:----|:----|
+| **Score**     | 0   | 1   | 2   | 3   | 4   |
 | **Frequency** | 3   | 4   | 7   | 6   | 3   |
 
 : Score obtained in a mathematics quiz {#tbl-score}
@@ -256,8 +259,9 @@ When the number of observations (*n*) is odd, then the median is the value at th
 
 Total frequency = 3 + 4 + 7 + 6 + 3 = 23 (odd number). Since the number of scores is odd, the median is at $\left( \frac{23 + 1}{2} \right)^{\text{th}} =$ 12^th^ position.
 
-| **Score**                          | 0   | 1   | **2**  | 3   | 4   |
+|                                    |     |     |        |     |     |
 |:-----------------------------------|:----|:----|:-------|:----|:----|
+| **Score**                          | 0   | 1   | **2**  | 3   | 4   |
 | **Frequency**                      | 3   | 4   | **7**  | 6   | 3   |
 | **less than cumulative frequency** | 3   | 7   | **14** | 20  | 23  |
 
@@ -273,8 +277,9 @@ When the number of observations is even, then the median is the average of ${\le
 
 **Example 4.6**: The @tbl-median is a frequency table of the marks obtained in a competition. Find the median score.
 
-| **Mark**      | 0   | 1   | 2   | 3   | 4   |
+|               |     |     |     |     |     |
 |:--------------|:----|:----|:----|:----|:----|
+| **Mark**      | 0   | 1   | 2   | 3   | 4   |
 | **Frequency** | 11  | 9   | 5   | 10  | 15  |
 
 : Distribution of marks obtained in a competition. {#tbl-median}
@@ -283,8 +288,9 @@ When the number of observations is even, then the median is the average of ${\le
 
 Total frequency = 11 + 9 + 5 + 10 + 15 = 50 (even number). Since the number of scores is even, the median is at the average of the values in ${\left( \frac{n}{2} \right)^{th} = 25\ and\ \left( \frac{n}{2} + 1 \right)}^{\text{th}} = 26$ positions. To find out the 25^th^ position and 26^th^ position, we add up the frequencies as shown:
 
-| **Mark**                           | 0   | 1   | 2   | 3   | 4   |
+|                                    |     |     |     |     |     |
 |:-----------------------------------|:----|:----|:----|:----|:----|
+| **Mark**                           | 0   | 1   | 2   | 3   | 4   |
 | **Frequency**                      | 11  | 9   | 5   | 10  | 15  |
 | **less than cumulative frequency** | 11  | 20  | 25  | 35  | 50  |
 
@@ -312,8 +318,9 @@ The median of a grouped frequency distribution can be estimated from a cumulativ
 
 **Example 4.7** @tbl-medianheight below gives the distribution of the heights of 60 students in a senior high school. Find the median height of the students
 
-| Height(cm)         | 145-150 | 150-155 | 155-160 | 160-165 | 165-170 | 170-175 |
+|                    |         |         |         |         |         |         |
 |:-------------------|:--------|:--------|:--------|:--------|:--------|:--------|
+| Height(cm)         | 145-150 | 150-155 | 155-160 | 160-165 | 165-170 | 170-175 |
 | Number of students | 3       | 9       | 16      | 18      | 10      | 4       |
 
 : Distribution of heights of 60 students {#tbl-medianheight}
@@ -381,8 +388,9 @@ It can be seen that the mode of a distribution may not exist, and even if it exi
 
 **Example 4.9** 20 patients selected at random had their blood groups determined. The results are given in the @tbl-letters
 
-| Blood group     | A   | AB  | B   | O   |
+|                 |     |     |     |     |
 |:----------------|:----|:----|:----|:----|
+| Blood group     | A   | AB  | B   | O   |
 | No. of patients | 2   | 4   | 6   | 8   |
 
 : Blood group of 20 patients {#tbl-letters}
