@@ -52,8 +52,9 @@ There are two main types of cumulative frequency curves:\
 
 The less than ogive, also known as the **less than type cumulative frequency curve**, is created by plotting the less than cumulative frequencies against the upper class boundaries. For example, consider the plant height data for 50 plants. By using the upper class limits and their cumulative frequencies, we can construct a smooth curve that provides insights into the data distribution. See @tbl-ullcf, which is constructed from @tbl-plantheight. The less than ogive, shown in @fig-lessogive, is drawn using @tbl-ullcf.
 
-| Upper limit | 140 | 150 | 160 | 170 | 180 | 190 |
+|             |     |     |     |     |     |     |
 |:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Upper limit | 140 | 150 | 160 | 170 | 180 | 190 |
 |     LCF     |  3  |  9  | 26  | 39  | 47  | 50  |
 
 : Upper limit and LCF of plant heights {#tbl-ullcf}
@@ -66,8 +67,9 @@ Note: LCF denotes less than cumulative frequency
 
 The **greater than ogive**, also known as the **greater than type cumulative frequency curve**, is constructed by plotting the greater than cumulative frequencies against the lower class boundaries. In this case, instead of using the upper limits like in the "Less than ogive", we use the lower class limits and their corresponding cumulative frequencies. This curve helps visualize the cumulative frequency distribution from the highest class down to the lowest, providing insights into the number of observations greater than a specific value. See @tbl-llgcf constructed from @tbl-plantheight. The greater than ogive, shown in @fig-greaterogive, is drawn using @tbl-llgcf.
 
-| Lower Limit | 130 | 140 | 150 | 160 | 170 | 180 |
+|             |     |     |     |     |     |     |
 |:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Lower limit | 130 | 140 | 150 | 160 | 170 | 180 |
 |     GCF     | 50  | 47  | 41  | 24  | 11  |  3  |
 
 : Lower limit and GCF of plant heights {#tbl-llgcf}
@@ -84,8 +86,9 @@ Intersection of both less than and greater than ogives gives the median
 
 A grouped frequency table can also be represented by a frequency polygon, a special type of line graph. To construct it, plot the class frequencies against the corresponding class midpoints and connect successive points with straight lines. The frequency polygon can also be derived by joining the midpoints of a histogram. See @tbl-mpfreq, constructed from @tbl-plantheight. The frequency polygon, created using @tbl-mpfreq, is shown in @fig-fp. The relation between frequency polygon and histogram can be seen in @fig-fph
 
-| Class Midpoints | 135 | 145 | 155 | 165 | 175 | 185 |
+|                 |     |     |     |     |     |     |
 |:---------------:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Class midpoints | 135 | 145 | 155 | 165 | 175 | 185 |
 |   Frequencies   |  3  |  6  | 17  | 13  |  8  |  3  |
 
 : Midpoints and frequencies {#tbl-mpfreq}
@@ -146,7 +149,7 @@ The component bar chart shows the changes of each component over the years as we
 ![Grouped bar chart](images/grouped_bar.png){#fig-groupedbar style="text-align:center;"}
 :::
 
-## Histogram versus Bar chart
+## Histogram versus bar chart
 
 @tbl-histovsbar highlights the key differences between histograms and bar charts, two commonly used graphical tools in data visualization. While both employ bars to represent data, they serve distinct purposes and are applied to different types of data. Understanding these differences ensures the correct choice of graph for effectively presenting and interpreting data.
 
@@ -237,7 +240,7 @@ It is important to be aware of the wide variety of visualization tools available
 
 ::: {.callout-caution title="Timeless Insights"}
 Historical facts here
-:::  
+:::
 
 ::: {.callout-tip title="Quotes to Inspire"}
 **"Statistics is the grammer of science"**\

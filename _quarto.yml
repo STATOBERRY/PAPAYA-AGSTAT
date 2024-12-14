@@ -36,6 +36,7 @@ book:
    - 3graph.qmd
    - central1.qmd
    - central2.qmd
+   - dispersion.qmd
    - appendix1.qmd
    - references.qmd
   twitter-card: 

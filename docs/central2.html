@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./appendix1.html" rel="next">
+<link href="./dispersion.html" rel="next">
 <link href="./central1.html" rel="prev">
 <link href="./images/papayalogo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -206,14 +206,20 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./dispersion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of Dispersion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./appendix1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Appendix 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Appendix 1</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -226,11 +232,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#geometric-mean-gm" id="toc-geometric-mean-gm" class="nav-link active" data-scroll-target="#geometric-mean-gm"><span class="header-section-number">5.1</span> Geometric mean (GM)</a>
+  <li><a href="#geometric-mean" id="toc-geometric-mean" class="nav-link active" data-scroll-target="#geometric-mean"><span class="header-section-number">5.1</span> Geometric mean</a>
   <ul class="collapse">
   <li><a href="#geometric-mean-for-frequency-table" id="toc-geometric-mean-for-frequency-table" class="nav-link" data-scroll-target="#geometric-mean-for-frequency-table"><span class="header-section-number">5.1.1</span> Geometric mean for frequency table</a></li>
   </ul></li>
-  <li><a href="#harmonic-mean-hm" id="toc-harmonic-mean-hm" class="nav-link" data-scroll-target="#harmonic-mean-hm"><span class="header-section-number">5.2</span> Harmonic mean (HM)</a>
+  <li><a href="#harmonic-mean" id="toc-harmonic-mean" class="nav-link" data-scroll-target="#harmonic-mean"><span class="header-section-number">5.2</span> Harmonic mean</a>
   <ul class="collapse">
   <li><a href="#harmonic-mean-for-frequency-table" id="toc-harmonic-mean-for-frequency-table" class="nav-link" data-scroll-target="#harmonic-mean-for-frequency-table"><span class="header-section-number">5.2.1</span> Harmonic mean for frequency table</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">5.2.2</span> </a></li>
@@ -270,9 +276,9 @@ window.Quarto = {
 
 
 <p>While simple averages like mean, median, and mode are widely used to summarize data, certain situations call for more specialized measures to capture the essence of a dataset. <strong>Special averages</strong>, including the <strong>geometric mean</strong> and <strong>harmonic mean</strong>, are tailored for specific contexts where the nature of the data or the relationships between data points require a different approach.</p>
-<section id="geometric-mean-gm" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="geometric-mean-gm"><span class="header-section-number">5.1</span> Geometric mean (GM)</h2>
-<p>The <strong>geometric mean</strong> is a specialized measure of central tendency, particularly suited for datasets involving growth rates, ratios, or percentages, such as population growth, investment returns, or interest rates. Unlike the arithmetic mean, which calculates the average by summing values, the geometric mean finds the average by multiplying values and then taking the root (typically the <em>n</em><sup>th</sup> root for <em>n</em> values).</p>
+<section id="geometric-mean" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="geometric-mean"><span class="header-section-number">5.1</span> Geometric mean</h2>
+<p>The <strong>geometric mean (GM)</strong> is a specialized measure of central tendency, particularly suited for datasets involving growth rates, ratios, or percentages, such as population growth, investment returns, or interest rates. Unlike the arithmetic mean, which calculates the average by summing values, the geometric mean finds the average by multiplying values and then taking the root (typically the <em>n</em><sup>th</sup> root for <em>n</em> values).</p>
 <p>This approach captures the compounding effects present in the data, making the geometric mean an essential tool for accurately summarizing proportional changes or rates over time. Its utility lies in providing a more representative measure for datasets where changes are multiplicative rather than additive.</p>
 <p>The geometric mean of a series containing <em>n</em> observations is the <em>n</em><sup>th</sup> root of the product of the values. If <span class="math inline">\(x_{1},x_{2},\ldots,&nbsp;x_{n}\)</span> are observations then</p>
 <p><span id="eq-gm1"><span class="math display">\[\mathbf{GM =}\sqrt[\mathbf{n}]{\mathbf{x}_{\mathbf{1}}\mathbf{x}_{\mathbf{2}}\mathbf{\ldots}\mathbf{x}_{\mathbf{n}}} \tag{5.1}\]</span></span></p>
@@ -285,7 +291,7 @@ window.Quarto = {
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="geometric-mean-for-frequency-table"><span class="header-section-number">5.1.1</span> Geometric mean for frequency table</h3>
 <p><span id="eq-gm4"><span class="math display">\[\mathbf{GM = \ Antilog}\left( \frac{\sum_{\mathbf{i = 1}}^{\mathbf{k}}{{\mathbf{f}_{\mathbf{i}}\mathbf{\log}}\mathbf{x}_{\mathbf{i}}}}{\mathbf{n}} \right) \tag{5.4}\]</span></span></p>
 <p>where <span class="math inline">\(x_{i}\)</span> is the <em>i</em><sup>th</sup> value in the dataset and for a grouped frequency table <span class="math inline">\(x_{i}\)</span> will be the midpoint of the <em>i</em><sup>th</sup> class interval calculated as the average of upper and lower limit, <span class="math inline">\(f_{i}\)</span> is the frequency of the <em>i</em><sup>th</sup> value or class , <em>k</em> is the number of classes.</p>
-<p><strong>Example 5.1</strong>: If the weight of sorghum ear heads are 45, 60, 48,100, 65 gms. Find the Geometric mean?</p>
+<p><strong>Example 5.1</strong> If the weight of sorghum ear heads are 45, 60, 48,100, 65 gms. Find the Geometric mean?</p>
 <div id="tbl-sorghumear" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sorghumear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -329,12 +335,12 @@ Table&nbsp;5.1: log values of sorghum ear head weights
 </div>
 </figure>
 </div>
-<p><strong>Solution 5.1</strong>:</p>
+<p><strong>Solution 5.1</strong></p>
 <p>Here <em>n</em> =5</p>
 <p>using <a href="#eq-gm3" class="quarto-xref">Equation&nbsp;<span>5.3</span></a></p>
 <p><span class="math display">\[=\text{Antilog}\left( \frac{8.926}{5} \right) \]</span><br>
 <span class="math display">\[ =\text{Antilog}(1.785) = 60.95\]</span> note: here <span class="math inline">\(\text{Antilog}\left( x \right) = 10^{x}\)</span> <em>i</em>.<em>e</em>. <span class="math display">\[\text{Antilog}\left( 1.785 \right) = \ 10^{1.785} = 60.95\]</span></p>
-<p><strong>Example 5.2</strong>: Geometric mean of a frequency distribution</p>
+<p><strong>Example 5.2</strong> Geometric mean of a frequency distribution</p>
 <div id="tbl-gmfreq" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gmfreq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -398,14 +404,14 @@ Table&nbsp;5.2: Frequency distribution and log for GM calculation
 </div>
 </figure>
 </div>
-<p><strong>Solution 5.2</strong>:</p>
+<p><strong>Solution 5.2</strong></p>
 <p>Here <em>n</em> =32</p>
 <p>using <a href="#eq-gm4" class="quarto-xref">Equation&nbsp;<span>5.4</span></a></p>
 <p><span class="math display">\[{\sum_{i = 1}^{k}{{f_{i}\log}x_{i}} = 57.782
 }\]</span><br>
 <span class="math display">\[{\text{GM} = \ Antilog\left( \frac{57.782}{32} \right)  }\]</span><br>
 <span class="math display">\[{= Antilog\left( 1.8056 \right)= 10^{1.8056} = 63.92}\]</span></p>
-<p><strong>Example 5.3</strong>: Geometric mean of a grouped frequency distribution</p>
+<p><strong>Example 5.3</strong> Geometric mean of a grouped frequency distribution</p>
 <div id="tbl-gmgrpfreq" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gmgrpfreq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -470,7 +476,7 @@ Table&nbsp;5.3: Geometric mean calculation for grouped frequency table
 </div>
 </figure>
 </div>
-<p><strong>Solution 5.4</strong>:<br>
+<p><strong>Solution 5.3</strong><br>
 Here <em>n</em> =32</p>
 <p>using <a href="#eq-gm4" class="quarto-xref">Equation&nbsp;<span>5.4</span></a></p>
 <p><span class="math display">\[{\sum_{i = 1}^{k}{{f_{i}\log}x_{i}} = 65.787}\]</span> <span class="math display">\[{\text{GM} = \ Antilog\left( \frac{65.787}{32} \right)}\]</span> <span class="math display">\[{= Antilog\left( 2.0558 \right) = 10^{2.0558} = 113.71}\]</span></p>
@@ -494,8 +500,8 @@ Here <em>n</em> =32</p>
 </ul>
 </section>
 </section>
-<section id="harmonic-mean-hm" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="harmonic-mean-hm"><span class="header-section-number">5.2</span> Harmonic mean (HM)</h2>
+<section id="harmonic-mean" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="harmonic-mean"><span class="header-section-number">5.2</span> Harmonic mean</h2>
 <p>Harmonic means are often used in averaging things like rates (e.g.&nbsp;the average travel speed given duration of several trips). Harmonic mean (HM) of a set of observations is defined as the reciprocal of the arithmetic average of the reciprocal of the given value.</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Note">
 <div class="callout-header d-flex align-content-center">
@@ -518,8 +524,8 @@ Note
 <li><p>Find the average of those reciprocals (just add them and divide by how many there are)</p></li>
 <li><p>Then do the reciprocal of that average (=1/average)</p></li>
 </ol>
-<p><strong>Example 5.4</strong>: From the given data 5, 10, 17, 24, 30 calculate H.M</p>
-<p><strong>Solution 5.4</strong>:</p>
+<p><strong>Example 5.4</strong> From the given data 5, 10, 17, 24, 30 calculate H.M</p>
+<p><strong>Solution 5.4</strong></p>
 <p>Here <em>n</em> = 5</p>
 <div id="tbl-hmcalc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -570,7 +576,7 @@ Table&nbsp;5.4: Inverse of numbers to calculate harmonic mean
 <h3 data-number="5.2.1" class="anchored" data-anchor-id="harmonic-mean-for-frequency-table"><span class="header-section-number">5.2.1</span> Harmonic mean for frequency table</h3>
 <p><span id="eq-hm2"><span class="math display">\[\mathbf{\text{H.M}} = \frac{n}{\sum_{i = 1}^{k}{f_{i}\frac{1}{x_{i}}}} \tag{5.6}\]</span></span></p>
 <p>where <span class="math inline">\(x_{i}\)</span> is the <em>i</em><sup>th</sup> value in the dataset and for a grouped frequency table <span class="math inline">\(x_{i}\)</span> will be the midpoint of the <em>i</em><sup>th</sup> class interval calculated as the average of upper and lower limit, <span class="math inline">\(f_{i}\)</span> is the frequency of the <em>i</em><sup>th</sup> value or class , <em>k</em> is the number of classes.</p>
-<p><strong>Example 5.5</strong>: For the given data calculate the harmonic mean.</p>
+<p><strong>Example 5.5</strong> For the given data calculate the harmonic mean.</p>
 <div id="tbl-tomato" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tomato-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -602,7 +608,7 @@ Table&nbsp;5.5: Model data for harmonic mean calculation
 </div>
 </figure>
 </div>
-<p><strong>Solution 5.5</strong>:</p>
+<p><strong>Solution 5.5</strong></p>
 <div id="tbl-freqhm" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-freqhm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -672,8 +678,8 @@ Table&nbsp;5.6: Calculation of harmonic mean from frequency table
 </section>
 <section id="section" class="level3" data-number="5.2.2">
 <h3 data-number="5.2.2" class="anchored" data-anchor-id="section"><span class="header-section-number">5.2.2</span> </h3>
-<p><strong>Example 5.6</strong>: <em>Cistern Problem</em>-Two pipes are used to fill a cistern. Pipe A can fill the cistern in 3 hours. Pipe B can fill the cistern in 5 hours. If both pipes are opened at the same time, how long will it take to fill the cistern completely?</p>
-<p><strong>Solution 5.6</strong>:<br>
+<p><strong>Example 5.6</strong> <em>Cistern Problem</em>-Two pipes are used to fill a cistern. Pipe A can fill the cistern in 3 hours. Pipe B can fill the cistern in 5 hours. If both pipes are opened at the same time, how long will it take to fill the cistern completely?</p>
+<p><strong>Solution 5.6</strong><br>
 To solve the cistern problem, we first calculate the rate at which each pipe fills the cistern. Pipe A fills the cistern in 3 hours, so its rate is <span class="math inline">\(\frac{1}{3}\)</span> of the cistern per hour. Pipe B fills the cistern in 5 hours, so its rate is <span class="math inline">\(\frac{1}{5}\)</span> per hour. To find the combined rate, we add these rates together; <span class="math inline">\(\frac{1}{3} + \frac{1}{5} = \frac{8}{15}\)</span>. This means the two pipes together fill <span class="math inline">\(\frac{8}{15}\)</span> of the cistern each hour. To find the total time, we take the reciprocal of the combined rate <em>i</em>.<em>e</em>. <span class="math inline">\(\text{Total time} = \frac{1}{\frac{8}{15}} = \frac{15}{8} = 1.875\)</span>. To convert 1.875 hours into hours and minutes, we first separate the whole number from the decimal part. 1.875 hours consists of 1 hour (the whole number) and 0.875 hours (the decimal part). Next, we convert the decimal part into minutes. Since 1 hour is equal to 60 minutes, we multiply 0.875 by 60 <em>i</em>.<em>e</em>. <span class="math inline">\(0.875 \times 60 = 52.5 \, \text{minutes}\)</span>. Rounding 52.5 minutes gives approximately 53 minutes. Thus, 1.875 hours is equivalent to <strong>1 hour and 53 minutes</strong>.</p>
 <p><br>
 The problem can be easily solved using the harmonic mean, the harmonic mean of two pipes is</p>
@@ -682,8 +688,8 @@ HM=\frac{2}{\frac{1}{3} +\frac{1}{5}}
 \]</span></p>
 <p><span class="math display">\[= \frac{2 \cdot 3 \cdot 5}{3 + 5} = \frac{30}{8} = 3.75 \, \text{hours}\]</span></p>
 <p>the harmonic mean of the pipes is 3.75 hours, and since both pipes are working together, the total time is half of that, which confirms the answer of 1 hour and 53 minutes.</p>
-<p><strong>Example 5.7</strong>: A car travels a certain distance from City A to City B at a speed of 60 km/h, and returns the same distance from City B to City A at a speed of 90 km/h. What is the average speed for the entire trip?</p>
-<p><strong>Solution 5.7</strong>:</p>
+<p><strong>Example 5.7</strong> A car travels a certain distance from City A to City B at a speed of 60 km/h, and returns the same distance from City B to City A at a speed of 90 km/h. What is the average speed for the entire trip?</p>
+<p><strong>Solution 5.7</strong></p>
 <p>To find the average speed when traveling the same distance at two different speeds, we use the harmonic mean. The harmonic mean for the speed is <span class="math inline">\(\frac{2 \cdot S_1 \cdot S_2}{S_1 + S_2}\)</span>, where <span class="math inline">\(S_1 = 60 \, \text{km/h}\)</span> is the speed from City A to City B, <span class="math inline">\(S_2 = 90 \, \text{km/h}\)</span> is the speed from City B to City A.</p>
 <p>In this case, we are calculating the average speed over the entire round trip. The harmonic mean is used because it accounts for the fact that traveling at different speeds over the same distance results in an overall average speed that is closer to the lower of the two speeds, rather than simply averaging the two speeds.</p>
 <p>Now, applying the harmonic mean formula:</p>
@@ -819,8 +825,8 @@ Note
 <p><span class="math inline">\(\mathbf{Q}_{\mathbf{1}}\mathbf{=}\left( \frac{\mathbf{n + 1}}{\mathbf{4}} \right)^{\mathbf{\text{th}}}\)</span> item</p>
 <p><span class="math inline">\(\mathbf{Q}_{\mathbf{3}}\mathbf{=}\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)^{\mathbf{\text{th}}}\)</span> item</p>
 <p>Calculations of quartiles are explained using the example below. See in the example the procedure followed when a fraction appear in the calculation.</p>
-<p><strong>Example 5.8</strong>: Compute quartiles for the data 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
-<p><strong>Solution 5.8</strong>:</p>
+<p><strong>Example 5.8</strong> Compute quartiles for the data 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
+<p><strong>Solution 5.8</strong></p>
 <p>First arrange the data in ascending order</p>
 <p>5, 8, 10, 15, 18, 25, 30, 35, 40, 45</p>
 <p>here <em>n</em> = 10</p>
@@ -839,7 +845,7 @@ Note
 <li><p>Find <span class="math inline">\(\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)\)</span></p></li>
 <li><p>See in the cumulative frequencies, the value just greater than <span class="math inline">\(\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)\)</span> ,then the corresponding value of <span class="math inline">\(x\)</span> is <span class="math inline">\(Q_{3}\)</span></p></li>
 </ol>
-<p><strong>Example 5.9</strong>: Compute quartiles for the data given below</p>
+<p><strong>Example 5.9</strong> Compute quartiles for the data given below</p>
 <div id="tbl-quartile" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-quartile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -873,7 +879,7 @@ Table&nbsp;5.7: A model frequency distribution
 </div>
 </figure>
 </div>
-<p><strong>Solution 5.9</strong>:</p>
+<p><strong>Solution 5.9</strong></p>
 <div id="tbl-qtlcalc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-qtlcalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -955,7 +961,7 @@ Table&nbsp;5.8: Cumulative frequency data for quartile calculation
 <p><span class="math inline">\(f_{3}\)</span>= frequency of the 3<sup>rd</sup> quartile class</p>
 <p><span class="math inline">\(c_{3}\)</span>= width of the 3<sup>rd</sup> quartile class</p>
 <p><span class="math inline">\(m_{3}\)</span> = cumulative frequency preceding the 3<sup>rd</sup> quartile class</p>
-<p><strong>Example 5.10</strong>: Find the quartiles for the grouped frequency data given</p>
+<p><strong>Example 5.10</strong> Find the quartiles for the grouped frequency data given</p>
 <div id="tbl-grpdqrtl" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grpdqrtl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1026,7 +1032,7 @@ Table&nbsp;5.9: A model grouped frequency data
 </div>
 </figure>
 </div>
-<p><strong>Solution 5.10</strong>:</p>
+<p><strong>Solution 5.10</strong></p>
 <p><span class="math inline">\(\left( \frac{n}{4} \right)\)</span> = <span class="math inline">\(\frac{204}{4}\)</span> = 51</p>
 <p>The cumulative frequency value just greater than 51 is 54 so the class 20-30 is the 1<sup>st</sup> quartile class</p>
 <p>using <a href="#eq-qrtl1" class="quarto-xref">Equation&nbsp;<span>5.11</span></a></p>
@@ -1071,8 +1077,8 @@ P_p = \left( \frac{p(n + 1)}{100} \right)
 <p><span class="math inline">\(\mathbf{f}\)</span> = frequency of the percentile class</p>
 <p><span class="math inline">\(\mathbf{c}\)</span> = class interval</p>
 <p><span class="math inline">\(\mathbf{n}\)</span> = total number of observations</p>
-<p><strong>Example 5.11</strong>: Compute <span class="math inline">\(\mathbf{P}_{\mathbf{25}}\)</span> and <span class="math inline">\(\mathbf{P}_{\mathbf{75}}\)</span> for the data 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
-<p><strong>Solution 5.11</strong>:</p>
+<p><strong>Example 5.11</strong> Compute <span class="math inline">\(\mathbf{P}_{\mathbf{25}}\)</span> and <span class="math inline">\(\mathbf{P}_{\mathbf{75}}\)</span> for the data 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
+<p><strong>Solution 5.11</strong></p>
 <p>First arrange the data in ascending order</p>
 <p>5, 8, 10, 15, 18, 25, 30, 35, 40, 45</p>
 <p>Here <em>n</em> =10</p>
@@ -1752,8 +1758,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./appendix1.html" class="pagination-link" aria-label="Appendix 1">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Appendix 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./dispersion.html" class="pagination-link" aria-label="Measures of Dispersion">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of Dispersion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
