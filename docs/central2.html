@@ -212,14 +212,20 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./skewness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Skewness and Kurtosis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./appendix1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Appendix 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Appendix 1</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -247,7 +253,7 @@ window.Quarto = {
   <li><a href="#geometric-illustration" id="toc-geometric-illustration" class="nav-link" data-scroll-target="#geometric-illustration"><span class="header-section-number">5.4.1</span> Geometric illustration</a></li>
   </ul></li>
   <li><a href="#sec-positional_avg" id="toc-sec-positional_avg" class="nav-link" data-scroll-target="#sec-positional_avg"><span class="header-section-number">5.5</span> Positional Averages</a></li>
-  <li><a href="#quartile" id="toc-quartile" class="nav-link" data-scroll-target="#quartile"><span class="header-section-number">5.6</span> Quartiles</a></li>
+  <li><a href="#sec-quartile" id="toc-sec-quartile" class="nav-link" data-scroll-target="#sec-quartile"><span class="header-section-number">5.6</span> Quartiles</a></li>
   <li><a href="#percentiles" id="toc-percentiles" class="nav-link" data-scroll-target="#percentiles"><span class="header-section-number">5.7</span> Percentiles</a></li>
   <li><a href="#deciles" id="toc-deciles" class="nav-link" data-scroll-target="#deciles"><span class="header-section-number">5.8</span> Deciles</a></li>
   </ul>
@@ -816,8 +822,8 @@ Note
 <p>The other common positional averages include <strong>percentiles</strong>, <strong>quartiles</strong>, and <strong>deciles</strong>, which divide the data into equal parts to analyze its distribution.</p>
 <p>In contrast, measures like the <strong>arithmetic mean</strong>, <strong>geometric mean</strong>, and <strong>harmonic mean</strong> are referred to as <strong>mathematical averages</strong>, as they are calculated through specific mathematical operations rather than being derived from the data’s positional properties.</p>
 </section>
-<section id="quartile" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="quartile"><span class="header-section-number">5.6</span> Quartiles</h2>
+<section id="sec-quartile" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="sec-quartile"><span class="header-section-number">5.6</span> Quartiles</h2>
 <p>The <strong>median</strong> divides a dataset into two equal halves. Similarly, it is possible to divide a dataset into more than two parts. When an <strong>ordered</strong> dataset is divided into four equal sections, the points that mark these divisions are called <strong>quartiles</strong>.</p>
 <p>The <strong>first or lower quartile (</strong><span class="math inline">\(\mathbf{Q}_{\mathbf{1}}\)</span><strong>)</strong> is a value that has one fourth, or 25% of the observations below its value.</p>
 <p>The <strong>second quartile (</strong><span class="math inline">\(\mathbf{Q}_{\mathbf{2}}\)</span><strong>)</strong>, has one-half, or 50% of the observations below its value. The second quartile is equal to the <strong>median</strong>.</p>
@@ -1100,17 +1106,15 @@ Note
 <p>Data in Example 5.11 is same as Example 5.8; it can be seen that <span class="math inline">\(P_{25} = Q_{1}\)</span> &amp; <span class="math inline">\(P_{75} = Q_{3}\)</span> always</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Try yourself
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
+<p><strong>Try yourself</strong></p>
 <p>Find <span class="math inline">\(P_{25}\)</span>, <span class="math inline">\(P_{50}\)</span> &amp; <span class="math inline">\(P_{75}\)</span> for Example 5.9 &amp; 5.10; verify that <span class="math inline">\(P_{50} = Q_{2}\)</span>, <span class="math inline">\(P_{25} = Q_{1}\)</span> &amp; <span class="math inline">\(P_{75} = Q_{3}\)</span></p>
+</div>
 </div>
 </div>
 </section>

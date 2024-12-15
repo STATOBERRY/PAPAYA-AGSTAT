@@ -332,7 +332,7 @@ library(knitr)
 library(kableExtra)
 dt<-read.csv("csv/c1e1.csv")
 dt %>%
-  kbl(booktabs = TRUE, align = "c") %>%
+  kbl(booktabs = TRUE, align = "c",) %>%
    kable_classic(full_width = F, html_font = "Georgia") %>%
 kable_styling(
     # latex_options = "HOLD_position", 
@@ -368,7 +368,7 @@ library(knitr)
 dt <- read.csv("csv/c1e2.csv")
 
 dt %>%
-  kbl(booktabs = FALSE, align = "c") %>%
+  kbl(booktabs = FALSE, align = "c",escape = FALSE) %>%
   kable_classic(full_width = FALSE, html_font = "Georgia") %>%
   kable_styling(
     # latex_options = "HOLD_position", 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Measures of Dispersion – TEXTBOOK OF AGRICULTURAL STATISTICS</title>
+<title>6&nbsp; Measures of dispersion – TEXTBOOK OF AGRICULTURAL STATISTICS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,9 +50,9 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./appendix1.html" rel="next">
+<link href="./skewness.html" rel="next">
 <link href="./central2.html" rel="prev">
-<link href="./images/papayalogo.png" rel="icon" type="image/png">
+<link href="./images/cover.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -122,12 +122,12 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="6&nbsp; Measures of Dispersion – TEXTBOOK OF AGRICULTURAL STATISTICS">
+<meta property="og:title" content="6&nbsp; Measures of dispersion – TEXTBOOK OF AGRICULTURAL STATISTICS">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://cleaning-data-r.ala.org.au/images/cover.jpg">
 <meta property="og:site_name" content="TEXTBOOK OF AGRICULTURAL STATISTICS">
 <meta property="og:image:alt" content="Textbook of Agricultural Statistics">
-<meta name="twitter:title" content="6&nbsp; Measures of Dispersion – TEXTBOOK OF AGRICULTURAL STATISTICS">
+<meta name="twitter:title" content="6&nbsp; Measures of dispersion – TEXTBOOK OF AGRICULTURAL STATISTICS">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://cleaning-data-r.ala.org.au/images/papayalogo.png">
 <meta name="twitter:image:alt" content="Textbook of Agricultural Statistics">
@@ -145,7 +145,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dispersion.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of Dispersion</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dispersion.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of dispersion</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -227,19 +227,25 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./dispersion.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of Dispersion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of dispersion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./skewness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Skewness and kurtosis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Appendix 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Appendix 1</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -270,7 +276,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of Dispersion</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measures of dispersion</span></h1>
 </div>
 
 
@@ -379,15 +385,21 @@ Note
 <p>S = Lower boundary of the lowest class.</p>
 <p><span id="eq-range"><span class="math display">\[Range = L - S \tag{6.1}\]</span></span></p>
 <p><strong>Example 6.2</strong>: Calculate range from the following distribution</p>
+<div id="tbl-rangemodel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rangemodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.2: Model frequency distribution table for range calculation
+</figcaption>
+<div aria-describedby="tbl-rangemodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Size</td>
-<td style="text-align: left;">60-63</td>
-<td style="text-align: left;">63-66</td>
-<td style="text-align: left;">66-69</td>
-<td style="text-align: left;">69-72</td>
-<td style="text-align: left;">72-75</td>
+<td style="text-align: left;">60–63</td>
+<td style="text-align: left;">63–66</td>
+<td style="text-align: left;">66–69</td>
+<td style="text-align: left;">69–72</td>
+<td style="text-align: left;">72–75</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Number</td>
@@ -399,7 +411,10 @@ Note
 </tr>
 </tbody>
 </table>
-<p><strong>Solution</strong></p>
+</div>
+</figure>
+</div>
+<p><strong>Solution 6.2</strong></p>
 <p>L = Upper boundary of the highest class = 75</p>
 <p>S = Lower boundary of the lowest class = 60</p>
 <p>Range = L – S = 75 – 60 = 15</p>
@@ -459,66 +474,66 @@ Note
 </ol>
 <p><span id="eq-mad"><span class="math display">\[MAD = \frac{\sum_{i = 1}^{n}\left| x_{i} - \overline{x} \right|}{n} \tag{6.3}\]</span></span></p>
 <p><strong>Example 6.4</strong> find the mean absolute deviation of the following 10, 15, 15, 17, 18, 21</p>
+<div id="tbl-mad1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mad1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.3: Calculation of mean absolute deviation
+</figcaption>
+<div aria-describedby="tbl-mad1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Sl.No.</th>
 <th style="text-align: center;"><span class="math display">\[x_{i}\]</span></th>
 <th style="text-align: center;"><span class="math display">\[x_{i} - \overline{x}\]</span></th>
-<th style="text-align: center;"><span class="math display">\[\left| x_{i} - \overline{x} \right|\]</span></th>
+<th style="text-align: center;"><span class="math display">\[\left| x_{i} - \overline{x}\right|\]</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
 <td style="text-align: center;">10</td>
 <td style="text-align: center;">-6</td>
 <td style="text-align: center;">6</td>
 </tr>
 <tr class="even">
-<td>2</td>
 <td style="text-align: center;">15</td>
 <td style="text-align: center;">-1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr class="odd">
-<td>3</td>
 <td style="text-align: center;">15</td>
 <td style="text-align: center;">-1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr class="even">
-<td>4</td>
 <td style="text-align: center;">17</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr class="odd">
-<td>5</td>
 <td style="text-align: center;">18</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr class="even">
-<td>6</td>
 <td style="text-align: center;">21</td>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">5</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td style="text-align: center;"><span class="math inline">\(\overline{x} =\)</span> 16</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><span class="math inline">\(\sum_{i = 1}^{n}\left| x_{i} - \overline{x} \right|\)</span> = 16</td>
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <p>Here <em>n</em> = 6 and <span class="math inline">\(\sum_{i = 1}^{n}\left| x_{i} - \overline{x} \right|\)</span> = 16 therefore MAD = <span class="math inline">\(\frac{16}{6} = 2.67\)</span></p>
 <p><strong>Merits and demerits of MAD</strong></p>
 <p><u><strong>Merits</strong></u></p>
@@ -541,9 +556,11 @@ Note
 <section id="the-variance-and-standard-deviation" class="level2" data-number="6.5">
 <h2 data-number="6.5" class="anchored" data-anchor-id="the-variance-and-standard-deviation"><span class="header-section-number">6.5</span> The variance and standard deviation</h2>
 <p>The most important measures of variability are the sample variance and the sample standard deviation. If <em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>… <em>x</em><sub>n</sub> is a sample of <em>n</em> observations, then the <strong>sample variance</strong> is denoted by <em>s</em>² and is defined by the equation.</p>
-<p><span id="eq-samplevariance"><span class="math display">\[{\mathbf{\text{sample variance}},\ \mathbf{s}}^{\mathbf{2}}\mathbf{=}\frac{\sum_{\mathbf{i = 1}}^{\mathbf{n}}\left( \mathbf{x}_{\mathbf{i}}\mathbf{-}\overline{\mathbf{x}} \right)^{\mathbf{2}}}{\mathbf{n - 1}} \tag{6.4}\]</span></span></p>
+<p><span id="eq-samplevariance"><span class="math display">\[
+\mathbf{\text{sample variance},\ s}^{2} = \frac{\sum_{i = 1}^{n} (x_{i} - \overline{x})^{2}}{n - 1}
+\tag{6.4}\]</span></span></p>
 <p>The sample <strong>standard deviation</strong>, <em>s</em>, is the positive square root of the sample variance.</p>
-<p><span class="math display">\[\mathbf{standard\ deviation = \ }\sqrt{\frac{\sum_{\mathbf{i = 1}}^{\mathbf{n}}\left( \mathbf{x}_{\mathbf{i}}\mathbf{-}\overline{\mathbf{x}} \right)^{\mathbf{2}}}{\mathbf{n - 1}}}\]</span></p>
+<p><span id="eq-samplesd"><span class="math display">\[\mathbf{\text{standard deviation} ,\ s = \ }\sqrt{\frac{\sum_{i = 1}^{n} (x_{i} - \overline{x})^{2}}{n - 1}} \tag{6.5}\]</span></span></p>
 <div class="callout callout-style-default callout-important callout-titled" title="Note">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -559,8 +576,14 @@ Note
 </div>
 </div>
 <p>If the standard deviation of data set A is greater than that of data set B, it indicates that data set A is more dispersed than data set B. A higher standard deviation means that the values in data set A are more spread out from the mean compared to the values in data set B. It’s important to note that the standard deviation of any data set is always a non-negative number, as it represents the square root of the variance, which is always non-negative. Variance and standard deviation can never be negative values.</p>
-<p><strong>Example 6.4</strong> Consider the <a href="#tbl-dsp1" class="quarto-xref">Table&nbsp;<span>6.1</span></a> discussed earlier, find the standard deviation?</p>
-<p><strong>Solution</strong> <strong>6.4</strong></p>
+<p><strong>Example 6.5</strong> Consider the <a href="#tbl-dsp1" class="quarto-xref">Table&nbsp;<span>6.1</span></a> discussed earlier, find the standard deviation?</p>
+<p><strong>Solution</strong> <strong>6.5</strong></p>
+<div id="tbl-stdsetA" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stdsetA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.4: Calculation of standard deviation set A
+</figcaption>
+<div aria-describedby="tbl-stdsetA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -571,9 +594,11 @@ Note
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">Set A</td>
-<td style="text-align: center;"><span class="math display">\[\mathbf{x}_{\mathbf{i}}\]</span></td>
-<td style="text-align: center;"><span class="math display">\[\left(\mathbf{x}_{\mathbf{i}}\mathbf{-}\overline{\mathbf{x}}\right)\]</span></td>
-<td style="text-align: center;"><span class="math display">\[\left(\mathbf{x}_{\mathbf{i}}\mathbf{-}\overline{\mathbf{x}}\right)^{\mathbf{2}}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[x_{i}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[x_{i} - \overline{x}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[
+\left( x_{i} - \overline{x} \right)^{2}
+\]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"></td>
@@ -619,9 +644,18 @@ Note
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <p>Mean (<span class="math inline">\(\overline{x}\)</span>) =<span class="math inline">\(\ \frac{18}{6} = 3\)</span></p>
 <p><span class="math display">\[{sample\ variance,\ s}_{A}^{2} = \frac{\sum_{i = 1}^{n}\left( x_{i} - \overline{x} \right)^{2}}{n - 1} = \frac{10}{5} = 2\]</span></p>
 <p><span class="math display">\[\text{sample standard deviation,}\ s_{A} = \ \sqrt{s_{A}^{2}} = \ \sqrt{2} = 1.414\]</span></p>
+<div id="tbl-stdsetB" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stdsetB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.5: Calculation of standard deviation set B
+</figcaption>
+<div aria-describedby="tbl-stdsetB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -632,9 +666,11 @@ Note
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">Set B</td>
-<td style="text-align: center;"><span class="math display">\[\mathbf{x}_{\mathbf{i}}\]</span></td>
-<td style="text-align: center;"><span class="math display">\[\left( \mathbf{x}_{\mathbf{i}}\mathbf{-}\overline{\mathbf{x}} \right)\]</span></td>
-<td style="text-align: center;"><span class="math display">\[\left( \mathbf{x}_{\mathbf{i}}\mathbf{-}\overline{\mathbf{x}} \right)^{\mathbf{2}}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[x_{i}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[x_{i} - \overline{x}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[
+\left( x_{i} - \overline{x} \right)^{2}
+\]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"></td>
@@ -680,14 +716,23 @@ Note
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <p>Mean (<span class="math inline">\(\overline{x}\)</span>) =<span class="math inline">\(\ \frac{18}{6} = 3\)</span></p>
 <p><span class="math display">\[{Sample\ variance,\ s}_{B}^{2} = \frac{\sum_{i = 1}^{n}\left( x_{i} - \overline{x} \right)^{2}}{n - 1} = \frac{54}{5} = 10.8\]</span></p>
 <p><span class="math display">\[Sample\ standard\ deviation,\ s_{B} = \ \sqrt{s_{B}^{2}} = \ \sqrt{10.8} = 3.29\]</span></p>
 <p>It can be seen that <span class="math inline">\(s_{B} &gt; s_{A}\)</span>, confirming that data set B is more dispersed than data set A as shown in <a href="#fig-scatterab" class="quarto-xref">Figure&nbsp;<span>6.1</span></a></p>
 <p><strong>An alternative formula for computing the variance</strong></p>
 <p>The computation of <em>s</em>² requires calculations of <span class="math inline">\(\overline{x}\)</span>, <em>n</em> subtractions and <em>n</em> squaring and adding operations. If the original observations or the deviations <span class="math inline">\(\left( x_{i} - \overline{x} \right)\)</span> are not integers, the deviations <span class="math inline">\(\left( x_{i} - \overline{x} \right)\)</span> may be difficult to work with, and several decimals may have to be carried to ensure numerical accuracy. A more efficient computational formula for <em>s</em>² is given by</p>
-<p><span id="eq-alternatevar"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{x_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}x_{i} \right)^{2} \right\} \tag{6.5}\]</span></span></p>
-<p><strong>Example 6.5</strong> Consider the data set below; find standard deviation?</p>
+<p><span id="eq-alternatevar"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{x_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}x_{i} \right)^{2} \right\} \tag{6.6}\]</span></span></p>
+<p><strong>Example 6.6</strong> Consider the data set below; find standard deviation?</p>
+<div id="tbl-alternatesd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-alternatesd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.6: Model dataset for standard deviation calculation
+</figcaption>
+<div aria-describedby="tbl-alternatesd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
@@ -703,7 +748,16 @@ Note
 </tr>
 </tbody>
 </table>
-<p><strong>Solution 6.5</strong></p>
+</div>
+</figure>
+</div>
+<p><strong>Solution 6.6</strong></p>
+<div id="tbl-alternatesd2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-alternatesd2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.7: Calculation of sd using alternate formula
+</figcaption>
+<div aria-describedby="tbl-alternatesd2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -713,8 +767,8 @@ Note
 <thead>
 <tr class="header">
 <th style="text-align: center;"></th>
-<th style="text-align: center;"><span class="math display">\[\mathbf{x}_{\mathbf{i}}\]</span></th>
-<th style="text-align: center;"><span class="math display">\[\mathbf{x}_{\mathbf{i}}^{\mathbf{2}}\]</span></th>
+<th style="text-align: center;"><span class="math display">\[x_{i}\]</span></th>
+<th style="text-align: center;"><span class="math display">\[x_{i}^{2}\]</span></th>
 </tr>
 </thead>
 <tbody>
@@ -770,15 +824,24 @@ Note
 </tr>
 </tbody>
 </table>
-<p>using <a href="#eq-alternatevar" class="quarto-xref">Equation&nbsp;<span>6.5</span></a> ; here <em>n</em> = 9</p>
+</div>
+</figure>
+</div>
+<p>using <a href="#eq-alternatevar" class="quarto-xref">Equation&nbsp;<span>6.6</span></a> ; here <em>n</em> = 9</p>
 <p><span class="math inline">\(s^{2} = \frac{1}{8}\left\{ 700 - {\frac{1}{9}\left( 72 \right)}^{2} \right\}\)</span> =15.5</p>
 <p><span class="math inline">\(s = \ \sqrt{15.5} = 3.94\)</span></p>
 <section id="standard-deviation-for-frequency-table" class="level3" data-number="6.5.1">
 <h3 data-number="6.5.1" class="anchored" data-anchor-id="standard-deviation-for-frequency-table"><span class="header-section-number">6.5.1</span> Standard deviation for frequency table</h3>
 <p><strong>For discrete frequency table</strong></p>
-<p><span id="eq-sdfreq"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{{f_{i}x}_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}{f_{i}x}_{i} \right)^{2} \right\} \tag{6.6}\]</span></span></p>
+<p><span id="eq-sdfreq"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{{f_{i}x}_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}{f_{i}x}_{i} \right)^{2} \right\} \tag{6.7}\]</span></span></p>
 <p>where <span class="math inline">\(x_i\)</span> is the <em>i</em><sup>th</sup> observation and <span class="math inline">\(f_{i}\)</span> is the corresponding frequency</p>
-<p><strong>Example 6.6</strong> The frequency distributions of seed yield of 50 sesamum plants are given below. Find the standard deviation.</p>
+<p><strong>Example 6.7</strong> The frequency distributions of seed yield of 50 sesamum plants are given below. Find the standard deviation.</p>
+<div id="tbl-seedyld" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.8: A model frequency distributions of seed yield
+</figcaption>
+<div aria-describedby="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
@@ -799,7 +862,16 @@ Note
 </tr>
 </tbody>
 </table>
-<p><strong>Solution</strong> <strong>6.6</strong></p>
+</div>
+</figure>
+</div>
+<p><strong>Solution</strong> <strong>6.7</strong></p>
+<div id="tbl-seedyld" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.9: Calculation of standard deviation for frequency table
+</figcaption>
+<div aria-describedby="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -848,13 +920,22 @@ Note
 </tr>
 </tbody>
 </table>
-<p>using <a href="#eq-sdfreq" class="quarto-xref">Equation&nbsp;<span>6.6</span></a></p>
+</div>
+</figure>
+</div>
+<p>using <a href="#eq-sdfreq" class="quarto-xref">Equation&nbsp;<span>6.7</span></a></p>
 <p><span class="math display">\[{sample\ variance,\ s}^{2} = \frac{1}{50 - 1}\left\{ 1537 - \frac{271^{2}}{50} \right\} = 1.3914\]</span></p>
 <p><span class="math inline">\(standard\ deviation,\ s = \sqrt{1.3914}\)</span> = 1.179</p>
 <p><strong>For grouped frequency table</strong></p>
-<p><span id="eq-sdgrp"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{{f_{i}d}_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}{f_{i}d}_{i} \right)^{2} \right\} \tag{6.7}\]</span></span></p>
+<p><span id="eq-sdgrp"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{{f_{i}d}_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}{f_{i}d}_{i} \right)^{2} \right\} \tag{6.8}\]</span></span></p>
 <p>where <span class="math inline">\(f_{i}\)</span> is the frequency of <em>i</em><sup>th</sup> class, <span class="math inline">\(d_{i} = \frac{x_{i} - A}{c}\)</span>, where <span class="math inline">\(x_{i}\)</span> is the class mark, <span class="math inline">\(A\)</span> is the class mark with the highest frequency and <em>c</em> is the class interval</p>
-<p><strong>Example 6.7</strong> The frequency distributions of seed yield of 50 sesamum plants are given below. Find the standard deviation</p>
+<p><strong>Example 6.8</strong> The frequency distributions of seed yield of 50 sesamum plants are given below. Find the standard deviation</p>
+<div id="tbl-grpseedyld" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grpseedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.10: A model gropued frequency distributions of seed yield
+</figcaption>
+<div aria-describedby="tbl-grpseedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 35%">
@@ -867,10 +948,10 @@ Note
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Seed yield in gms (<em>x</em>)</td>
-<td style="text-align: left;">2.5-3.5</td>
-<td style="text-align: left;">3.5-4.5</td>
-<td style="text-align: left;">4.5-5.5</td>
-<td style="text-align: left;">5.5-6.5</td>
+<td style="text-align: left;">2.5–3.5</td>
+<td style="text-align: left;">3.5–4.5</td>
+<td style="text-align: left;">4.5–5.5</td>
+<td style="text-align: left;">5.5–6.5</td>
 <td style="text-align: left;">6.5-7.5</td>
 </tr>
 <tr class="even">
@@ -883,16 +964,25 @@ Note
 </tr>
 </tbody>
 </table>
-<p><strong>Solution</strong> <strong>6.7</strong></p>
+</div>
+</figure>
+</div>
+<p><strong>Solution 6.8</strong></p>
 <p>Here <em>n</em> =50; <em>c</em> =1</p>
+<div id="tbl-grpfreqsd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grpfreqsd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.11: Calculation of sd for grouped frequency distribution
+</figcaption>
+<div aria-describedby="tbl-grpfreqsd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 26%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -955,8 +1045,11 @@ Note
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <p><em>A</em> = 5</p>
-<p>using <a href="#eq-sdgrp" class="quarto-xref">Equation&nbsp;<span>6.7</span></a></p>
+<p>using <a href="#eq-sdgrp" class="quarto-xref">Equation&nbsp;<span>6.8</span></a></p>
 <p><span class="math display">\[{sample\ variance,\ s}^{2} = \frac{1}{49}\left( 77 - \frac{\left( 21 \right)^{2}}{50} \right) = \ 1.3914\]</span></p>
 <p><span class="math inline">\(standard\ deviation,\ s = \sqrt{1.3914}\)</span> = 1.179</p>
 </section>
@@ -983,10 +1076,10 @@ Note
 <h2 data-number="6.6" class="anchored" data-anchor-id="coefficient-of-variation"><span class="header-section-number">6.6</span> Coefficient of variation</h2>
 <p>The standard deviation is an absolute measure of dispersion. It is expressed in terms of units in which the original figures are collected and stated. The standard deviation of heights of plants cannot be compared with the standard deviation of weights of the grains, as both are expressed in different units, <em>i</em>.<em>e</em> heights in centimetre and weights in kilograms.</p>
 <p>Therefore the standard deviation must be converted into a relative measure of dispersion for the purpose of comparison. The relative measure is known as the <strong>coefficient of variation</strong>. The coefficient of variation is obtained by dividing the standard deviation by the mean and expressed in percentage.</p>
-<p><span id="eq-cv"><span class="math display">\[\mathbf{\text{Coefficient of variation}}\left( \mathbf{C}\mathbf{.}\mathbf{V} \right)\mathbf{=}\frac{\mathbf{\text{standard deviation}}}{\mathbf{\text{mean}}}\mathbf{\times 100} \tag{6.8}\]</span></span></p>
+<p><span id="eq-cv"><span class="math display">\[\mathbf{\text{Coefficient of variation}}\left( \mathbf{C}\mathbf{.}\mathbf{V} \right)\mathbf{=}\frac{\mathbf{\text{standard deviation}}}{\mathbf{\text{mean}}}\mathbf{\times 100} \tag{6.9}\]</span></span></p>
 <p>A higher C.V. indicates greater variability in the dataset, meaning the data values are more dispersed relative to the mean. In contrast, a lower C.V. signifies lower variability, indicating that the data values are more closely clustered around the mean. This measure is particularly useful when comparing datasets with different units or scales.</p>
-<p><strong>Example 6.8</strong> Consider the measurement on yield and plant height of a paddy variety. The mean and standard deviation for yield are 50 kg and 10 kg respectively. The mean and standard deviation for plant height are 55 cm and 5 cm respectively. Compare the variability.</p>
-<p><strong>Solution</strong> <strong>6.8</strong></p>
+<p><strong>Example 6.9</strong> Consider the measurement on yield and plant height of a paddy variety. The mean and standard deviation for yield are 50 kg and 10 kg respectively. The mean and standard deviation for plant height are 55 cm and 5 cm respectively. Compare the variability.</p>
+<p><strong>Solution 6.9</strong></p>
 <p>Here the measurements for yield and plant height are in different units. Hence the variability can be compared only by using coefficient of variation.</p>
 <p>For yield, CV=<span class="math inline">\(\ \frac{10}{50} \times 100 =\)</span> 20%</p>
 <p>For plant height, CV= <span class="math inline">\(\frac{5}{55} \times 100 =\)</span> 9.1%</p>
@@ -1022,6 +1115,7 @@ Quotes to Inspire
 <p><strong>“The object of our being statistical is to learn how to improve the whole health of humanity” – Florence nightingale</strong></p>
 </div>
 </div>
+
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -1603,8 +1697,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./appendix1.html" class="pagination-link" aria-label="Appendix 1">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Appendix 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./skewness.html" class="pagination-link" aria-label="Skewness and kurtosis">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Skewness and kurtosis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

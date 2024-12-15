@@ -10,7 +10,7 @@ project:
 book:
   title: "TEXTBOOK OF AGRICULTURAL STATISTICS"
   subtitle: "A comprehensive guide in basic statistics for agricultural research"
-  favicon: images/papayalogo.png
+  favicon: images/cover.jpg
   author: 
     - Dr. Pratheesh P. Gopinath
     - Dr. Manju Mary Paul
@@ -36,7 +36,8 @@ book:
    - 3graph.qmd
    - central1.qmd
    - central2.qmd
-   - dispersion.qmd
+   - dispersion.qmd  
+   - skewness.qmd
    - appendix1.qmd
    - references.qmd
   twitter-card: 
@@ -64,7 +65,8 @@ format:
     mainfont: Georgia
     monofont: Fira Code
     highlight-style: arrow
-    monobackgroundcolor: "#F7F7F7"
+    monobackgroundcolor: "#F7F7F7"  
+    math: mathjax
     theme:
       light:
         - theme.css

@@ -335,7 +335,7 @@ The other common positional averages include **percentiles**, **quartiles**, and
 
 In contrast, measures like the **arithmetic mean**, **geometric mean**, and **harmonic mean** are referred to as **mathematical averages**, as they are calculated through specific mathematical operations rather than being derived from the data's positional properties.
 
-## Quartiles {#quartile}
+## Quartiles {#sec-quartile}
 
 The **median** divides a dataset into two equal halves. Similarly, it is possible to divide a dataset into more than two parts. When an **ordered** dataset is divided into four equal sections, the points that mark these divisions are called **quartiles**.
 
@@ -571,7 +571,7 @@ Data in Example 5.11 is same as Example 5.8; it can be seen that $P_{25} = Q_{1}
 :::
 
 ::: {.callout-note appearance="simple"}
-## Try yourself
+**Try yourself**  
 
 Find $P_{25}$, $P_{50}$ & $P_{75}$ for Example 5.9 & 5.10; verify that $P_{50} = Q_{2}$, $P_{25} = Q_{1}$ & $P_{75} = Q_{3}$
 :::
