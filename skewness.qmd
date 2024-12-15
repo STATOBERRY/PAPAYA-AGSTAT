@@ -346,15 +346,14 @@ $\beta_{2} = \frac{\mu_{4}}{\mu_{2}^{2}} = \frac{23.062}{\left( 3.123 \right)^{2
 
 $\beta_{2}$ is 2.364, which is close to 3, distribution can be considered slightly platykurtic close to symmetric.
 
-You can verify the frequency curve of Example 7.1 @fig-freqcurvex, it can be seen that it is slightly right tailed (positively skewed)  
+You can verify the frequency curve of Example 7.1 @fig-freqcurvex, it can be seen that it is slightly right tailed (positively skewed)
 
-![Frequency curve of Example 7.1](images/image11_5.jpeg){#fig-freqcurvex fig-align="center" width="70%" style="text-align:center;"}  
-
+![Frequency curve of Example 7.1](images/image11_5.jpeg){#fig-freqcurvex fig-align="center" width="70%" style="text-align:center;"}
 
  \
  \
  
-  
+
 ::: {.callout-tip title="Quotes to Inspire"}
 **"We are just statistics, born to consume resources" -- Horace**
-:::  
+:::

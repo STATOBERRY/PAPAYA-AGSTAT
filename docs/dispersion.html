@@ -62,7 +62,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b41886b866eb54f17009da6c00af6bd8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-84d67a869316b323f81d9f2a2c5555cd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-bad6a7b64396174f9e6ce9f1aaf6e4b8.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -294,13 +294,13 @@ window.Quarto = {
 
 
 <p>In the previous chapters, we have seen how a set of data can be summarized by a single representative value that describes the central tendency of the data. Consider the two sets of data, A and B, in <a href="#tbl-dsp1" class="quarto-xref">Table&nbsp;<span>6.1</span></a>.</p>
-<div id="tbl-dsp1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-dsp1" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dsp1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;6.1: Model dataset to demonstrate dispersion
 </figcaption>
 <div aria-describedby="tbl-dsp1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <tbody>
 <tr class="odd">
 <td><strong>A</strong></td>
@@ -371,8 +371,66 @@ Note
 <p>It can be denoted as, Range = L – S.</p>
 <p>Where L = Largest value; S = Smallest value.</p>
 <p><strong>Example 6.1</strong> The marks obtained by 8 students in mathematics and physics examinations are as follows:</p>
-<p>Mathematics: 35, 60, 70, 40, 85, 96, 55, 65.</p>
-<p>Physics: 50, 55, 70, 65, 89, 68, 72, 80.</p>
+<div id="tbl-markrange" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-markrange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.2: Model dataset of marks obtained in two subjects
+</figcaption>
+<div aria-describedby="tbl-markrange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-bordered table-hover caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Student</th>
+<th style="text-align: center;">Mathematics</th>
+<th style="text-align: center;">Physics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">55</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">70</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">65</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;">89</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">96</td>
+<td style="text-align: center;">68</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">72</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">80</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 <p>Find the ranges of the two sets of data. Are the physics marks more dispersed than the mathematics marks?</p>
 <p><strong>Solution 6.1</strong></p>
 <p>For mathematics,</p>
@@ -385,13 +443,13 @@ Note
 <p>S = Lower boundary of the lowest class.</p>
 <p><span id="eq-range"><span class="math display">\[Range = L - S \tag{6.1}\]</span></span></p>
 <p><strong>Example 6.2</strong>: Calculate range from the following distribution</p>
-<div id="tbl-rangemodel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-rangemodel" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rangemodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.2: Model frequency distribution table for range calculation
+Table&nbsp;6.3: Model frequency distribution table for range calculation
 </figcaption>
 <div aria-describedby="tbl-rangemodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Size</td>
@@ -439,9 +497,46 @@ Table&nbsp;6.2: Model frequency distribution table for range calculation
 <p>The range is a simple and quick measure to calculate. However, because it relies solely on the maximum and minimum values in a data set, it does not provide information about how the data is distributed between these two values. As a result, the range may not be an effective measure of dispersion, especially if one or both of these values are significantly different from the rest of the data. To address this limitation, the interquartile range is often used. The interquartile range is a more robust measure of dispersion, defined as the difference between the upper and lower quartiles of the data. IQR is also known as midspread. Thus,</p>
 <p><span id="eq-iqr"><span class="math display">\[IQR = Q_3 - Q_1 \tag{6.2}\]</span></span></p>
 <p>The inter-quartile range of a set of data is therefore not affected by values of the data outside <em>Q</em><sub>1</sub> and <em>Q</em><sub>3</sub> making it a more reliable measure of spread for skewed or non-normal distributions.</p>
-<p><strong>Example 6.3</strong> Consider the two sets of data below, find IQR</p>
-<p><strong>A</strong>: 3, 4, 5, 6, 8, 9, 10, 12, 15</p>
-<p><strong>B</strong>: 3, 8, 8, 9, 9, 9, 10, 10, 15</p>
+<p><strong>Example 6.3</strong> Consider the two sets of data A &amp; B below, find IQR</p>
+<div id="tbl-modeldatiqr" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-modeldatiqr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.4: Model dataset for IQR calculation
+</figcaption>
+<div aria-describedby="tbl-modeldatiqr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-bordered table-hover caption-top table">
+<thead>
+<tr class="header">
+<th>A</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>12</th>
+<th>15</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>B</td>
+<td>3</td>
+<td>8</td>
+<td>8</td>
+<td>9</td>
+<td>9</td>
+<td>9</td>
+<td>10</td>
+<td>10</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 <p>For data set A, <em>Q</em><sub>1</sub> = 4.5, <em>Q</em><sub>3</sub> = 11; so Inter-Quartile Range =11 – 4.5 = 6.5</p>
 <p>For data set B, <em>Q</em><sub>1</sub> = 8, <em>Q</em><sub>3</sub> = 10; so Inter-Quartile Range =10 – 8 = 2</p>
 <p>Since the interquartile range (IQR) of data set A is greater than that of data set B, these results indicate that data set A is more dispersed than data set B. It is also noticeable that the range is the same for both sets.</p>
@@ -474,17 +569,17 @@ Table&nbsp;6.2: Model frequency distribution table for range calculation
 </ol>
 <p><span id="eq-mad"><span class="math display">\[MAD = \frac{\sum_{i = 1}^{n}\left| x_{i} - \overline{x} \right|}{n} \tag{6.3}\]</span></span></p>
 <p><strong>Example 6.4</strong> find the mean absolute deviation of the following 10, 15, 15, 17, 18, 21</p>
-<div id="tbl-mad1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-mad1" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mad1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.3: Calculation of mean absolute deviation
+Table&nbsp;6.5: Calculation of mean absolute deviation
 </figcaption>
 <div aria-describedby="tbl-mad1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 30%">
+<col style="width: 30%">
+<col style="width: 40%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -578,18 +673,18 @@ Note
 <p>If the standard deviation of data set A is greater than that of data set B, it indicates that data set A is more dispersed than data set B. A higher standard deviation means that the values in data set A are more spread out from the mean compared to the values in data set B. It’s important to note that the standard deviation of any data set is always a non-negative number, as it represents the square root of the variance, which is always non-negative. Variance and standard deviation can never be negative values.</p>
 <p><strong>Example 6.5</strong> Consider the <a href="#tbl-dsp1" class="quarto-xref">Table&nbsp;<span>6.1</span></a> discussed earlier, find the standard deviation?</p>
 <p><strong>Solution</strong> <strong>6.5</strong></p>
-<div id="tbl-stdsetA" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-stdsetA" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stdsetA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.4: Calculation of standard deviation set A
+Table&nbsp;6.6: Calculation of standard deviation set A
 </figcaption>
 <div aria-describedby="tbl-stdsetA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 19%">
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 30%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -650,18 +745,18 @@ Table&nbsp;6.4: Calculation of standard deviation set A
 <p>Mean (<span class="math inline">\(\overline{x}\)</span>) =<span class="math inline">\(\ \frac{18}{6} = 3\)</span></p>
 <p><span class="math display">\[{sample\ variance,\ s}_{A}^{2} = \frac{\sum_{i = 1}^{n}\left( x_{i} - \overline{x} \right)^{2}}{n - 1} = \frac{10}{5} = 2\]</span></p>
 <p><span class="math display">\[\text{sample standard deviation,}\ s_{A} = \ \sqrt{s_{A}^{2}} = \ \sqrt{2} = 1.414\]</span></p>
-<div id="tbl-stdsetB" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-stdsetB" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stdsetB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.5: Calculation of standard deviation set B
+Table&nbsp;6.7: Calculation of standard deviation set B
 </figcaption>
 <div aria-describedby="tbl-stdsetB-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 19%">
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 30%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -727,13 +822,13 @@ Table&nbsp;6.5: Calculation of standard deviation set B
 <p>The computation of <em>s</em>² requires calculations of <span class="math inline">\(\overline{x}\)</span>, <em>n</em> subtractions and <em>n</em> squaring and adding operations. If the original observations or the deviations <span class="math inline">\(\left( x_{i} - \overline{x} \right)\)</span> are not integers, the deviations <span class="math inline">\(\left( x_{i} - \overline{x} \right)\)</span> may be difficult to work with, and several decimals may have to be carried to ensure numerical accuracy. A more efficient computational formula for <em>s</em>² is given by</p>
 <p><span id="eq-alternatevar"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{x_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}x_{i} \right)^{2} \right\} \tag{6.6}\]</span></span></p>
 <p><strong>Example 6.6</strong> Consider the data set below; find standard deviation?</p>
-<div id="tbl-alternatesd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-alternatesd" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-alternatesd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.6: Model dataset for standard deviation calculation
+Table&nbsp;6.8: Model dataset for standard deviation calculation
 </figcaption>
 <div aria-describedby="tbl-alternatesd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">3</td>
@@ -752,75 +847,63 @@ Table&nbsp;6.6: Model dataset for standard deviation calculation
 </figure>
 </div>
 <p><strong>Solution 6.6</strong></p>
-<div id="tbl-alternatesd2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-alternatesd2" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-alternatesd2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.7: Calculation of sd using alternate formula
+Table&nbsp;6.9: Calculation of sd using alternate formula
 </figcaption>
 <div aria-describedby="tbl-alternatesd2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"></th>
 <th style="text-align: center;"><span class="math display">\[x_{i}\]</span></th>
 <th style="text-align: center;"><span class="math display">\[x_{i}^{2}\]</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">9</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">16</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">25</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">6</td>
 <td style="text-align: center;">36</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">8</td>
 <td style="text-align: center;">64</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">9</td>
 <td style="text-align: center;">81</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">10</td>
 <td style="text-align: center;">100</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">12</td>
 <td style="text-align: center;">144</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">15</td>
 <td style="text-align: center;">225</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><strong>Sum</strong></td>
-<td style="text-align: center;"><strong>72</strong></td>
-<td style="text-align: center;"><strong>700</strong></td>
+<td style="text-align: center;">$$\sum_{i = 1}^{n}{x_{i}$$ <strong>= 72</strong></td>
+<td style="text-align: center;">$\sum_{i = 1}^{n}{x_{i}^{2}$ = <strong>700</strong></td>
 </tr>
 </tbody>
 </table>
@@ -836,29 +919,29 @@ Table&nbsp;6.7: Calculation of sd using alternate formula
 <p><span id="eq-sdfreq"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{{f_{i}x}_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}{f_{i}x}_{i} \right)^{2} \right\} \tag{6.7}\]</span></span></p>
 <p>where <span class="math inline">\(x_i\)</span> is the <em>i</em><sup>th</sup> observation and <span class="math inline">\(f_{i}\)</span> is the corresponding frequency</p>
 <p><strong>Example 6.7</strong> The frequency distributions of seed yield of 50 sesamum plants are given below. Find the standard deviation.</p>
-<div id="tbl-seedyld" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-seedyld" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.8: A model frequency distributions of seed yield
+Table&nbsp;6.10: A model frequency distributions of seed yield
 </figcaption>
 <div aria-describedby="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Seed yield in gms (<em>x</em>)</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">7</td>
+<td style="text-align: center;">Seed yield in gms (<em>x</em>)</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">7</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Frequency (<em>f</em>)</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">15</td>
-<td style="text-align: left;">15</td>
-<td style="text-align: left;">10</td>
+<td style="text-align: center;">Frequency (<em>f</em>)</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">10</td>
 </tr>
 </tbody>
 </table>
@@ -866,57 +949,57 @@ Table&nbsp;6.8: A model frequency distributions of seed yield
 </figure>
 </div>
 <p><strong>Solution</strong> <strong>6.7</strong></p>
-<div id="tbl-seedyld" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-seedyld" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.9: Calculation of standard deviation for frequency table
+Table&nbsp;6.11: Calculation of standard deviation for frequency table
 </figcaption>
 <div aria-describedby="tbl-seedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: left;"><strong><em>x</em></strong></th>
-<th style="text-align: left;"><strong><em>f</em></strong></th>
-<th style="text-align: left;"><strong><em>f.x</em></strong></th>
-<th style="text-align: left;"><strong><em>f.x<sup>2</sup></em></strong></th>
+<th style="text-align: center;"><strong><em>x</em></strong></th>
+<th style="text-align: center;"><strong><em>f</em></strong></th>
+<th style="text-align: center;"><strong><em>f.x</em></strong></th>
+<th style="text-align: center;"><strong><em>f.x<sup>2</sup></em></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">12</td>
-<td style="text-align: left;">36</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">36</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">24</td>
-<td style="text-align: left;">96</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">96</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">15</td>
-<td style="text-align: left;">75</td>
-<td style="text-align: left;">375</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;">375</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">15</td>
-<td style="text-align: left;">90</td>
-<td style="text-align: left;">540</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">540</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">7</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">70</td>
-<td style="text-align: left;">490</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">490</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: left;"><strong>50</strong></td>
-<td style="text-align: left;"><strong>271</strong></td>
-<td style="text-align: left;"><strong>1537</strong></td>
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>50</strong></td>
+<td style="text-align: center;"><strong>271</strong></td>
+<td style="text-align: center;"><strong>1537</strong></td>
 </tr>
 </tbody>
 </table>
@@ -930,19 +1013,19 @@ Table&nbsp;6.9: Calculation of standard deviation for frequency table
 <p><span id="eq-sdgrp"><span class="math display">\[s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{{f_{i}d}_{i}^{2} - \frac{1}{n}}\left( \sum_{i = 1}^{n}{f_{i}d}_{i} \right)^{2} \right\} \tag{6.8}\]</span></span></p>
 <p>where <span class="math inline">\(f_{i}\)</span> is the frequency of <em>i</em><sup>th</sup> class, <span class="math inline">\(d_{i} = \frac{x_{i} - A}{c}\)</span>, where <span class="math inline">\(x_{i}\)</span> is the class mark, <span class="math inline">\(A\)</span> is the class mark with the highest frequency and <em>c</em> is the class interval</p>
 <p><strong>Example 6.8</strong> The frequency distributions of seed yield of 50 sesamum plants are given below. Find the standard deviation</p>
-<div id="tbl-grpseedyld" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-grpseedyld" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grpseedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.10: A model gropued frequency distributions of seed yield
+Table&nbsp;6.12: A model gropued frequency distributions of seed yield
 </figcaption>
 <div aria-describedby="tbl-grpseedyld-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
+<col style="width: 33%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
 <col style="width: 12%">
 </colgroup>
 <tbody>
@@ -969,13 +1052,13 @@ Table&nbsp;6.10: A model gropued frequency distributions of seed yield
 </div>
 <p><strong>Solution 6.8</strong></p>
 <p>Here <em>n</em> =50; <em>c</em> =1</p>
-<div id="tbl-grpfreqsd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-grpfreqsd" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grpfreqsd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.11: Calculation of sd for grouped frequency distribution
+Table&nbsp;6.13: Calculation of sd for grouped frequency distribution
 </figcaption>
 <div aria-describedby="tbl-grpfreqsd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <colgroup>
 <col style="width: 16%">
 <col style="width: 16%">
@@ -996,7 +1079,7 @@ Table&nbsp;6.11: Calculation of sd for grouped frequency distribution
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">2.5-3.5</td>
+<td style="text-align: center;">2.5–3.5</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-2</td>
@@ -1004,7 +1087,7 @@ Table&nbsp;6.11: Calculation of sd for grouped frequency distribution
 <td style="text-align: center;">16</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">3.5-4.5</td>
+<td style="text-align: center;">3.5–4.5</td>
 <td style="text-align: center;">6</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-1</td>
@@ -1012,7 +1095,7 @@ Table&nbsp;6.11: Calculation of sd for grouped frequency distribution
 <td style="text-align: center;">6</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">4.5-5.5</td>
+<td style="text-align: center;">4.5–5.5</td>
 <td style="text-align: center;">15</td>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">0</td>
@@ -1020,7 +1103,7 @@ Table&nbsp;6.11: Calculation of sd for grouped frequency distribution
 <td style="text-align: center;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">5.5-6.5</td>
+<td style="text-align: center;">5.5–6.5</td>
 <td style="text-align: center;">15</td>
 <td style="text-align: center;">6</td>
 <td style="text-align: center;">1</td>
@@ -1028,7 +1111,7 @@ Table&nbsp;6.11: Calculation of sd for grouped frequency distribution
 <td style="text-align: center;">15</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">6.5-7.5</td>
+<td style="text-align: center;">6.5–7.5</td>
 <td style="text-align: center;">10</td>
 <td style="text-align: center;">7</td>
 <td style="text-align: center;">2</td>

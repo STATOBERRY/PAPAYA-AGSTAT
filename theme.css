@@ -88,6 +88,12 @@ a {
   max-width: 100% !important;
 }  
 
+.table {
+  max-width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
 
 
 
