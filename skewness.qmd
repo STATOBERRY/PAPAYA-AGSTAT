@@ -21,11 +21,11 @@ A distribution, or data set, is symmetric if it looks the same to the left and r
 For a symmetric distribution skewness = 0; mean = median = mode. @fig-symmdist shows how a symmetric distribution looks like.
 :::
 
-![symmetric distribution](images/image3_5.jpeg){#fig-symmdist fig-align="center" width="70%" style="text-align:center;"}
+![symmetric distribution](images/image3_5.jpeg){#fig-symmdist fig-align="center" width="50%" style="text-align:center;"}
 
 @fig-histodata shows a model data set with skewness = 0 (symmetric distribution) 
 
-![Data set with skewness = 0](images/image4_5.jpeg){#fig-histodata fig-align="center" width="70%" style="text-align:center;"}
+![Data set with skewness = 0](images/image4_5.jpeg){#fig-histodata fig-align="center" width="50%" style="text-align:center;"}
 
 ### Negatively skewed
 
@@ -37,11 +37,11 @@ Mean \< Median \< Mode
 
 This occurs because the mean is pulled towards the longer tail, while the median and mode remain closer to the center of the data's bulk.
 
-![Left skewed or negatively skewed distribution](images/image5_5.jpeg){#fig-leftskew fig-align="center" width="70%" style="text-align:center;"}
+![Left skewed or negatively skewed distribution](images/image5_5.jpeg){#fig-leftskew fig-align="center" style="text-align:center;" width="50%"}
 
 @fig-negskewed shows a model dataset with negative skewness.
 
-![Negatively skewed data set](images/image6_5.jpeg){#fig-negskewed fig-align="center" width="70%" style="text-align:center;"}
+![Negatively skewed data set](images/image6_5.jpeg){#fig-negskewed fig-align="center" style="text-align:center;" width="50%"}
 
 ### Positively skewed
 
@@ -53,11 +53,11 @@ Mean \> Median \> Mode
 
 This occurs because the mean is influenced by the extreme values in the longer right tail, while the median and mode remain closer to the center of the data's bulk.
 
-![Right skewed or positively skewed distribution](images/image7_5.jpeg){#fig-posskewed fig-align="center" width="70%" style="text-align:center;"}
+![Right skewed or positively skewed distribution](images/image7_5.jpeg){#fig-posskewed fig-align="center" style="text-align:center;" width="50%"}
 
 @fig-rightskeweddat shows a model dataset with positive skewness.
 
-![Data set with positive skewness or right skewed](images/image8_5.jpeg){#fig-rightskeweddat fig-align="center" width="70%" style="text-align:center;"}
+![Data set with positive skewness or right skewed](images/image8_5.jpeg){#fig-rightskeweddat fig-align="center" style="text-align:center;" width="50%"}
 
 ## Measures of skewness
 
@@ -88,7 +88,7 @@ $$S_{k} = \frac{3(mean - median)}{\text{standard deviation}}$$ {#eq-karlsq2}
 |      64      |       16        |
 |      65      |        8        |
 
-: Model dataset for skewness calculation {#tbl-skewnessmodel .bordered .hover}
+: Model dataset for skewness calculation {#tbl-skewnessmodel .bordered}
 
 **Solution 7.1**
 
@@ -97,21 +97,22 @@ $$S_{k} = \frac{3(mean - median)}{\text{standard deviation}}$$ {#eq-karlsq2}
 #| tbl-cap: "Karl Pearson's coefficient of skewness"
 #| fig-cap: "Karl Pearson's coefficient of skewness"  
 #| filters: 
-#| - parse-latex    
+#| - parse-latex  
+
 
 library(knitr)
 library(kableExtra)
 dt<-read.csv("csv/Book23.csv")
 colnames(dt) <- c("Height ($x_{i}$)","frequency ($f_{i}$)","$f_{i}x_{i}$","$f_{i}x_{i}^{2}$")
 dt %>%
-  kbl(booktabs = FALSE, align = "c") %>%
-  kable_classic(full_width = FALSE, html_font = "Georgia") %>%
-  kable_styling(
+  kbl(booktabs = TRUE, align = "c", escape = FALSE) %>%
+   kable_classic(full_width = F, html_font = "Georgia") %>%
+kable_styling(
     # latex_options = "HOLD_position", 
     full_width = FALSE,
     position = "center", 
     bootstrap_options = "bordered"
-  )  
+  ) 
 ```
 
 Mean, $\overline{x} = \frac{\sum_{i = 1}^{n}{f_{i}x_{i}}}{\sum_{i = 1}^{n}f_{i}}$ = $\frac{11482}{187} = 61.40$
@@ -136,7 +137,7 @@ From the table @tbl-karlcf, it is evident that the median is 61.
 |      64      |       16        |         179          |
 |      65      |        8        |         187          |
 
-: Cumulative frequency for skewness calculation {#tbl-karlcf .bordered .hover}
+: Cumulative frequency for skewness calculation {#tbl-karlcf .bordered}
 
 using @eq-karlsq2
 
@@ -181,7 +182,8 @@ Bowley's measure of skewness is based on the middle 50% of the observations; it 
 $${Kelly's\ Measure\ of\ Skewness,\ S}_{p} = \frac{\left( P_{90} - P_{50} \right) - \left( P_{50} - P_{10} \right)}{\left( P_{90} - P_{50} \right) + \left( P_{50} - P_{10} \right)}$$ {#eq-kellyskew}
 
 ::: {.callout-note appearance="simple"}
-**Try yourself** Try to find Kelly's Measure of Skewness for @tbl-skewnessmodel
+**Try yourself**\
+Try to find Kelly's Measure of Skewness for @tbl-skewnessmodel
 :::
 
 ### Measure based on moments
@@ -210,9 +212,9 @@ In short values of following moments about mean are
 |:----------------------:|:------------:|
 |      $$\mu_{0}$$       |      1       |
 |      $$\mu_{1}$$       |      0       |
-|      $$\mu_{2}$$       | $\sigma^{2}$ |  
+|      $$\mu_{2}$$       | $\sigma^{2}$ |
 
-: Moments about mean {#tbl-momentsabtmean .bordered .hover}
+: Moments about mean {#tbl-momentsabtmean .bordered}
 
 ::: {.callout-important title="Note"}
 It should be remembered that first moment about mean is 0 and second moment about mean is **variance**.
@@ -222,24 +224,24 @@ for @tbl-skewnessmodel in Example 7.1 given above, calculate third central momen
 
 ```{r ex76, echo=FALSE,warning=FALSE,results='asis'}
 #| label: tbl-moment3
-#| tbl-cap: "Third central moment calculation"
+#| tbl-cap: "Third central moment calculation"  
 #| fig-cap: "Third central moment calculation" 
 #| filters: 
-#| - parse-latex      
+#| - parse-latex   
 
 library(knitr)
 library(kableExtra)
 dt<-read.csv("csv/Book24.csv")
 colnames(dt) <- c("Height ($x_{i}$)","frequency ($f_{i}$)","$\\left( x_{i}-\\overline{x} \\right)^{3}$","${f_{i}\\left( x_{i}-\\overline{x}\\right)}^{3}$")
 dt %>%
-  kbl(booktabs = FALSE, align = "c") %>%
-  kable_classic(full_width = FALSE, html_font = "Georgia") %>%
-  kable_styling(
+  kbl(booktabs = TRUE, align = "c", escape = FALSE) %>%
+   kable_classic(full_width = F, html_font = "Georgia") %>%
+kable_styling(
     # latex_options = "HOLD_position", 
     full_width = FALSE,
     position = "center", 
     bootstrap_options = "bordered"
-  )  
+  )
 ```
 
 Mean = 61.40
@@ -282,7 +284,7 @@ Since $\mu_{3}$ is positive $\gamma_{1}$is positive. Since $\gamma_{1}$ is sligh
 
 Kurtosis is a statistical measure that describes the shape of a distribution's frequency curve, focusing on its relative peakedness. While skewness measures the asymmetry or lack of symmetry in a distribution, kurtosis evaluates how sharp or flat the peak of the curve is. There are three categories of frequency curves depending upon the shape of their peak as shown in @fig-kurtopeak.
 
-![Three categories of frequency curves](images/image10_5.jpeg){#fig-kurtopeak fig-align="center" width="70%" style="text-align:center;"}
+![Three categories of frequency curves](images/image10_5.jpeg){#fig-kurtopeak fig-align="center" style="text-align:center;" width="40%"}
 
 Kurtosis refers to degree of flatness or peakedness of the curve. It is measured relative to the peakedness of normal curve. The normal curve is considered as *mesokurtic*. If a curve is more peaked than normal curve, it is called *leptokurtic*. If a curve is more flat-topped than normal curve, it is called *platykurtic*. The condition of peakedness (leptokurtic) or flatness (platykurtic) is called **kurtosis of excess**.
 
@@ -312,19 +314,19 @@ for @tbl-skewnessmodel in Example 7.1, kurtosis can be examined as follows
 
 ```{r ex77, echo=FALSE,warning=FALSE,results='asis'}
 #| label: tbl-kutocalc
-#| tbl-cap: "Measures of kurtosis"  
+#| tbl-cap: "Measures of kurtosis"
 #| fig-cap: "Measures of kurtosis"  
 #| filters: 
-#| - parse-latex  
+#| - parse-latex    
 
 library(knitr)
 library(kableExtra)
 dt<-read.csv("csv/Book25.csv")
 colnames(dt) <- c('Height ($x_{i}$)','frequency ($f_{i}$)','$\\left( x_{i}-\\overline{x} \\right)^{4}$','${f_{i}\\left( x_{i}-\\overline{x}\\right)}^{4}$')
 dt %>%
-  kbl(booktabs = FALSE, align = "c", escape = FALSE, format = "html") %>%
-  kable_classic(full_width = FALSE, html_font = "Georgia") %>%
-  kable_styling(
+  kbl(booktabs = TRUE, align = "c", escape = FALSE) %>%
+   kable_classic(full_width = F, html_font = "Georgia") %>%
+kable_styling(
     # latex_options = "HOLD_position", 
     full_width = FALSE,
     position = "center", 
@@ -344,7 +346,7 @@ $\beta_{2}$ is 2.364, which is close to 3, distribution can be considered slight
 
 You can verify the frequency curve of Example 7.1 @fig-freqcurvex, it can be seen that it is slightly right tailed (positively skewed)
 
-![Frequency curve of Example 7.1](images/image11_5.jpeg){#fig-freqcurvex fig-align="center" width="70%" style="text-align:center;"}
+![Frequency curve of Example 7.1](images/image11_5.jpeg){#fig-freqcurvex fig-align="center" style="text-align:center;" width="40%"}
 
  \
  \

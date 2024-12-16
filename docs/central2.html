@@ -287,24 +287,25 @@ window.Quarto = {
 <p>The <strong>geometric mean (GM)</strong> is a specialized measure of central tendency, particularly suited for datasets involving growth rates, ratios, or percentages, such as population growth, investment returns, or interest rates. Unlike the arithmetic mean, which calculates the average by summing values, the geometric mean finds the average by multiplying values and then taking the root (typically the <em>n</em><sup>th</sup> root for <em>n</em> values).</p>
 <p>This approach captures the compounding effects present in the data, making the geometric mean an essential tool for accurately summarizing proportional changes or rates over time. Its utility lies in providing a more representative measure for datasets where changes are multiplicative rather than additive.</p>
 <p>The geometric mean of a series containing <em>n</em> observations is the <em>n</em><sup>th</sup> root of the product of the values. If <span class="math inline">\(x_{1},x_{2},\ldots,&nbsp;x_{n}\)</span> are observations then</p>
-<p><span id="eq-gm1"><span class="math display">\[\mathbf{GM =}\sqrt[\mathbf{n}]{\mathbf{x}_{\mathbf{1}}\mathbf{x}_{\mathbf{2}}\mathbf{\ldots}\mathbf{x}_{\mathbf{n}}} \tag{5.1}\]</span></span></p>
-<p><span class="math display">\[\mathbf{=}\left( \mathbf{x}_{\mathbf{1}}\mathbf{x}_{\mathbf{2}}\mathbf{\ldots}\mathbf{x}_{\mathbf{n}} \right)^{\frac{\mathbf{1}}{\mathbf{n}}}\]</span></p>
-<p><span class="math display">\[\mathbf{\log}\mathbf{\text{GM}}\mathbf{=}\frac{\mathbf{1}}{\mathbf{n}}\mathbf{\log}\left( \mathbf{x}_{\mathbf{1}}\mathbf{x}_{\mathbf{2}}\mathbf{\ldots}\mathbf{x}_{\mathbf{n}} \right)\]</span></p>
-<p><span class="math display">\[\mathbf{=}\frac{\mathbf{1}}{\mathbf{n}}\left( \mathbf{\log}\mathbf{x}_{\mathbf{1}}\mathbf{+}\mathbf{\log}\mathbf{x}_{\mathbf{2}}\mathbf{\ldots +}\mathbf{\log}\mathbf{x}_{\mathbf{n}} \right)\]</span></p>
-<p><span id="eq-gm2"><span class="math display">\[\mathbf{=}\frac{\sum_{\mathbf{i = 1}}^{\mathbf{n}}{\mathbf{\log}\mathbf{x}_{\mathbf{i}}}}{\mathbf{n}} \tag{5.2}\]</span></span></p>
-<p><span id="eq-gm3"><span class="math display">\[\mathbf{\ GM = Antilog}\left( \frac{\sum_{\mathbf{i = 1}}^{\mathbf{n}}{\mathbf{\log}\mathbf{x}_{\mathbf{i}}}}{\mathbf{n}} \right) \tag{5.3}\]</span></span></p>
+<p><span id="eq-gm1"><span class="math display">\[GM = \sqrt[n]{\prod_{i=1}^{n}x_{i}} \tag{5.1}\]</span></span><br>
+where <span class="math inline">\(\prod_{i=1}^{n} x_i\)</span> means the product of <span class="math inline">\(x_{1},x_{2},\ldots,&nbsp;x_{n}\)</span></p>
+<p><span class="math display">\[= \left( x_1 x_2 \cdots x_n \right)^{\frac{1}{n}}\]</span></p>
+<p><span class="math display">\[\log \text{GM} = \frac{1}{n} \log \left( x_1 x_2 \cdots x_n \right)\]</span></p>
+<p><span class="math display">\[= \frac{1}{n} \left( \log x_1 + \log x_2 + \cdots + \log x_n \right)\]</span></p>
+<p><span id="eq-gm2"><span class="math display">\[= \frac{\sum_{i=1}^{n} \log x_i}{n} \tag{5.2}\]</span></span></p>
+<p><span id="eq-gm3"><span class="math display">\[\text{GM} = \text{Antilog} \left( \frac{\sum_{i=1}^{n} \log x_i}{n} \right) \tag{5.3}\]</span></span></p>
 <section id="geometric-mean-for-frequency-table" class="level3" data-number="5.1.1">
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="geometric-mean-for-frequency-table"><span class="header-section-number">5.1.1</span> Geometric mean for frequency table</h3>
-<p><span id="eq-gm4"><span class="math display">\[\mathbf{GM = \ Antilog}\left( \frac{\sum_{\mathbf{i = 1}}^{\mathbf{k}}{{\mathbf{f}_{\mathbf{i}}\mathbf{\log}}\mathbf{x}_{\mathbf{i}}}}{\mathbf{n}} \right) \tag{5.4}\]</span></span></p>
+<p><span id="eq-gm4"><span class="math display">\[\text{GM} = \text{Antilog} \left( \frac{\sum_{i=1}^{k} f_i \log x_i}{n} \right) \tag{5.4}\]</span></span></p>
 <p>where <span class="math inline">\(x_{i}\)</span> is the <em>i</em><sup>th</sup> value in the dataset and for a grouped frequency table <span class="math inline">\(x_{i}\)</span> will be the midpoint of the <em>i</em><sup>th</sup> class interval calculated as the average of upper and lower limit, <span class="math inline">\(f_{i}\)</span> is the frequency of the <em>i</em><sup>th</sup> value or class , <em>k</em> is the number of classes.</p>
-<p><strong>Example 5.1</strong> If the weight of sorghum ear heads are 45, 60, 48,100, 65 gms. Find the Geometric mean?</p>
-<div id="tbl-sorghumear" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<p><strong>Example 5.1</strong> If the weight of sorghum ear heads are 45, 60, 48, 100, 65 gms. Find the Geometric mean?</p>
+<div id="tbl-sorghumear" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sorghumear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.1: log values of sorghum ear head weights
 </figcaption>
 <div aria-describedby="tbl-sorghumear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Weight of ear head (<em>x</em>)</th>
@@ -347,13 +348,13 @@ Table&nbsp;5.1: log values of sorghum ear head weights
 <p><span class="math display">\[=\text{Antilog}\left( \frac{8.926}{5} \right) \]</span><br>
 <span class="math display">\[ =\text{Antilog}(1.785) = 60.95\]</span> note: here <span class="math inline">\(\text{Antilog}\left( x \right) = 10^{x}\)</span> <em>i</em>.<em>e</em>. <span class="math display">\[\text{Antilog}\left( 1.785 \right) = \ 10^{1.785} = 60.95\]</span></p>
 <p><strong>Example 5.2</strong> Geometric mean of a frequency distribution</p>
-<div id="tbl-gmfreq" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-gmfreq" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gmfreq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.2: Frequency distribution and log for GM calculation
 </figcaption>
 <div aria-describedby="tbl-gmfreq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <colgroup>
 <col style="width: 38%">
 <col style="width: 23%">
@@ -365,7 +366,7 @@ Table&nbsp;5.2: Frequency distribution and log for GM calculation
 <th style="text-align: center;">Weight of ear head (<em>x</em>)</th>
 <th style="text-align: center;">Frequency(<em>f</em>)</th>
 <th style="text-align: center;">log(<em>x</em>)</th>
-<th style="text-align: center;"><em>f</em> . log(<em>x</em>)</th>
+<th style="text-align: center;"><em>f</em>.log(<em>x</em>)</th>
 </tr>
 </thead>
 <tbody>
@@ -418,20 +419,20 @@ Table&nbsp;5.2: Frequency distribution and log for GM calculation
 <span class="math display">\[{\text{GM} = \ Antilog\left( \frac{57.782}{32} \right)  }\]</span><br>
 <span class="math display">\[{= Antilog\left( 1.8056 \right)= 10^{1.8056} = 63.92}\]</span></p>
 <p><strong>Example 5.3</strong> Geometric mean of a grouped frequency distribution</p>
-<div id="tbl-gmgrpfreq" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-gmgrpfreq" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gmgrpfreq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.3: Geometric mean calculation for grouped frequency table
 </figcaption>
 <div aria-describedby="tbl-gmgrpfreq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Class</th>
 <th style="text-align: center;">Mid value (<em>x</em>)</th>
 <th style="text-align: center;">Frequency(<em>f</em>)</th>
 <th style="text-align: center;">log(<em>x</em>)</th>
-<th style="text-align: center;">flog(x)</th>
+<th style="text-align: center;"><em>f</em>.log(x)</th>
 </tr>
 </thead>
 <tbody>
@@ -533,13 +534,13 @@ Note
 <p><strong>Example 5.4</strong> From the given data 5, 10, 17, 24, 30 calculate H.M</p>
 <p><strong>Solution 5.4</strong></p>
 <p>Here <em>n</em> = 5</p>
-<div id="tbl-hmcalc" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-hmcalc" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hmcalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.4: Inverse of numbers to calculate harmonic mean
 </figcaption>
 <div aria-describedby="tbl-hmcalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;"><em>x</em></th>
@@ -583,16 +584,16 @@ Table&nbsp;5.4: Inverse of numbers to calculate harmonic mean
 <p><span id="eq-hm2"><span class="math display">\[\mathbf{\text{H.M}} = \frac{n}{\sum_{i = 1}^{k}{f_{i}\frac{1}{x_{i}}}} \tag{5.6}\]</span></span></p>
 <p>where <span class="math inline">\(x_{i}\)</span> is the <em>i</em><sup>th</sup> value in the dataset and for a grouped frequency table <span class="math inline">\(x_{i}\)</span> will be the midpoint of the <em>i</em><sup>th</sup> class interval calculated as the average of upper and lower limit, <span class="math inline">\(f_{i}\)</span> is the frequency of the <em>i</em><sup>th</sup> value or class , <em>k</em> is the number of classes.</p>
 <p><strong>Example 5.5</strong> For the given data calculate the harmonic mean.</p>
-<div id="tbl-tomato" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-tomato" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tomato-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.5: Model data for harmonic mean calculation
 </figcaption>
 <div aria-describedby="tbl-tomato-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">x</td>
+<td style="text-align: left;"><em>x</em></td>
 <td style="text-align: left;">20</td>
 <td style="text-align: left;">21</td>
 <td style="text-align: left;">22</td>
@@ -615,13 +616,13 @@ Table&nbsp;5.5: Model data for harmonic mean calculation
 </figure>
 </div>
 <p><strong>Solution 5.5</strong></p>
-<div id="tbl-freqhm" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-freqhm" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-freqhm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.6: Calculation of harmonic mean from frequency table
 </figcaption>
 <div aria-describedby="tbl-freqhm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;"><em>x</em></th>
@@ -828,40 +829,39 @@ Note
 <p>The <strong>first or lower quartile (</strong><span class="math inline">\(\mathbf{Q}_{\mathbf{1}}\)</span><strong>)</strong> is a value that has one fourth, or 25% of the observations below its value.</p>
 <p>The <strong>second quartile (</strong><span class="math inline">\(\mathbf{Q}_{\mathbf{2}}\)</span><strong>)</strong>, has one-half, or 50% of the observations below its value. The second quartile is equal to the <strong>median</strong>.</p>
 <p>The <strong>third or upper quartile</strong>, <strong>(</strong><span class="math inline">\(\mathbf{Q}_{\mathbf{3}}\)</span><strong>)</strong>, is a value that has three-fourths, or 75% of the observations below it. If there are <em>n</em> items in a dataset then</p>
-<p><span class="math inline">\(\mathbf{Q}_{\mathbf{1}}\mathbf{=}\left( \frac{\mathbf{n + 1}}{\mathbf{4}} \right)^{\mathbf{\text{th}}}\)</span> item</p>
-<p><span class="math inline">\(\mathbf{Q}_{\mathbf{3}}\mathbf{=}\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)^{\mathbf{\text{th}}}\)</span> item</p>
+<p><span id="eq-quartileq1"><span class="math display">\[Q_1 = \left( \frac{n + 1}{4} \right)^{\text{th}} {\text{item}} \tag{5.11}\]</span></span></p>
+<p><span id="eq-quartileq2"><span class="math display">\[Q_3 = \left( \frac{3(n + 1)}{4} \right)^{\text{th}} {\text{item}} \tag{5.12}\]</span></span></p>
 <p>Calculations of quartiles are explained using the example below. See in the example the procedure followed when a fraction appear in the calculation.</p>
 <p><strong>Example 5.8</strong> Compute quartiles for the data 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
 <p><strong>Solution 5.8</strong></p>
 <p>First arrange the data in ascending order</p>
 <p>5, 8, 10, 15, 18, 25, 30, 35, 40, 45</p>
 <p>here <em>n</em> = 10</p>
-<p><span class="math inline">\(\mathbf{Q}_{\mathbf{1}}\mathbf{=}\left(\frac{\mathbf{n + 1}}{\mathbf{4}} \right)^{\mathbf{\text{th}}}\)</span> item</p>
-<p><em>i</em>.<em>e</em>. <span class="math inline">\(Q_{1} = \left( \frac{10 + 1}{4} \right)^{th}\)</span> = 2.75<sup>th</sup> item; when such a fraction appears we use the following procedure</p>
+<p>using <a href="#eq-quartileq1" class="quarto-xref">Equation&nbsp;<span>5.11</span></a> and <a href="#eq-quartileq2" class="quarto-xref">Equation&nbsp;<span>5.12</span></a></p>
+<p><span class="math inline">\(Q_{1} = \left( \frac{10 + 1}{4} \right)^{th}\)</span> = 2.75<sup>th</sup> item; when such a fraction appears we use the following procedure</p>
 <p><span class="math inline">\(Q_{1} =\)</span><!-- -->2.75<sup>th</sup> item = 2<sup>nd</sup> item + 0.75(3<sup>rd</sup> item - 2<sup>nd</sup> item)</p>
 <p>So from the given data <span class="math inline">\(Q_{1}\)</span>= 8+0.75(10– 8) = 9.5, also <span class="math inline">\(Q_{2}\)</span> is the median, here <span class="math inline">\(Q_{2} =\)</span>(18+25)/2 = 21.5</p>
-<p><span class="math inline">\(\mathbf{Q}_{\mathbf{3}}\mathbf{=}\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)^{\mathbf{\text{th}}}\)</span> item</p>
-<p><em>i</em>.<em>e</em>. <span class="math inline">\(Q_{3} = \left( 3 \times \frac{(10 + 1)}{4} \right)^{th}\)</span> = 8.25<sup>th</sup> item = 8<sup>th</sup> item + 0.25(9<sup>th</sup> item - 8<sup>th</sup> item) = 35+0.25(40-35) = 36.25</p>
+<p><span class="math inline">\(Q_{3} = \left(\frac{3(10 + 1)}{4} \right)^{th}\)</span> = 8.25<sup>th</sup> item = 8<sup>th</sup> item + 0.25(9<sup>th</sup> item - 8<sup>th</sup> item) = 35+0.25(40-35) = 36.25</p>
 <p><strong>Quartiles of a discrete frequency data</strong></p>
 <p>Below it is explained steps in calculating quartiles for a discrete frequency data</p>
 <ol type="1">
 <li><p>Find cumulative frequencies.</p></li>
-<li><p>Find <span class="math inline">\(\left( \frac{\mathbf{n + 1}}{\mathbf{4}} \right)\)</span></p></li>
-<li><p>See in the cumulative frequencies, the value just greater than <span class="math inline">\(\left( \frac{\mathbf{n + 1}}{\mathbf{4}} \right)\)</span> , then the corresponding value of <span class="math inline">\(x\)</span> is <span class="math inline">\(Q_{1}\)</span></p></li>
+<li><p>Find <span class="math inline">\(\left( \frac{n + 1}{4} \right)\)</span></p></li>
+<li><p>See in the cumulative frequencies, the value just greater than <span class="math inline">\(\left( \frac{\mathbf{n + 1}}{\mathbf{4}} \right)\)</span>, then the corresponding value of <span class="math inline">\(x\)</span> is <span class="math inline">\(Q_{1}\)</span></p></li>
 <li><p>Find <span class="math inline">\(\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)\)</span></p></li>
-<li><p>See in the cumulative frequencies, the value just greater than <span class="math inline">\(\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)\)</span> ,then the corresponding value of <span class="math inline">\(x\)</span> is <span class="math inline">\(Q_{3}\)</span></p></li>
+<li><p>See in the cumulative frequencies, the value just greater than <span class="math inline">\(\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)\)</span>, then the corresponding value of <span class="math inline">\(x\)</span> is <span class="math inline">\(Q_{3}\)</span></p></li>
 </ol>
 <p><strong>Example 5.9</strong> Compute quartiles for the data given below</p>
-<div id="tbl-quartile" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-quartile" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-quartile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.7: A model frequency distribution
 </figcaption>
 <div aria-describedby="tbl-quartile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(\mathbf{x}\)</span></td>
+<td style="text-align: center;"><em>x</em></td>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">8</td>
 <td style="text-align: center;">12</td>
@@ -871,7 +871,7 @@ Table&nbsp;5.7: A model frequency distribution
 <td style="text-align: center;">30</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><span class="math inline">\(\mathbf{f}\)</span></td>
+<td style="text-align: center;"><em>f</em></td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">2</td>
@@ -886,13 +886,13 @@ Table&nbsp;5.7: A model frequency distribution
 </figure>
 </div>
 <p><strong>Solution 5.9</strong></p>
-<div id="tbl-qtlcalc" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-qtlcalc" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-qtlcalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.8: Cumulative frequency data for quartile calculation
 </figcaption>
 <div aria-describedby="tbl-qtlcalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;"><em>x</em></th>
@@ -942,23 +942,23 @@ Table&nbsp;5.8: Cumulative frequency data for quartile calculation
 </figure>
 </div>
 <p>Here <em>n</em> =24</p>
-<p><span class="math inline">\(\left( \frac{\mathbf{n + 1}}{\mathbf{4}} \right)\)</span> = <span class="math inline">\(\left( \frac{\mathbf{n + 1}}{\mathbf{4}} \right)\mathbf{\ }\)</span> = <span class="math inline">\(\left( \frac{\mathbf{25}}{\mathbf{4}} \right)\)</span> = 6.25</p>
+<p><span class="math inline">\(\left( \frac{n + 1}{4} \right)\)</span> = <span class="math inline">\(\left( \frac{25}{4} \right)\)</span> = 6.25</p>
 <p>The cumulative frequency value just greater than 6.25 is 7, the<br>
-<span class="math inline">\(\mathbf{x}\)</span> value corresponding to cumulative frequency 7 is 8. So <span class="math inline">\(\mathbf{Q}_{\mathbf{1}}\)</span> = 8</p>
-<p><span class="math inline">\(\left( \frac{\mathbf{3(n + 1)}}{\mathbf{4}} \right)\)</span> = <span class="math inline">\(\left( \frac{\mathbf{3}\mathbf{\times}\mathbf{25}}{\mathbf{4}} \right)\)</span> = 18.75</p>
+<span class="math inline">\({x}\)</span> value corresponding to cumulative frequency 7 is 8. So <span class="math inline">\({Q}_{1}\)</span> = 8</p>
+<p><span class="math inline">\(\left( \frac{3(n + 1)}{4} \right)\)</span> = <span class="math inline">\(\left( \frac{3 \times 25}{4} \right)\)</span> = 18.75</p>
 <p>The cumulative frequency value just greater than 18.75 is 20, the<br>
-<span class="math inline">\(\mathbf{x}\)</span> value corresponding to cumulative frequency 20 is 24. So <span class="math inline">\(\mathbf{Q}_{\mathbf{3}}\)</span> = 24</p>
+<span class="math inline">\(\mathbf{x}\)</span> value corresponding to cumulative frequency 20 is 24. So <span class="math inline">\({Q}_{3}\)</span> = 24</p>
 <p><strong>Quartiles of a grouped frequency data</strong></p>
 <p>Below it is explained steps in calculating quartiles for a continuous frequency data</p>
 <ol type="1">
 <li><p>Find cumulative frequencies</p></li>
-<li><p>Find <span class="math inline">\(\left( \frac{\mathbf{n}}{\mathbf{4}} \right)\)</span></p></li>
-<li><p>See in the cumulative frequencies, the value just greater than<span class="math inline">\(\ \left( \frac{\mathbf{n}}{\mathbf{4}} \right)\)</span>, and then the corresponding class interval is called <strong>first quartile class</strong>.</p></li>
-<li><p>Find <span class="math inline">\(3\left( \frac{\mathbf{n}}{\mathbf{4}} \right)\)</span></p></li>
-<li><p>See in the cumulative frequencies the value just greater than <span class="math inline">\(3\left( \frac{\mathbf{n}}{\mathbf{4}} \right)\mathbf{\ }\)</span>then the corresponding class interval is called <strong>3<sup>rd</sup> quartile class</strong>. Then apply the respective formulae</p></li>
+<li><p>Find <span class="math inline">\(\left( \frac{n}{4} \right)\)</span></p></li>
+<li><p>See in the cumulative frequencies, the value just greater than<span class="math inline">\(\left( \frac{n}{4} \right)\)</span>, and then the corresponding class interval is called <strong>first quartile class</strong>.</p></li>
+<li><p>Find <span class="math inline">\(3\left( \frac{n}{4} \right)\)</span></p></li>
+<li><p>See in the cumulative frequencies the value just greater than <span class="math inline">\(33\left( \frac{n}{4} \right)\)</span>then the corresponding class interval is called <strong>3<sup>rd</sup> quartile class</strong>. Then apply the respective formulae</p></li>
 </ol>
-<p><span id="eq-qrtl1"><span class="math display">\[\mathbf{Q}_{\mathbf{1}}\mathbf{=}\mathbf{l}_{\mathbf{1}}\mathbf{+}\frac{\frac{\mathbf{n}}{\mathbf{4}}\mathbf{-}\mathbf{m}_{\mathbf{1}}}{\mathbf{f}_{\mathbf{1}}}\mathbf{\times}\mathbf{c}_{\mathbf{1}} \tag{5.11}\]</span></span></p>
-<p><span id="eq-qrtl2"><span class="math display">\[\mathbf{Q}_{\mathbf{3}}\mathbf{=}\mathbf{l}_{\mathbf{3}}\mathbf{+}\frac{\mathbf{3}\left( \frac{\mathbf{n}}{\mathbf{4}} \right)\mathbf{-}\mathbf{m}_{\mathbf{3}}}{\mathbf{f}_{\mathbf{3}}}\mathbf{\times}\mathbf{c}_{\mathbf{3}} \tag{5.12}\]</span></span></p>
+<p><span id="eq-qrtl1"><span class="math display">\[Q_1 = l_1 + \frac{\frac{n}{4} - m_1}{f_1} \times c_1 \tag{5.13}\]</span></span></p>
+<p><span id="eq-qrtl2"><span class="math display">\[Q_3 = l_3 + \frac{3 \left( \frac{n}{4} \right) - m_3}{f_3} \times c_3 \tag{5.14}\]</span></span></p>
 <p>Where, <span class="math inline">\(l_{1}\)</span> = lower limit of the first quartile class</p>
 <p><span class="math inline">\(f_{1}\)</span> = frequency of the first quartile class</p>
 <p><span class="math inline">\(c_{1}\)</span> = width of the first quartile class</p>
@@ -968,13 +968,13 @@ Table&nbsp;5.8: Cumulative frequency data for quartile calculation
 <p><span class="math inline">\(c_{3}\)</span>= width of the 3<sup>rd</sup> quartile class</p>
 <p><span class="math inline">\(m_{3}\)</span> = cumulative frequency preceding the 3<sup>rd</sup> quartile class</p>
 <p><strong>Example 5.10</strong> Find the quartiles for the grouped frequency data given</p>
-<div id="tbl-grpdqrtl" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-grpdqrtl" class="bordered quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grpdqrtl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5.9: A model grouped frequency data
 </figcaption>
 <div aria-describedby="tbl-grpdqrtl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table-bordered table-hover caption-top table">
+<table class="table-bordered caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;"><strong>Class</strong></th>
@@ -1041,12 +1041,12 @@ Table&nbsp;5.9: A model grouped frequency data
 <p><strong>Solution 5.10</strong></p>
 <p><span class="math inline">\(\left( \frac{n}{4} \right)\)</span> = <span class="math inline">\(\frac{204}{4}\)</span> = 51</p>
 <p>The cumulative frequency value just greater than 51 is 54 so the class 20-30 is the 1<sup>st</sup> quartile class</p>
-<p>using <a href="#eq-qrtl1" class="quarto-xref">Equation&nbsp;<span>5.11</span></a></p>
-<p><span class="math display">\[\mathbf{Q}_{\mathbf{1}}\mathbf{=}\mathbf{20 +}\frac{\mathbf{51 - 29}}{\mathbf{25}}\mathbf{\times 10\  = 28.8}\]</span></p>
+<p>using <a href="#eq-qrtl1" class="quarto-xref">Equation&nbsp;<span>5.13</span></a></p>
+<p><span class="math display">\[Q_1 = 20 + \frac{51 - 29}{25} \times 10 = 28.8\]</span></p>
 <p><span class="math inline">\(3\left( \frac{n}{4} \right)\)</span>= <span class="math inline">\(3 \times \frac{204}{4}\)</span> = 153</p>
 <p>The cumulative frequency value just greater than 153 is 167 so the class 60-70 is the 3<sup>rd</sup> quartile class</p>
-<p>using <a href="#eq-qrtl2" class="quarto-xref">Equation&nbsp;<span>5.12</span></a></p>
-<p><span class="math display">\[\mathbf{Q}_{\mathbf{1}}\mathbf{=}\mathbf{60 +}\frac{\mathbf{153 - 145}}{\mathbf{22}}\mathbf{\times 10 = 63.63}\]</span></p>
+<p>using <a href="#eq-qrtl2" class="quarto-xref">Equation&nbsp;<span>5.14</span></a></p>
+<p><span class="math display">\[Q_1 = 60 + \frac{153 - 145}{22} \times 10 = 63.63\]</span></p>
 </section>
 <section id="percentiles" class="level2" data-number="5.7">
 <h2 data-number="5.7" class="anchored" data-anchor-id="percentiles"><span class="header-section-number">5.7</span> Percentiles</h2>
@@ -1056,7 +1056,7 @@ Table&nbsp;5.9: A model grouped frequency data
 - The <span class="math inline">\(\mathbf{P}_{\mathbf{25}}\)</span>, <strong>25th percentile</strong> corresponds to the first quartile (<span class="math inline">\(Q_1\)</span>), which marks the lower 25% of the data.<br>
 - The <span class="math inline">\(\mathbf{P}_{\mathbf{75}}\)</span>, <strong>75th percentile</strong> is the third quartile (<span class="math inline">\(Q_3\)</span>), indicating that 75% of the data falls below this value.</p>
 <p>For raw data, first arrange the <em>n</em> observations in increasing order. Then the <em>x</em><sup>th</sup> percentile is given by</p>
-<p><span class="math inline">\(\mathbf{P}_{\mathbf{p}}\mathbf{=}\left( \frac{\mathbf{p}\left( \mathbf{n + 1} \right)}{\mathbf{100}} \right)^{\mathbf{\text{th}}}\)</span> item</p>
+<p><span id="eq-percentilesingle1"><span class="math display">\[P_p = \left( \frac{p(n + 1)}{100} \right)^{\text{th}} \text{ item} \tag{5.15}\]</span></span></p>
 <p><strong>Percentiles of discrete frequency data</strong></p>
 <p>To calculate percentiles for discrete frequency data, follow these steps which is similar to that of quartiles:</p>
 <ol type="1">
@@ -1072,26 +1072,26 @@ P_p = \left( \frac{p(n + 1)}{100} \right)
 <p>Calculation of percentile is very much similar to that of quartile. For a frequency distribution the <em>p</em><sup>th</sup> percentile is given by following steps</p>
 <ol type="1">
 <li><p>Find cumulative frequencies</p></li>
-<li><p>Find <span class="math inline">\(\left( \frac{\text{p.n}}{100} \right)\)</span></p></li>
-<li><p>See in the cumulative frequencies, the value just greater than<span class="math inline">\(\left( \frac{\text{p.n}}{100} \right)\)</span>and then the corresponding class interval is called <strong>Percentile class</strong>.</p></li>
+<li><p>Find <span class="math inline">\(\left( \frac{p.n}{100} \right)\)</span></p></li>
+<li><p>See in the cumulative frequencies, the value just greater than <span class="math inline">\(\left( \frac{p.n}{100} \right)\)</span> and then the corresponding class interval is called <strong>Percentile class</strong>.</p></li>
 <li><p>Use the following formula</p></li>
 </ol>
-<p><span id="eq-percentile1"><span class="math display">\[\mathbf{P}_{\mathbf{p}}\mathbf{= l +}\frac{\left( \frac{\mathbf{p \times n}}{\mathbf{100}} \right)\mathbf{- cf}}{\mathbf{f}}\mathbf{\times c} \tag{5.13}\]</span></span></p>
+<p><span id="eq-percentile1"><span class="math display">\[P_p = l + \frac{\left( \frac{p \times n}{100} \right) - cf}{f} \times c \tag{5.16}\]</span></span></p>
 <p>Where</p>
-<p><span class="math inline">\(\mathbf{l}\)</span> = lower limit of the percentile class</p>
-<p><span class="math inline">\(\mathbf{\text{cf}}\)</span> = cumulative frequency preceding the percentile class</p>
-<p><span class="math inline">\(\mathbf{f}\)</span> = frequency of the percentile class</p>
-<p><span class="math inline">\(\mathbf{c}\)</span> = class interval</p>
-<p><span class="math inline">\(\mathbf{n}\)</span> = total number of observations</p>
-<p><strong>Example 5.11</strong> Compute <span class="math inline">\(\mathbf{P}_{\mathbf{25}}\)</span> and <span class="math inline">\(\mathbf{P}_{\mathbf{75}}\)</span> for the data 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
+<p><span class="math inline">\({l}\)</span> = lower limit of the percentile class</p>
+<p><span class="math inline">\({cf}\)</span> = cumulative frequency preceding the percentile class</p>
+<p><span class="math inline">\({f}\)</span> = frequency of the percentile class</p>
+<p><span class="math inline">\({c}\)</span> = class interval</p>
+<p><span class="math inline">\({n}\)</span> = total number of observations</p>
+<p><strong>Example 5.11</strong> Compute <span class="math inline">\({P}_{25}\)</span> and <span class="math inline">\({P}_{75}\)</span> for the data 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
 <p><strong>Solution 5.11</strong></p>
 <p>First arrange the data in ascending order</p>
 <p>5, 8, 10, 15, 18, 25, 30, 35, 40, 45</p>
 <p>Here <em>n</em> =10</p>
-<p><span class="math inline">\(\mathbf{P}_{\mathbf{25}}\mathbf{=}\left( \frac{\mathbf{25}\left( \mathbf{10 + 1} \right)}{\mathbf{100}} \right)^{\mathbf{\text{th}}}\)</span> = 2.75<sup>th</sup> item</p>
+<p><span class="math inline">\(P_{25} = \left( \frac{25(10 + 1)}{100} \right)^{\text{th}}\)</span> = 2.75<sup>th</sup> item</p>
 <p><span class="math inline">\(P_{25} =\)</span><!-- -->2.75<sup>th</sup> item = 2<sup>nd</sup> item + 0.75(3<sup>rd</sup> item – 2<sup>nd</sup> item)</p>
 <p>So from the given data <span class="math inline">\(P_{25}\)</span>= 8+0.75(10– 8) = 9.5</p>
-<p><span class="math inline">\(\mathbf{P}_{\mathbf{75}}\mathbf{=}\left( \frac{\mathbf{75}\left( \mathbf{10 + 1} \right)}{\mathbf{100}} \right)^{\mathbf{\text{th}}}\)</span> = 8.25<sup>th</sup> item</p>
+<p><span class="math inline">\(P_{75} = \left( \frac{75(10 + 1)}{100} \right)^{\text{th}}\)</span> = 8.25<sup>th</sup> item</p>
 <p><em>i</em>.<em>e</em>. <span class="math inline">\(P_{75} = \left( 75 \times \frac{10 + 1}{100} \right)^{th}\)</span> = 8.25<sup>th</sup> item = 8<sup>th</sup> item + 0.25(9<sup>th</sup> item –8<sup>th</sup> item) = 35+0.25(40-35) =36.25</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Note">
 <div class="callout-header d-flex align-content-center">
@@ -1121,7 +1121,8 @@ Note
 <section id="deciles" class="level2" data-number="5.8">
 <h2 data-number="5.8" class="anchored" data-anchor-id="deciles"><span class="header-section-number">5.8</span> Deciles</h2>
 <p>Deciles consist of 9 points that divide an ordered dataset into ten equal parts. The <em>d</em> <sup>th</sup> decile is denoted as <span class="math inline">\(D_d\)</span>. It is important to note that the <strong>median</strong> is the <strong>5th decile</strong>.</p>
-<p><span class="math inline">\(\mathbf{D}_{\mathbf{d}}\mathbf{=}\left( \frac{\mathbf{d}\left( \mathbf{n + 1} \right)}{\mathbf{10}} \right)^{\mathbf{\text{th}}}\)</span> item. where <span class="math inline">\(d\)</span> is the decile number (e.g., <span class="math inline">\(d = 1\)</span> for the first decile, <span class="math inline">\(d = 9\)</span> for the ninth decile), and <span class="math inline">\(n\)</span> is the total number of data points.</p>
+<p><span id="eq-decileq1"><span class="math display">\[D_d = \left( \frac{d(n + 1)}{10} \right)^{\text{th}} \text{ item} \tag{5.17}\]</span></span><br>
+where, <span class="math inline">\(d\)</span> is the decile number (e.g., <span class="math inline">\(d = 1\)</span> for the first decile, <span class="math inline">\(d = 9\)</span> for the ninth decile), and <span class="math inline">\(n\)</span> is the total number of data points.</p>
 <p><strong>Deciles of discrete frequency data</strong></p>
 <p>To calculate deciles for discrete frequency data, follow these steps which are similar to that of percentiles:</p>
 <ol type="1">
@@ -1138,28 +1139,26 @@ Find the cumulative frequency that is just greater than or equal to the calculat
 <p>For a frequency distribution the <em>d</em><sup>th</sup> decile is given by following steps</p>
 <ol type="1">
 <li><p>Find cumulative frequencies</p></li>
-<li><p>Find <span class="math inline">\(\left( \frac{\text{d.n}}{10} \right)\)</span></p></li>
-<li><p>See in the cumulative frequencies, the value just greater than<span class="math inline">\(\left( \frac{\text{d.n}}{10} \right)\)</span>and then the corresponding class interval is called <strong>decile class</strong>.</p></li>
+<li><p>Find <span class="math inline">\(\left( \frac{d.n}{10} \right)\)</span></p></li>
+<li><p>See in the cumulative frequencies, the value just greater than<span class="math inline">\(\left( \frac{d.n}{10} \right)\)</span>and then the corresponding class interval is called <strong>decile class</strong>.</p></li>
 <li><p>Use the following formula</p></li>
 </ol>
-<p><span id="eq-decile"><span class="math display">\[\mathbf{D}_{\mathbf{d}}\mathbf{= l +}\frac{\left( \frac{\mathbf{d \times n}}{\mathbf{10}} \right)\mathbf{- cf}}{\mathbf{f}}\mathbf{\times c} \tag{5.14}\]</span></span></p>
+<p><span id="eq-decile"><span class="math display">\[D_d = l + \frac{\left( \frac{d \times n}{10} \right) - cf}{f} \times c \tag{5.18}\]</span></span></p>
 <p>Where</p>
-<p><span class="math inline">\(\mathbf{l}\)</span> = lower limit of the decile class</p>
-<p><span class="math inline">\(\mathbf{\text{cf}}\)</span> = cumulative frequency preceding the decile class</p>
-<p><span class="math inline">\(\mathbf{f}\)</span> = frequency of the decile class</p>
-<p><span class="math inline">\(\mathbf{c}\)</span> = class interval</p>
-<p><span class="math inline">\(\mathbf{n}\)</span> = total number of observations</p>
-<div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<p><span class="math inline">\(l\)</span> = lower limit of the decile class</p>
+<p><span class="math inline">\({cf}\)</span> = cumulative frequency preceding the decile class</p>
+<p><span class="math inline">\({f}\)</span> = frequency of the decile class</p>
+<p><span class="math inline">\({c}\)</span> = class interval</p>
+<p><span class="math inline">\({n}\)</span> = total number of observations</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Try yourself
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
+<p><strong>Try yourself</strong></p>
 <p>Find <span class="math inline">\(\text{D}_{5}\)</span> for Example 5.9, 5.10 &amp; 5.11; verify that <span class="math inline">\(\text{D}_{5} = \text{Q}_{2} = \text{P}_{50} = median\)</span></p>
+</div>
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled" title="Historical Insights">
