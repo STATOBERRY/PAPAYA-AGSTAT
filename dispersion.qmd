@@ -135,8 +135,9 @@ The inter-quartile range of a set of data is therefore not affected by values of
 
 **Example 6.3** Consider the two sets of data A & B below, find IQR
 
-| A   | 3   | 4   | 5   | 6   | 8   | 9   | 10  | 12  | 15  |
+|     |     |     |     |     |     |     |     |     |     |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| A   | 3   | 4   | 5   | 6   | 8   | 9   | 10  | 12  | 15  |
 | B   | 3   | 8   | 8   | 9   | 9   | 9   | 10  | 10  | 15  |
 
 : Model dataset for IQR calculation {#tbl-modeldatiqr .bordered .hover}
@@ -190,7 +191,7 @@ $$MAD = \frac{\sum_{i = 1}^{n}\left| x_{i} - \overline{x} \right|}{n}$$ {#eq-mad
 **Example 6.4** find the mean absolute deviation of the following 10, 15, 15, 17, 18, 21
 
 | $$x_{i}$$ | $$x_{i} - \overline{x}$$ | $$\left| x_{i} - \overline{x}\right|$$ |
-|:--------------------:|:--------------------:|:---------------------------:|
+|:--------------------:|:--------------------:|:--------------------------:|
 | 10 | -6 | 6 |
 | 15 | -1 | 1 |
 | 15 | -1 | 1 |
@@ -254,7 +255,7 @@ If the standard deviation of data set A is greater than that of data set B, it i
 **Solution** **6.5**
 
 |  |  |  |  |
-|:---------------:|:---------------:|:-----------------:|:-------------------:|
+|:----------------:|:----------------:|:----------------:|:-----------------:|
 | Set A | $$x_{i}$$ | $$x_{i} - \overline{x}$$ | $$
 \left( x_{i} - \overline{x} \right)^{2}
 $$ |
@@ -275,7 +276,7 @@ $${sample\ variance,\ s}_{A}^{2} = \frac{\sum_{i = 1}^{n}\left( x_{i} - \overlin
 $$\text{sample standard deviation,}\ s_{A} = \ \sqrt{s_{A}^{2}} = \ \sqrt{2} = 1.414$$
 
 |  |  |  |  |
-|:---------------:|:---------------:|:----------------:|:-------------------:|
+|:----------------:|:----------------:|:----------------:|:-----------------:|
 | Set B | $$x_{i}$$ | $$x_{i} - \overline{x}$$ | $$
 \left( x_{i} - \overline{x} \right)^{2}
 $$ |
@@ -306,8 +307,8 @@ $$s^{2} = \frac{1}{n - 1}\left\{ \sum_{i = 1}^{n}{x_{i}^{2} - \frac{1}{n}}\left(
 **Example 6.6** Consider the data set below; find standard deviation?
 
 |     |     |     |     |     |     |     |     |     |
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|
-| 3   | 4   | 5   | 6   | 8   | 9   | 10  | 12  | 15  |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|  3  |  4  |  5  |  6  |  8  |  9  | 10  | 12  | 15  |
 
 : Model dataset for standard deviation calculation {#tbl-alternatesd .bordered .hover}
 
@@ -379,9 +380,9 @@ where $f_{i}$ is the frequency of *i*^th^ class, $d_{i} = \frac{x_{i} - A}{c}$, 
 **Example 6.8** The frequency distributions of seed yield of 50 sesamum plants are given below. Find the standard deviation
 
 |                         |          |          |          |          |         |
-|:------------------------|:---------|:---------|:---------|:---------|:--------|
+|:------------------------|:--------:|:--------:|:--------:|:--------:|:-------:|
 | Seed yield in gms (*x*) | 2.5--3.5 | 3.5--4.5 | 4.5--5.5 | 5.5--6.5 | 6.5-7.5 |
-| Frequency (*f*)         | 4        | 6        | 15       | 15       | 10      |
+| Frequency (*f*)         |    4     |    6     |    15    |    15    |   10    |
 
 : A model gropued frequency distributions of seed yield {#tbl-grpseedyld .bordered .hover}
 

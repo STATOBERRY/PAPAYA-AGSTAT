@@ -4,8 +4,8 @@ In the previous chapter, we explored numerical measures of central tendency and 
 
 The shape of a distribution helps us understand the symmetry, peakedness, and presence of tails in the data. While a histogram provides a visual summary of the shape, we often need numerical measures for precise analysis. These measures include:
 
-1.  **Skewness**, which quantifies the degree of asymmetry in the data distribution.
-2.  **Kurtosis**, which measures the "tailedness" or peakedness of the distribution.
+-   **Skewness**, which quantifies the degree of asymmetry in the data distribution.
+-   **Kurtosis**, which measures the "tailedness" or peakedness of the distribution.
 
 In this chapter, we will have a detailed discussion on these two important measures of shape, understanding how they are calculated and interpreted. By the end, you’ll be able to evaluate whether a distribution is symmetric, positively or negatively skewed, and whether it has light or heavy tails.
 
@@ -78,17 +78,17 @@ $$S_{k} = \frac{3(mean - median)}{\text{standard deviation}}$$ {#eq-karlsq2}
 **Example 7.1** Compute the Karl Pearson's coefficient of skewness from the following data:
 
 | Height (*x*) | frequency (*f*) |
-|:-------------|:----------------|
-| 58           | 10              |
-| 59           | 18              |
-| 60           | 30              |
-| 61           | 42              |
-| 62           | 35              |
-| 63           | 28              |
-| 64           | 16              |
-| 65           | 8               |
+|:------------:|:---------------:|
+|      58      |       10        |
+|      59      |       18        |
+|      60      |       30        |
+|      61      |       42        |
+|      62      |       35        |
+|      63      |       28        |
+|      64      |       16        |
+|      65      |        8        |
 
-: Model dataset for skewness calculation {#tbl-skewnessmodel}
+: Model dataset for skewness calculation {#tbl-skewnessmodel .bordered .hover}
 
 **Solution 7.1**
 
@@ -126,17 +126,17 @@ Here, $\frac{n + 1}{2} = \frac{187 + 1}{2} = \frac{188}{2} = 94$.\
 From the table @tbl-karlcf, it is evident that the median is 61.
 
 | Height (*x*) | frequency (*f*) | cumulative frequency |
-|:-------------|:----------------|:---------------------|
-| 58           | 10              | 10                   |
-| 59           | 18              | 28                   |
-| 60           | 30              | 58                   |
-| 61           | 42              | 100                  |
-| 62           | 35              | 135                  |
-| 63           | 28              | 163                  |
-| 64           | 16              | 179                  |
-| 65           | 8               | 187                  |
+|:------------:|:---------------:|:--------------------:|
+|      58      |       10        |          10          |
+|      59      |       18        |          28          |
+|      60      |       30        |          58          |
+|      61      |       42        |         100          |
+|      62      |       35        |         135          |
+|      63      |       28        |         163          |
+|      64      |       16        |         179          |
+|      65      |        8        |         187          |
 
-: Cumulative frequency for skewness calculation {#tbl-karlcf}
+: Cumulative frequency for skewness calculation {#tbl-karlcf .bordered .hover}
 
 using @eq-karlsq2
 
@@ -206,17 +206,13 @@ If *r* = 2, $\mu_{2} = \frac{\sum_{i = 1}^{N}{f_{i}\left( x_{i} - \overline{x} \
 
 In short values of following moments about mean are
 
-+------------------------+----------------+
-| **Moments about mean** | **Value**      |
-|                        |                |
-| **(central moment)**   |                |
-+========================+================+
-| $$\mu_{0}$$            | 1              |
-+------------------------+----------------+
-| $$\mu_{1}$$            | 0              |
-+------------------------+----------------+
-| $$\mu_{2}$$            | $\sigma^{2}$   |
-+------------------------+----------------+
+| **Moments about mean** |  **Value**   |
+|:----------------------:|:------------:|
+|      $$\mu_{0}$$       |      1       |
+|      $$\mu_{1}$$       |      0       |
+|      $$\mu_{2}$$       | $\sigma^{2}$ |  
+
+: Moments about mean {#tbl-momentsabtmean .bordered .hover}
 
 ::: {.callout-important title="Note"}
 It should be remembered that first moment about mean is 0 and second moment about mean is **variance**.

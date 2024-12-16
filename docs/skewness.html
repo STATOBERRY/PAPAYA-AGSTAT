@@ -285,10 +285,10 @@ window.Quarto = {
 
 <p>In the previous chapter, we explored numerical measures of central tendency and dispersion. Together, these measures give us insights into the location and spread of our data. However, they don’t fully describe the data distribution. What about its shape?</p>
 <p>The shape of a distribution helps us understand the symmetry, peakedness, and presence of tails in the data. While a histogram provides a visual summary of the shape, we often need numerical measures for precise analysis. These measures include:</p>
-<ol type="1">
+<ul>
 <li><strong>Skewness</strong>, which quantifies the degree of asymmetry in the data distribution.</li>
 <li><strong>Kurtosis</strong>, which measures the “tailedness” or peakedness of the distribution.</li>
-</ol>
+</ul>
 <p>In this chapter, we will have a detailed discussion on these two important measures of shape, understanding how they are calculated and interpreted. By the end, you’ll be able to evaluate whether a distribution is symmetric, positively or negatively skewed, and whether it has light or heavy tails.</p>
 <section id="skewness" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="skewness"><span class="header-section-number">7.1</span> Skewness</h2>
@@ -406,51 +406,51 @@ Figure&nbsp;7.7: Data set with positive skewness or right skewed
 <p>In <a href="#eq-karlsq" class="quarto-xref">Equation&nbsp;<span>7.1</span></a> since mode is used, there is a problem that if mode is not defined for a distribution we cannot find <span class="math inline">\(S_{k}\)</span>. But empirical relation between mean, median and mode states that, for a moderately symmetrical distribution <span class="math inline">\(\ mean - mode \approx 3(mean - median)\)</span>. So <a href="#eq-karlsq" class="quarto-xref">Equation&nbsp;<span>7.1</span></a> can be written as</p>
 <p><span id="eq-karlsq2"><span class="math display">\[S_{k} = \frac{3(mean - median)}{\text{standard deviation}} \tag{7.2}\]</span></span></p>
 <p><strong>Example 7.1</strong> Compute the Karl Pearson’s coefficient of skewness from the following data:</p>
-<div id="tbl-skewnessmodel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-skewnessmodel" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-skewnessmodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;7.1: Model dataset for skewness calculation
 </figcaption>
 <div aria-describedby="tbl-skewnessmodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Height (<em>x</em>)</th>
-<th style="text-align: left;">frequency (<em>f</em>)</th>
+<th style="text-align: center;">Height (<em>x</em>)</th>
+<th style="text-align: center;">frequency (<em>f</em>)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">58</td>
-<td style="text-align: left;">10</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">10</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">59</td>
-<td style="text-align: left;">18</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: center;">18</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">60</td>
-<td style="text-align: left;">30</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">30</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">61</td>
-<td style="text-align: left;">42</td>
+<td style="text-align: center;">61</td>
+<td style="text-align: center;">42</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">62</td>
-<td style="text-align: left;">35</td>
+<td style="text-align: center;">62</td>
+<td style="text-align: center;">35</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">63</td>
-<td style="text-align: left;">28</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">28</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">64</td>
-<td style="text-align: left;">16</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">16</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">65</td>
-<td style="text-align: left;">8</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">8</td>
 </tr>
 </tbody>
 </table>
@@ -458,7 +458,7 @@ Table&nbsp;7.1: Model dataset for skewness calculation
 </figure>
 </div>
 <p><strong>Solution 7.1</strong></p>
-<div id="tbl-karlskew" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-filters="parse-latex" data-tbl-cap="Karl Pearson's coefficient of skewness">
+<div id="tbl-karlskew" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap="Karl Pearson's coefficient of skewness" data-filters="parse-latex">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-karlskew-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;7.2: Karl Pearson’s coefficient of skewness
@@ -619,60 +619,60 @@ Sum
 <p>To calculate the median, refer to the table <a href="#tbl-karlcf" class="quarto-xref">Table&nbsp;<span>7.3</span></a>. Locate the cumulative frequency just greater than <span class="math inline">\(\frac{n + 1}{2}\)</span>, and the corresponding value of <span class="math inline">\(x\)</span> will be the median (<span class="math inline">\(Q_2\)</span>).</p>
 <p>Here, <span class="math inline">\(\frac{n + 1}{2} = \frac{187 + 1}{2} = \frac{188}{2} = 94\)</span>.<br>
 From the table <a href="#tbl-karlcf" class="quarto-xref">Table&nbsp;<span>7.3</span></a>, it is evident that the median is 61.</p>
-<div id="tbl-karlcf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-karlcf" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-karlcf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;7.3: Cumulative frequency for skewness calculation
 </figcaption>
 <div aria-describedby="tbl-karlcf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-bordered table-hover caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Height (<em>x</em>)</th>
-<th style="text-align: left;">frequency (<em>f</em>)</th>
-<th style="text-align: left;">cumulative frequency</th>
+<th style="text-align: center;">Height (<em>x</em>)</th>
+<th style="text-align: center;">frequency (<em>f</em>)</th>
+<th style="text-align: center;">cumulative frequency</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">58</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">10</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">59</td>
-<td style="text-align: left;">18</td>
-<td style="text-align: left;">28</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">28</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">60</td>
-<td style="text-align: left;">30</td>
-<td style="text-align: left;">58</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">58</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">61</td>
-<td style="text-align: left;">42</td>
-<td style="text-align: left;">100</td>
+<td style="text-align: center;">61</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">100</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">62</td>
-<td style="text-align: left;">35</td>
-<td style="text-align: left;">135</td>
+<td style="text-align: center;">62</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">135</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">63</td>
-<td style="text-align: left;">28</td>
-<td style="text-align: left;">163</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">163</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">64</td>
-<td style="text-align: left;">16</td>
-<td style="text-align: left;">179</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">179</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">65</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">187</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">187</td>
 </tr>
 </tbody>
 </table>
@@ -729,33 +729,37 @@ Table&nbsp;7.3: Cumulative frequency for skewness calculation
 <p>If <em>r</em> = 1, <span class="math inline">\(\mu_{1} = \frac{\sum_{i = 1}^{N}{f_{i}\left( x_{i} - \overline{x} \right)^{1}}}{N}\)</span> = 0 (sum of deviation about mean is zero)</p>
 <p>If <em>r</em> = 2, <span class="math inline">\(\mu_{2} = \frac{\sum_{i = 1}^{N}{f_{i}\left( x_{i} - \overline{x} \right)^{2}}}{N}\)</span> = <span class="math inline">\(\sigma^{2}\)</span>, Population variance</p>
 <p>In short values of following moments about mean are</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 34%">
-<col style="width: 23%">
-</colgroup>
+<div id="tbl-momentsabtmean" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-momentsabtmean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7.4: Moments about mean
+</figcaption>
+<div aria-describedby="tbl-momentsabtmean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-bordered table-hover caption-top table">
 <thead>
 <tr class="header">
-<th><p><strong>Moments about mean</strong></p>
-<p><strong>(central moment)</strong></p></th>
-<th><strong>Value</strong></th>
+<th style="text-align: center;"><strong>Moments about mean</strong></th>
+<th style="text-align: center;"><strong>Value</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[\mu_{0}\]</span></td>
-<td>1</td>
+<td style="text-align: center;"><span class="math display">\[\mu_{0}\]</span></td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[\mu_{1}\]</span></td>
-<td>0</td>
+<td style="text-align: center;"><span class="math display">\[\mu_{1}\]</span></td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr class="odd">
-<td><span class="math display">\[\mu_{2}\]</span></td>
-<td><span class="math inline">\(\sigma^{2}\)</span></td>
+<td style="text-align: center;"><span class="math display">\[\mu_{2}\]</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sigma^{2}\)</span></td>
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <div class="callout callout-style-default callout-important callout-titled" title="Note">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -770,10 +774,10 @@ Note
 </div>
 </div>
 <p>for <a href="#tbl-skewnessmodel" class="quarto-xref">Table&nbsp;<span>7.1</span></a> in Example 7.1 given above, calculate third central moment, <span class="math inline">\(\mu_{3}\)</span></p>
-<div id="tbl-moment3" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-filters="parse-latex" data-tbl-cap="Third central moment calculation">
+<div id="tbl-moment3" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap="Third central moment calculation" data-filters="parse-latex">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-moment3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;7.4: Third central moment calculation
+Table&nbsp;7.5: Third central moment calculation
 </figcaption>
 <div aria-describedby="tbl-moment3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class=" lightable-classic table table-bordered" style="font-family: Georgia; width: auto !important; margin-left: auto; margin-right: auto; width: auto !important; margin-left: auto; margin-right: auto;">
@@ -980,10 +984,10 @@ Figure&nbsp;7.8: Three categories of frequency curves
 <li><p><span class="math inline">\(\gamma_{2}\)</span>&lt; 0 means the curve is platykurtic.</p></li>
 </ul>
 <p>for <a href="#tbl-skewnessmodel" class="quarto-xref">Table&nbsp;<span>7.1</span></a> in Example 7.1, kurtosis can be examined as follows</p>
-<div id="tbl-kutocalc" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-filters="parse-latex" data-tbl-cap="Measures of kurtosis">
+<div id="tbl-kutocalc" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap="Measures of kurtosis" data-filters="parse-latex">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-kutocalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;7.5: Measures of kurtosis
+Table&nbsp;7.6: Measures of kurtosis
 </figcaption>
 <div aria-describedby="tbl-kutocalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class=" lightable-classic table table-bordered" style="font-family: Georgia; width: auto !important; margin-left: auto; margin-right: auto; width: auto !important; margin-left: auto; margin-right: auto;">

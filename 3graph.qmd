@@ -34,7 +34,7 @@ In these cases, the frequency density is plotted on the y-axis to ensure that th
 |    170 -- 180     |     8     |
 |    180 -- 190     |     3     |
 
-: Grouped frequency table of plant heights {#tbl-plantheight}
+: Grouped frequency table of plant heights {#tbl-plantheight .bordered .hover}
 
 ![Histogram](images/histogram.png){#fig-histo fig-align="center" width="50%" style="text-align:center;"}
 
@@ -57,7 +57,7 @@ The less than ogive, also known as the **less than type cumulative frequency cur
 | Upper limit | 140 | 150 | 160 | 170 | 180 | 190 |
 |     LCF     |  3  |  9  | 26  | 39  | 47  | 50  |
 
-: Upper limit and LCF of plant heights {#tbl-ullcf}
+: Upper limit and LCF of plant heights {#tbl-ullcf .bordered .hover}
 
 Note: LCF denotes less than cumulative frequency
 
@@ -72,7 +72,7 @@ The **greater than ogive**, also known as the **greater than type cumulative fre
 | Lower limit | 130 | 140 | 150 | 160 | 170 | 180 |
 |     GCF     | 50  | 47  | 41  | 24  | 11  |  3  |
 
-: Lower limit and GCF of plant heights {#tbl-llgcf}
+: Lower limit and GCF of plant heights {#tbl-llgcf .bordered .hover}
 
 Note: GCF denotes greater than cumulative frequency
 
@@ -91,7 +91,7 @@ A grouped frequency table can also be represented by a frequency polygon, a spec
 | Class midpoints | 135 | 145 | 155 | 165 | 175 | 185 |
 |   Frequencies   |  3  |  6  | 17  | 13  |  8  |  3  |
 
-: Midpoints and frequencies {#tbl-mpfreq}
+: Midpoints and frequencies {#tbl-mpfreq .bordered .hover}
 
 ::: {#frequency-poly layout-ncol="2"}
 ![Frequency Polygon](images/frequency_polygon.png){#fig-fp width="300" height="180"}
@@ -126,7 +126,7 @@ In a simple bar chart, the height (or length) of each bar is equal to the value 
 | Ernakulam |           1100            |
 |  Wayanad  |           1400            |
 
-: hypothetical data on coconut production {#tbl-coconutprod}
+: hypothetical data on coconut production {#tbl-coconutprod .bordered .hover}
 
 **Component bar chart**
 
@@ -163,7 +163,7 @@ The component bar chart shows the changes of each component over the years as we
 | **Bar Order** | Bars cannot be reordered. | Bars can be reordered. |
 | **Bar Width** | Bar widths may vary. | Bar widths are uniform. |
 
-: Comparison between histogram and barchart {#tbl-histovsbar}
+: Comparison between histogram and barchart {#tbl-histovsbar .bordered .hover}
 
 ## Pie charts
 
@@ -188,7 +188,7 @@ A pie chart is a circular graph divided into sectors, each sector representing a
 |    Sugar    |       11250        |           50           |
 |  **Total**  |     **81000**      |        **360**         |
 
-: Hypothetical data on the production of different commodities {#tbl-wheatprod}
+: Hypothetical data on the production of different commodities {#tbl-wheatprod .bordered .hover}
 
 ![Piechart](images/piechart.png){#fig-piechart fig-align="center" width="50%" style="text-align:center;"}
 
