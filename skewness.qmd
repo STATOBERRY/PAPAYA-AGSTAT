@@ -350,7 +350,17 @@ You can verify the frequency curve of Example 7.1 @fig-freqcurvex, it can be see
 
  \
  \
- 
+  
+
+
+::: {.callout-caution title="Historical Insights"}  
+
+**"Crabs and kurtosis"**
+
+The story of **kurtosis** and **skewness** begins with a fascinating scientific journey involving **crabs**! In the late 1800s, Karl Pearson, a pioneering statistician, worked with biologist Walter Weldon to study variations in the size of crustaceans, like crabs. They noticed that the data didn't follow the usual normal pattern, so Pearson developed new tools to better understand the shapes of these unusual data distributions. 
+
+He created the concept of **skewness** to measure whether the data was symmetrical or had long tails on one side. Then, he developed **kurtosis**, a measure of how "peaked" or "flat" the data distribution was compared to the normal curve. These ideas helped statisticians better analyze data that didn’t fit the typical patterns, paving the way for modern statistical tools we still use today! [@fiori2009kurtosis]  
+:::  
 
 ::: {.callout-tip title="Quotes to Inspire"}
 **"We are just statistics, born to consume resources" -- Horace**

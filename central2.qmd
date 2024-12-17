@@ -624,7 +624,7 @@ ${n}$ = total number of observations
 ::: {.callout-note appearance="simple"}
 **Try yourself**
 
-Find $\text{D}_{5}$ for Example 5.9, 5.10 & 5.11; verify that $\text{D}_{5} = \text{Q}_{2} = \text{P}_{50} = median$
+Find $\text{D}_{5}$ for Example 5.9, 5.10 & 5.11; verify that ${D}_{5} = {Q}_{2} = {P}_{50} = median$
 :::
 
 ::: {.callout-caution title="Historical Insights"}

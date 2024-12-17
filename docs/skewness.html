@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -458,7 +478,7 @@ Table&nbsp;7.1: Model dataset for skewness calculation
 </figure>
 </div>
 <p><strong>Solution 7.1</strong></p>
-<div id="tbl-karlskew" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap="Karl Pearson's coefficient of skewness" data-filters="parse-latex">
+<div id="tbl-karlskew" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-filters="parse-latex" data-tbl-cap="Karl Pearson's coefficient of skewness">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-karlskew-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;7.2: Karl Pearson’s coefficient of skewness
@@ -775,7 +795,7 @@ Note
 </div>
 </div>
 <p>for <a href="#tbl-skewnessmodel" class="quarto-xref">Table&nbsp;<span>7.1</span></a> in Example 7.1 given above, calculate third central moment, <span class="math inline">\(\mu_{3}\)</span></p>
-<div id="tbl-moment3" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap="Third central moment calculation" data-filters="parse-latex">
+<div id="tbl-moment3" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-filters="parse-latex" data-tbl-cap="Third central moment calculation">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-moment3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;7.5: Third central moment calculation
@@ -985,7 +1005,7 @@ Figure&nbsp;7.8: Three categories of frequency curves
 <li><p><span class="math inline">\(\gamma_{2}\)</span>&lt; 0 means the curve is platykurtic.</p></li>
 </ul>
 <p>for <a href="#tbl-skewnessmodel" class="quarto-xref">Table&nbsp;<span>7.1</span></a> in Example 7.1, kurtosis can be examined as follows</p>
-<div id="tbl-kutocalc" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap="Measures of kurtosis" data-filters="parse-latex">
+<div id="tbl-kutocalc" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-filters="parse-latex" data-tbl-cap="Measures of kurtosis">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-kutocalc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;7.6: Measures of kurtosis
@@ -1159,6 +1179,21 @@ Figure&nbsp;7.9: Frequency curve of Example 7.1
 <p>&nbsp;<br>
 &nbsp;<br>
 &nbsp;</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Historical Insights">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Historical Insights
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>“Crabs and kurtosis”</strong></p>
+<p>The story of <strong>kurtosis</strong> and <strong>skewness</strong> begins with a fascinating scientific journey involving <strong>crabs</strong>! In the late 1800s, Karl Pearson, a pioneering statistician, worked with biologist Walter Weldon to study variations in the size of crustaceans, like crabs. They noticed that the data didn’t follow the usual normal pattern, so Pearson developed new tools to better understand the shapes of these unusual data distributions.</p>
+<p>He created the concept of <strong>skewness</strong> to measure whether the data was symmetrical or had long tails on one side. Then, he developed <strong>kurtosis</strong>, a measure of how “peaked” or “flat” the data distribution was compared to the normal curve. These ideas helped statisticians better analyze data that didn’t fit the typical patterns, paving the way for modern statistical tools we still use today! <span class="citation" data-cites="fiori2009kurtosis">(<a href="references.html#ref-fiori2009kurtosis" role="doc-biblioref">Fiori and Zenga 2009</a>)</span></p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Quotes to Inspire">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1175,6 +1210,11 @@ Quotes to Inspire
 
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-fiori2009kurtosis" class="csl-entry" role="listitem">
+Fiori, Anna M., and Michele Zenga. 2009. <span>“Karl Pearson and the Origin of Kurtosis.”</span> <em>International Statistical Review</em> 77 (1): 40–50. <a href="https://doi.org/10.1111/j.1751-5823.2009.00076.x">https://doi.org/10.1111/j.1751-5823.2009.00076.x</a>.
+</div>
+</div>
 </section>
 </section>
 

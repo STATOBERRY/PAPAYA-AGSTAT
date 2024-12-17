@@ -23,7 +23,7 @@ $$
 In these cases, the frequency density is plotted on the y-axis to ensure that the *area of each rectangle* accurately represents the frequency of the class. This approach maintains the correct visual representation of the data distribution regardless of the class interval widths.
 :::
 
-@tbl-plantheight displays the frequency distribution of plant heights for a sample of 50 plants. This data can be visualized effectively using a histogram, as shown in @fig-histo.
+**Example 3.1** @tbl-plantheight displays the frequency distribution of plant heights for a sample of 50 plants. This data can be visualized effectively using a histogram, as shown in @fig-histo.
 
 | Plant height (cm) | Frequency |
 |:-----------------:|:---------:|
