@@ -130,7 +130,7 @@ In a simple bar chart, the height (or length) of each bar is equal to the value 
 
 **Component bar chart**
 
-In a component bar chart, the bar for each category is subdivided into component parts; hence its name. Component bar charts are therefore used to show the division of items into components. This is illustrated in the following example.
+In a component bar chart, the bar for each category is subdivided into component parts; hence its name. Component bar charts are therefore used to show the division of items into components. Component bar chart is also known as *stacked barchart*
 
 @fig-cbsales shows the distribution of sales of agricultural produce from a farm in 1995, 1996 and 1997 and its corresponding component barchart in @fig-cbar.
 
